@@ -1,7 +1,7 @@
 ---
 layout: page
-title: data
-permalink: /data/
+title: analyses
+permalink: /analyses/
 ---
 
 [Download the data]()
