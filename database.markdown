@@ -11,7 +11,7 @@ permalink: /database/
 <style>
 	h1 { font-size: 40px; }
 	th { text-align: left; }
-	table.browse { min-width: 1000px; }
+	table.browse { min-width: 1000px;}
 	table.browse { margin-left: auto; margin-right: auto; } /* center table */
 	table.browse { border-collapse: collapse; } /* don't put gaps between cells */
 	table.browse th { background:skyblue; }
@@ -36,6 +36,17 @@ let INDEX_monopoly		= "Monophonic/Polyphonic";
 let INDEX_sacrsec		= "Sacred/Secular";
 let INDEX_vocinstr		= "Vocal/Instrumental";
 let INDEX_genre			= "Genre";
+let INDEX_source 		= "Source of Work Listed in Program";
+let INDEX_folios		= "Folios/no.";
+let INDEX_edition		= "Edition of Work Listed in Program";
+let INDEX_pages			= "Nos./Page Numbers";
+let INDEX_scanedition	= "Scan of Edition";
+let INDEX_ProgID		= "Program ID";
+let INDEX_ProgDate		= "Program Date";
+let INDEX_ProgOrder		= "Order in Program";
+let INDEX_NotesWork		= "Notes on Work";
+let INDEX_ModernEd		= "Modern Edition";
+let INDEX_Repeatcon		= "Repeat Concerts";
 
 document.addEventListener("DOMContentLoaded", function () {
 	var id = "AKfycbye6akuTA_UHOqrdZJwC9utsK1FTnUJIxTLndGibFgyNVPa0xW4FEsygSPfVsuHjsIsCg";
@@ -51,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	.catch((error) => console.error("Error downloading metadata: ", error));
 
 });
-
 
 
 //////////////////////////////
@@ -90,7 +100,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_composername, INDEX_conflattr, INDEX_language, INDEX_language2, INDEX_monopoly, INDEX_sacrsec, INDEX_vocinstr, INDEX_genre];
+	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_composername, INDEX_conflattr, INDEX_language, INDEX_language2, INDEX_monopoly, INDEX_sacrsec, INDEX_vocinstr, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_pages, INDEX_scanedition, INDEX_ProgID, INDEX_ProgDate, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
