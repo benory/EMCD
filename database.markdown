@@ -138,7 +138,9 @@ function makeTableBody(headings, data) {
 		for (let i=0; i<headings.length; i++) {
 			let value = entry[headings[i]];
 			output += "<td>";
-			output += value;
+			if (typeof output !== "undefined") {  
+				output += value;
+			}
 			output += "</td>";
 		}
 		output += "</tr>\n";
