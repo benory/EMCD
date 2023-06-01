@@ -30,7 +30,7 @@ For more details, read the [documentation](https://docs.google.com/document/d/18
 ### The archives
 
 Concert programs have been located so far in the following archives:
-+ Harvard University Theatre Collection
++ Harvard University, Harvard Theatre Collection
 + New York Public Library, Music Division
 + Stadtsarchiv München
 + Universitätsarchiv Bonn
