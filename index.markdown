@@ -7,9 +7,9 @@ layout: page
 ---
 
 The Early Music Concerts Database catalogues programs of medieval and Renaissance music in Europe and the United States from roughly 1915 through 1960. 
-+ For more information, see [about this project](about)
-+ To access the catalogue, see [database](database)
-+ For some analyses based on the project data, see [analyses](analyses)
++ Learn more [about this project](about).
++ Access the [concert program database](database).
++ See some [analyses](analyses) based on the project data. 
 
 <br>
 
