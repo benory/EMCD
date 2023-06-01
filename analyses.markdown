@@ -1,6 +1,5 @@
 ---
 layout: page
-title: analyses
 permalink: /analyses/
 ---
 
