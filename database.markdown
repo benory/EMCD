@@ -25,8 +25,8 @@ permalink: /database/
 	table.browse td:nth-child(4) {white-space: nowrap;}
 	table.browse td:nth-child(5) {min-width: 100px}
 	table.browse td:nth-child(6) {min-width: 150px;}
-	table.browse td:nth-child(7) {min-width: 150px;}
-	table.browse td:nth-child(12) {min-width: 200px;}
+	table.browse td:nth-child(7) {min-width: 200px;}
+	select.source {max-width: 250px}
 </style>
 
 <script>
@@ -94,6 +94,7 @@ function buildSearchInterface(data, selector) {
 	output += buildMonoPolySelect(data);
 	output += buildSacredSecularSelect(data);
 	output += buildVocInstrSelect(data);
+	output += buildSourceSelect(data);
 	element.innerHTML = output;
 }
 
@@ -436,6 +437,36 @@ function buildVocInstrSelect(data) {
 	return output;
 }
 
+//////////////////////////////
+//
+// buildSourceSelect --
+//
+
+function buildSourceSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let source = entry[INDEX_source];
+		if (!source) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
+			continue;
+		}
+		counter[source] = (counter[source] === undefined) ? 1 : counter[source] + 1;
+	}
+
+	let solist = Object.keys(counter).sort();
+	let sourceCount = solist.length;
+	let output = "<select class='source' onchange='doSearch()'>\n";
+	output += `<option value="">Any source [${sourceCount}]</option>`;
+	for (let i=0; i<solist.length; i++) {
+		let name = solist[i];
+		let count = counter[solist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
 
 //////////////////////////////
 //
@@ -525,6 +556,13 @@ function doSearch(data) {
 	}
 	let sacredsecularQuery = sacredsecularField.value;
 
+	let sourceField = searchInterface.querySelector("select.source");
+	if (!sourceField) {
+		console.log("Problem finding source field in search interface");
+		return;
+	}
+	let sourceQuery = sourceField.value;
+
 	let vocinstrField = searchInterface.querySelector("select.vocinstr");
 	if (!vocinstrField) {
 		console.log("Problem finding sacred/secular field in search interface");
@@ -600,6 +638,18 @@ function doSearch(data) {
 			let entry = data[i];
 			let sacredsecular = entry[INDEX_sacrsec];
 			if (sacredsecular == sacredsecularQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (sourceQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let source = entry[INDEX_source];
+			if (source == sourceQuery) {
 				tempdata.push(entry);
 			}
 		}
