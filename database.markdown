@@ -83,6 +83,7 @@ function buildSearchInterface(data, selector) {
 	let output = "";
 	output += buildComposerSelect(data);
 	output += buildVoiceSelect(data);
+	output += buildGenreSelect(data);
 	element.innerHTML = output;
 }
 
@@ -185,6 +186,37 @@ function buildComposerSelect(data) {
 }
 
 
+//////////////////////////////
+//
+// buildGenreSelect --
+//
+
+function buildGenreSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let genre = entry[INDEX_genre];
+		if (!genre) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A GENRE");
+			continue;
+		}
+		counter[genre] = (counter[genre] === undefined) ? 1 : counter[genre] + 1;
+	}
+
+	let glist = Object.keys(counter).sort();
+	let genreCount = glist.length;
+	let output = "<select class='genre' onchange='doSearch()'>\n";
+	output += `<option value="">Any genre [${genreCount}]</option>`;
+	for (let i=0; i<glist.length; i++) {
+		let name = glist[i];
+		let count = counter[glist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
 
 //////////////////////////////
 //
@@ -246,6 +278,13 @@ function doSearch(data) {
 	}
 	let voiceQuery = voiceField.value;
 
+	let genreField = searchInterface.querySelector("select.genre");
+	if (!genreField) {
+		console.log("Problem finding genre field in search interface");
+		return;
+	}
+	let genreQuery = genreField.value;
+
 	if (composerQuery) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
@@ -269,6 +308,19 @@ function doSearch(data) {
 		}
 		data = tempdata;
 	}
+
+	if (genreQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let genre = entry[INDEX_genre];
+			if (genre == genreQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
 
 	displayBrowseTable(data);
 }
