@@ -23,6 +23,7 @@ permalink: /database/
 	.wrapper {margin-left: 10px;}
 	table.browse td:nth-child(2) {white-space: nowrap;}
 	table.browse td:nth-child(4) {white-space: nowrap;}
+	table.browse td:nth-child(7) {white-space: nowrap;}
 </style>
 
 <script>
