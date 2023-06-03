@@ -23,9 +23,10 @@ permalink: /database/
 	.wrapper {margin-left: 10px;}
 	table.browse td:nth-child(2) {white-space: nowrap;}
 	table.browse td:nth-child(4) {white-space: nowrap;}
-	table.browse td:nth-child(7) {white-space: nowrap;}
-	table.browse td:nth-child(8) {min-width: 200px;}
-	table.browse td:nth-child(16) {min-width: 225px;}
+	table.browse td:nth-child(6) {white-space: nowrap;}
+	table.browse td:nth-child(7) {min-width: 200px;}
+	table.browse td:nth-child(9) {min-width: 200px;}
+	table.browse td:nth-child(15) {min-width: 225px;}
 </style>
 
 <script>
@@ -112,7 +113,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_composername, INDEX_language2, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_pages, INDEX_scanedition, INDEX_ProgID, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
+	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_composername, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_scanedition, INDEX_ProgID, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
@@ -153,7 +154,14 @@ function makeTableBody(headings, data) {
 				value = entry[headings[i]];
 			}
 			output += "<td>";
-			output += value;
+
+			if (headings[i] == INDEX_edition) {
+				let editioncombined = getEdition(entry);
+				output += editioncombined;
+			}
+			else {
+				output += value;
+			}
 			output += "</td>";
 		}
 		output += "</tr>\n";
@@ -226,7 +234,34 @@ function buildGenreSelect(data) {
 	return output;
 }
 
+//////////////////////////////
+//
+// getEdition -- Generate Edition + Pages 
+//
 
+function getEdition(entry) {
+	console.warn(entry);
+	let edition = "";
+	if (typeof entry["Edition of Work Listed in Program"] !== "undefined") {
+		edition = entry["Edition of Work Listed in Program"];
+	}
+	let editionpages = "";
+	if (typeof entry["Nos./Page Numbers"] !== "undefined") {
+		editionpages = entry["Nos./Page Numbers"];
+	}
+	if (!editionpages.match(/^\s*$/)) {
+		if (!edition.match(/^\s*$/)) {
+			return `${edition}, ${editionpages}`;
+		} else {
+			return `${editionpages}`;
+		}
+	}
+	if (edition.match(/^\s*$/)) {
+		return "";
+	} else {
+		return edition;
+	}
+}
 
 //////////////////////////////
 //
