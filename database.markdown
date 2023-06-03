@@ -24,6 +24,7 @@ permalink: /database/
 	table.browse td:nth-child(2) {white-space: nowrap;}
 	table.browse td:nth-child(4) {white-space: nowrap;}
 	table.browse td:nth-child(7) {white-space: nowrap;}
+	table.browse td:nth-child(16) {min-width: 225px;}
 </style>
 
 <script>
