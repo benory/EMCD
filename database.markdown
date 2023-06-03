@@ -21,12 +21,12 @@ permalink: /database/
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
-	table.browse td:nth-child(2) {white-space: nowrap;}
+	table.browse td:nth-child(2) {min-width: 125px;}
 	table.browse td:nth-child(4) {white-space: nowrap;}
-	table.browse td:nth-child(6) {white-space: nowrap;}
-	table.browse td:nth-child(7) {min-width: 200px;}
-	table.browse td:nth-child(9) {min-width: 200px;}
-	table.browse td:nth-child(15) {min-width: 225px;}
+	table.browse td:nth-child(5) {min-width: 100px}
+	table.browse td:nth-child(6) {min-width: 150px;}
+	table.browse td:nth-child(7) {min-width: 150px;}
+	table.browse td:nth-child(12) {min-width: 200px;}
 </style>
 
 <script>
@@ -45,7 +45,7 @@ let INDEX_sacrsec		= "Sacred/Secular";
 let INDEX_vocinstr		= "Vocal/Instrumental";
 let INDEX_genre			= "Genre";
 let INDEX_source 		= "Source of Work Listed in Program";
-let INDEX_folios		= "Folios/no.";
+let INDEX_folios		= "Folios/No.";
 let INDEX_edition		= "Edition of Work Listed in Program";
 let INDEX_pages			= "Nos./Page Numbers";
 let INDEX_scanedition	= "Scan of Edition";
@@ -113,7 +113,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_composername, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_scanedition, INDEX_ProgID, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
+	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_genre, INDEX_source, INDEX_edition, INDEX_ModernEd];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
@@ -157,9 +157,12 @@ function makeTableBody(headings, data) {
 
 			if (headings[i] == INDEX_edition) {
 				let editioncombined = getEdition(entry);
-				output += editioncombined;
-			}
-			else {
+				let url = getEditionUrl(entry);
+				output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
+			} else if (headings[i] == INDEX_source){
+				let sourcecombined = getSource(entry);
+				output += sourcecombined;
+			} else {
 				output += value;
 			}
 			output += "</td>";
@@ -236,6 +239,35 @@ function buildGenreSelect(data) {
 
 //////////////////////////////
 //
+// getSource -- Generate Source + Folios/Pages 
+//
+
+function getSource(entry) {
+	console.warn(entry);
+	let source = "";
+	if (typeof entry["Source of Work Listed in Program"] !== "undefined") {
+		source = entry["Source of Work Listed in Program"];
+	}
+	let sourcepages = "";
+	if (typeof entry["Folios/No."] !== "undefined") {
+		sourcepages = entry["Folios/No."];
+	}
+	if (!sourcepages.match(/^\s*$/)) {
+		if (!source.match(/^\s*$/)) {
+			return `${source}, ${sourcepages}`;
+		} else {
+			return `${sourcepages}`;
+		}
+	}
+	if (source.match(/^\s*$/)) {
+		return "";
+	} else {
+		return source;
+	}
+}
+
+//////////////////////////////
+//
 // getEdition -- Generate Edition + Pages 
 //
 
@@ -261,6 +293,20 @@ function getEdition(entry) {
 	} else {
 		return edition;
 	}
+}
+
+//////////////////////////////
+//
+// getEditionUrl -- Generate a source link based on "Scan of Edition".
+//
+
+function getEditionUrl(entry) {
+	let editionurl = "";
+	if (typeof entry["Scan of Edition"] !== "undefined") {
+		editionurl = entry["Scan of Edition"];
+		return editionurl;
+	}
+	return "";
 }
 
 //////////////////////////////
