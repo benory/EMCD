@@ -21,6 +21,8 @@ permalink: /database/
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
+	table.browse td:nth-child(2) {white-space: nowrap;}
+	table.browse td:nth-child(4) {white-space: nowrap;}
 </style>
 
 <script>
@@ -84,6 +86,10 @@ function buildSearchInterface(data, selector) {
 	output += buildComposerSelect(data);
 	output += buildVoiceSelect(data);
 	output += buildGenreSelect(data);
+	output += buildLanguageSelect(data);
+	output += buildMonoPolySelect(data);
+	output += buildSacredSecularSelect(data);
+	output += buildVocInstrSelect(data);
 	element.innerHTML = output;
 }
 
@@ -103,7 +109,7 @@ function displayBrowseTable(data, selector) {
 		console.error(`Error: cannot find ${selector} element to display work table`);
 		return;
 	}
-	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_composername, INDEX_conflattr, INDEX_language, INDEX_language2, INDEX_monopoly, INDEX_sacrsec, INDEX_vocinstr, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_pages, INDEX_scanedition, INDEX_ProgID, INDEX_ProgDate, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
+	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_composername, INDEX_language2, INDEX_genre, INDEX_source, INDEX_folios, INDEX_edition, INDEX_pages, INDEX_scanedition, INDEX_ProgID, INDEX_ProgOrder, INDEX_NotesWork, INDEX_ModernEd, INDEX_Repeatcon];
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
@@ -218,6 +224,135 @@ function buildGenreSelect(data) {
 }
 
 
+
+//////////////////////////////
+//
+// buildLanguageSelect --
+//
+
+function buildLanguageSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let language = entry[INDEX_language];
+		if (!language) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A LANGUAGE");
+			continue;
+		}
+		counter[language] = (counter[language] === undefined) ? 1 : counter[language] + 1;
+	}
+
+	let llist = Object.keys(counter).sort();
+	let languageCount = llist.length;
+	let output = "<select class='language' onchange='doSearch()'>\n";
+	output += `<option value="">Any language [${languageCount}]</option>`;
+	for (let i=0; i<llist.length; i++) {
+		let name = llist[i];
+		let count = counter[llist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
+// buildMonoPolySelect --
+//
+
+function buildMonoPolySelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let monopoly = entry[INDEX_monopoly];
+		if (!monopoly) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A MONOPHONIC/POLYPHONIC DESIGNATION");
+			continue;
+		}
+		counter[monopoly] = (counter[monopoly] === undefined) ? 1 : counter[monopoly] + 1;
+	}
+
+	let mlist = Object.keys(counter).sort();
+	let monopolyCount = mlist.length;
+	let output = "<select class='monopoly' onchange='doSearch()'>\n";
+	output += `<option value="">monophonic/polyphonic [${monopolyCount}]</option>`;
+	for (let i=0; i<mlist.length; i++) {
+		let name = mlist[i];
+		let count = counter[mlist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
+// buildSacredSecularSelect --
+//
+
+function buildSacredSecularSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let sacredsecular = entry[INDEX_sacrsec];
+		if (!sacredsecular) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A SACRED/SECULAR DESIGNATION");
+			continue;
+		}
+		counter[sacredsecular] = (counter[sacredsecular] === undefined) ? 1 : counter[sacredsecular] + 1;
+	}
+
+	let slist = Object.keys(counter).sort();
+	let sacredsecularCount = slist.length;
+	let output = "<select class='sacredsecular' onchange='doSearch()'>\n";
+	output += `<option value="">sacred/secular [${sacredsecularCount}]</option>`;
+	for (let i=0; i<slist.length; i++) {
+		let name = slist[i];
+		let count = counter[slist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
+// buildVocInstrSelect --
+//
+
+function buildVocInstrSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let vocinstr = entry[INDEX_vocinstr];
+		if (!vocinstr) {
+			console.error("WARNING: ", entry, " DOES NOT HAVE A VOCAL/INSTRUMENTAL DESIGNATION");
+			continue;
+		}
+		counter[vocinstr] = (counter[vocinstr] === undefined) ? 1 : counter[vocinstr] + 1;
+	}
+
+	let vilist = Object.keys(counter).sort();
+	let vocinstrCount = vilist.length;
+	let output = "<select class='vocinstr' onchange='doSearch()'>\n";
+	output += `<option value="">vocal/instrumental [${vocinstrCount}]</option>`;
+	for (let i=0; i<vilist.length; i++) {
+		let name = vilist[i];
+		let count = counter[vilist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
 //////////////////////////////
 //
 // buildVoiceSelect --
@@ -285,6 +420,35 @@ function doSearch(data) {
 	}
 	let genreQuery = genreField.value;
 
+	let languageField = searchInterface.querySelector("select.language");
+	if (!languageField) {
+		console.log("Problem finding language field in search interface");
+		return;
+	}
+	let languageQuery = languageField.value;
+
+	let monopolyField = searchInterface.querySelector("select.monopoly");
+	if (!monopolyField) {
+		console.log("Problem finding monophonic/polyphonic field in search interface");
+		return;
+	}
+	let monopolyQuery = monopolyField.value;
+
+	let sacredsecularField = searchInterface.querySelector("select.sacredsecular");
+	if (!sacredsecularField) {
+		console.log("Problem finding sacred/secular field in search interface");
+		return;
+	}
+	let sacredsecularQuery = sacredsecularField.value;
+
+	let vocinstrField = searchInterface.querySelector("select.vocinstr");
+	if (!vocinstrField) {
+		console.log("Problem finding sacred/secular field in search interface");
+		return;
+	}
+	let vocinstrQuery = vocinstrField.value;
+
+
 	if (composerQuery) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
@@ -315,6 +479,55 @@ function doSearch(data) {
 			let entry = data[i];
 			let genre = entry[INDEX_genre];
 			if (genre == genreQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (languageQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let language = entry[INDEX_language];
+			if (language == languageQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+
+	if (monopolyQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let monopoly = entry[INDEX_monopoly];
+			if (monopoly == monopolyQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (sacredsecularQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let sacredsecular = entry[INDEX_sacrsec];
+			if (sacredsecular == sacredsecularQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (vocinstrQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let vocinstr = entry[INDEX_vocinstr];
+			if (vocinstr == vocinstrQuery) {
 				tempdata.push(entry);
 			}
 		}
