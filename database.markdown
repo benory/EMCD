@@ -16,7 +16,7 @@ permalink: /database/
 	table.browse { margin-left: auto; margin-right: auto; } /* center table */
 	table.browse { border-collapse: collapse; } /* don't put gaps between cells */
 	table.browse th { background:skyblue; }
-	table.browse td, table.browse th { padding-left: 10px; padding-top: 5px; }
+	table.browse td, table.browse th {padding-left: 2px; padding-top: 2px; padding: 2px}
 	table.browse tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
 	#search-interface { margin-bottom: 30px; }
