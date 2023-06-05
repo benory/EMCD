@@ -12,8 +12,6 @@ The Early Music Concerts Database catalogues programs of medieval and Renaissanc
 + Learn more [about this project](about).
 + Access the [concert program database](database).
 
-<br>
-
 ### Project data
 + 48 catalogued concerts
 + 497 individual performed works, including pieces by 130 individual composers 
