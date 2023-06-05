@@ -63,46 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	fetch(url)
 	.then((response) => response.json())
 	.then((data) => {
-		processMetadata(data);
+		METADATA = data;
 		buildSearchInterface(data, "#search-interface");
 		displayBrowseTable(data, "#list"); 
 	})
 	.catch((error) => console.error("Error downloading metadata: ", error));
 
 });
-
-//////////////////////////////
-//
-// processMetadata --
-//
-
-function processMetadata(metadata) {
-
-	let element = document.querySelector("#menu");
-	if (!element) {
-		console.error("Cannot find menu element");
-		return;
-	}
-
-	let genres = {};
-	for (let entry of metadata) {
-		let genre = entry.INDEX_genre;
-		if (typeof genres[genre] !== "undefined") {
-			genres[genre]++;
-		} else {
-			genres[genre] = 1;
-		}
-	}
-	let keys = Object.getOwnPropertyNames(genres);
-	keys.sort((a, b) => {
-		if (genres[a] == genres[b]) {
-			// sort cases alphabetically by genre if the have the same count:
-			return a.localeCompare(b);
-		} else {
-			return genres[b] - genres[a];
-		}
-	});
-}
 
 
 //////////////////////////////
