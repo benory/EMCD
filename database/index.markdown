@@ -213,28 +213,33 @@ function buildComposerSelect(data) {
 //
 
 function buildGenreSelect(data) {
-	let counter = {};
-	let sum = data.length;
-	for (let i=0; i<sum; i++) {
-		let entry = data[i];
-		let genre = entry[INDEX_genre];
-		if (!genre) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A GENRE");
-			continue;
+	let genres = {};
+	for (let entry of METADATA) {
+		let genre = entry.Genre;
+		if (typeof genres[genre] !== "undefined") {
+			genres[genre]++;
+		} else {
+			genres[genre] = 1;
 		}
-		counter[genre] = (counter[genre] === undefined) ? 1 : counter[genre] + 1;
 	}
 
-	let glist = Object.keys(counter).sort();
-	let genreCount = glist.length;
+	let keys = Object.getOwnPropertyNames(genres);
+	keys.sort((a, b) => {
+		if (genres[a] == genres[b]) {
+			// sort cases alphabetically by genre if the have the same count:
+			return a.localeCompare(b);
+		} else {
+			return genres[b] - genres[a];
+		}
+	});
+	let genreCount = keys.length;
+
 	let output = "<select class='genre' onchange='doSearch()'>\n";
-	output += `<option value="">Any genre [${genreCount}]</option>`;
-	for (let i=0; i<glist.length; i++) {
-		let name = glist[i];
-		let count = counter[glist[i]];
-		output += `<option value="${name}">${name} (${count})</option>`;
+	output += `<option value=''>Any genre [${genreCount}]</options>`;
+	for (let genre of keys) {
+		output += `<option value="${genre}">${genre} (${genres[genre]})</option>`;
 	}
-	output += "</select>\n";
+	output += "</select>";
 	return output;
 }
 
