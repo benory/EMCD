@@ -1,7 +1,6 @@
 ---
 layout: page
 title: database
-permalink: /database/
 ---
 
 <div id="search-interface"></div>
@@ -57,17 +56,18 @@ let INDEX_ModernEd		= "Modern Edition";
 let INDEX_Repeatcon		= "Repeat Concerts";
 
 document.addEventListener("DOMContentLoaded", function () {
-	var id = "AKfycbye6akuTA_UHOqrdZJwC9utsK1FTnUJIxTLndGibFgyNVPa0xW4FEsygSPfVsuHjsIsCg";
-	var url = `https://script.google.com/macros/s/${id}/exec`;
+	//var id = "AKfycbye6akuTA_UHOqrdZJwC9utsK1FTnUJIxTLndGibFgyNVPa0xW4FEsygSPfVsuHjsIsCg";
+	//var url = `https://script.google.com/macros/s/${id}/exec`;
 
-	fetch(url)
-	.then((response) => response.json())
-	.then((data) => {
-		METADATA = data;
-		buildSearchInterface(data, "#search-interface");
-		displayBrowseTable(data, "#list"); 
-	})
-	.catch((error) => console.error("Error downloading metadata: ", error));
+	//fetch(url)
+	//.then((response) => response.json())
+	//.then((data) => {
+	//	METADATA = data;
+	METADATA = {% include_relative works.json %};
+	buildSearchInterface(METADATA, "#search-interface");
+	displayBrowseTable(METADATA, "#list"); 
+	//})
+	//.catch((error) => console.error("Error downloading metadata: ", error));
 
 });
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: about
-permalink: /about/
 ---
 
 We're often told how informal performance in European musicological seminars played important roles in the revival of medieval and Renaissance music performance following World War I. 

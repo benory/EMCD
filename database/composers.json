@@ -1,0 +1,702 @@
+[
+	{
+		"URLBASE": "Composer",
+		"https://rism.online/people/": "ID Type"
+	},
+	{
+		"URLBASE": "Anonymous",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Aquanus, Adam",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Arcadelt, Jacques",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Aston, Hugh",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Augsburg, Pfabinschswantz von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Balbulus, Notker",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Barbe, Antoine",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Basiron, Philippe",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bassano, Giovanni",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Besard, Jean-Baptiste",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Binchois, Gilles",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bologna, Jacopo da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bonnel, Pietrequin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bonnet, Pierre",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bornelh, Giraut de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Brade, William",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Brätel, Ulrich",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Brolo, Bartolomeo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Browne, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bruck, Arnold von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Brumel, Antoine",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Bull, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Busnois, Antoine",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Byrd, William",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cabezón, Antonio de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Caccini, Giulio Romano",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Caimo, Gioseppe",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cara, Marchetto",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Caroso, Fabritio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Caserta, Philippus de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Caurroy, Eustache du",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cavazzoni, Girolamo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cavazzoni, Marco Antonio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cifra, Antonio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Clemens non Papa",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Coincy, Gautier de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Compère, Loyset",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cornysh (Junior), William",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Cruce, Petrus de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "d'Amiens, Guillaume",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "d'Arras, Moniot",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Dascanio, Josquin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Davy, Richard",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "des Prez, Josquin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Donato, Baldissera",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Dowland, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Du Fay, Guillaume",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ducis, Benedictus",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Dunstaple, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Eccard, Johann",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Farnaby, Giles",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Fayrfax, Robert",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Finck, Heinrich",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Firenze, Gheradello da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Firenze, Paolo da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Fogliano, Giacomo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Forster, Sebastian",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Franck, Melchior",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Frauenlob",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Fulda, Adam von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gabrieli, Andrea",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gabrieli, Giovanni",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gaffurius, Franchinus",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gagliano, Marco da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gallilei, Vincenzo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gascongne, Mathieu",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gastoldi, Giovanni Giacomo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gesualdo, Carlo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ghizeghem, Hayne van",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gibbons, Orlando",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gintzler, Simon",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gombert, Nicolas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Greiter, Mathias",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Guami, Gioseffo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Gumpelzhaimer, Adam",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Hagenbach, Jacob",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Halle, Adam de la",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Hassler, Hans Leo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Haussmann, Valentin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Hesdin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Hofhaimer, Paul",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ileborgh, Adam",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Isaac, Henricus",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Janequin, Clément",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Johnson, Robert",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Kleber, Leonhard",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Konstanz, Hans von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Kotter, Hans",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "La Rue, Pierre de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Landini, Francesco",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Langenaw, Johann Leonhard von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Lasso, Orlando di",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Laufenberg, Heinrich",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Le Jeune, Claude",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Lebrung, Johannes",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Lemlin, Lorenz",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Léonin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Machaut, Guillaume de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mahu, Stephan",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Maire, J. le",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mangon, Johannes",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Marenzio, Luca",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Marseille, Folquet de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mena, Gabriel",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Merulo, Claudio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mesomedes",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Milán, Luis",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mondejar, Alonso de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Monte, Philippe de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Monteverdi, Claudio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Morley, Thomas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Morton, Robert",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mouton, Jean",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Mundy, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Navarre, Thibaut de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Neidhart",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Neusiedler, Hans",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Nicholson, Richard",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Niger, Franciscus",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Nola, Giovanni Domenico da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Obrecht, Jacob",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Okeghem, Johannes",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ortiz, Diego",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Orto, Marbriano de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Osiander, Lucas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Othmayr, Caspar",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Padua, Grazioso da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Palestrina, Giovanni Pierluigi da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Paumann, Conrad",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Pérotin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Pesaro, Guglielmo Ebreo da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Pesenti, Michele",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Petit, Nino le",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Peuerl, Paul",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Piacenza, Domenico da",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Piero",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Power, Leonel",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Praetorius, Christoph",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Praetorius, Michael",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Prioris, Johannes",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ranieri",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Rore, Cipriano de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Rügen, Vitslav von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Sabio, Alfonso el",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Salzburg, Monk of",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Schlick, Arnolt",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Senfl, Ludwig",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Sermisy, Claudin de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Sicher, Fridolin",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Stoltzer, Thomas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Sweelinck, Jan Pieterszoon",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Taverner, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Torre, Francesco de la",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Tritonius, Petrus",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Tromboncino, Bartolomeo",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Tyard, Pontus de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Tzamen, Thomas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Unknown",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Vaquerias, Rambaut de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Vecchi, Orazio",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Ventadorn, Bernart de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Verdelot, Philippe",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Victoria, Tomás Luis de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Vintz, Georg",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Vitry, Philippe de",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Vogelweide, Walther von der",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Walter, Johann",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Weck, Johann",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Weelkes, Thomas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Whythorne, Thomas",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Wilbye, John",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Willaert, Adrian",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Wolkenstein, Oswald von",
+		"https://rism.online/people/": "composer"
+	},
+	{
+		"URLBASE": "Zirler, Stephan",
+		"https://rism.online/people/": "composer"
+	}
+]

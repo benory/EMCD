@@ -1,0 +1,634 @@
+[
+	{
+		"URLBASE for BMLO": "Person",
+		"https://bmlo.de/": "ID Type"
+	},
+	{
+		"URLBASE for BMLO": "Arendt, John",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Armstrong, Thomas",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Ballard, William",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Beck, Margaret",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Beck, Sydney",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Becking, Gustav",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Berberich, Ludwig",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Besseler, Heinrich",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Borkholder, Otto",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Bostwick, Alan",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Bozeman, George",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Brask, Harriet",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Brenner, Hans",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Brown, Bailey",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Brown, Howard Mayer",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Brown, Sam",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Bukofzer, Manfred F.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Castle, Conan",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Cazeaux, Isabelle",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Chan, Jean",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Currier, Gwendolyn",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Cuyler, Louise",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Dale, Martha",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Dart, Thurston",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Delaney, George Jerome",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Deller, Alfred",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "DeLoriea, George",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Denrenging, Eloise",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "DeRonde, Marion",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Dietrich, Fritz",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Dischner, Oskar",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Doe, Edith",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Douglass, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Dupré, Desmond",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Durrance, Samuel",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Eckerman, Nathaniel",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Einstein, Alfred",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Eitel, Priscilla",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Estrin, Mark",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Exon, George",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Ficker, Rudolf von",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Finney, Ross Lee",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Flügel, Gertrud",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Gardner, Lucile",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Gartside, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Garvin, David",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Geering, Arnold",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Glover, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Gore, William",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Götsch, Georg",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Götz, Willi",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Granderson, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Grimmeisen, Erwin",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Grudzinski, Theodore",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Gurlitt, Wilibald",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hamlin, Anna",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Handschin, Jacques",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Härtl, Valentin",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hathaway, Marcia",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Haugh, Harold",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Heartz, Daniel",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Helsing, Hedda",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hertzmann, Erich",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hess, William",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hewitt, Helen",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Heyde, Norma Swinney",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hibberd, Lloyd",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hindemith, Paul",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hornung, Hilde",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Huber, Anton",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Hunt, Thomas Webb",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Jackson, Roland",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Jarrel, Mrs.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Jöde, Fritz",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Johnson, Dean",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Jones, Sheila",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Karp, Theodore",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Kessler, Maurice",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Kestenberg, Leo",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Kiefer, E.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Klein, Maynard",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Köhler, Josef",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "König, Peter",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Kurtz, Kenneth",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Laban, Juana de",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Lang, Paul Henry",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Larzelere, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Liegner, J.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Lienhardt, John",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Loft, A.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Lowinsky, Edward",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Lowinsky, Gretel",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Majer, Marianne",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Maples, Janet",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "McLain, R.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Mearns, James",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Minor, Andrew",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Mishkin, Henry G.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Mohr, Ernst",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Moore, Mary",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Moruzeanu, Larisa",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Mugdan, Klaus",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Müller, Liselotte",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Najera, Edmund",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Nobel, Felix de",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Olson, Phyllis",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Oswald, Genevieve",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Otter, Margaret",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Ottman, Robert",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Peters, Jean",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Piette, Ruth",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Plamenac, Dragan",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Reichenbach, Hermann",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Rein, Walter",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Reisman, Lincoln",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Rögele, Reinhold",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Rood, Louise",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Rosenblum, Myron",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Sawade, Irmtraud",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schee, Dagny",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schmid, Willi",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schindler, Rudolf",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schmidlin, Ella",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schmidt-Görg, Joseph",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schönfelder, Willi",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schultze, Katharine",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Schwarzmaier, Ernst",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Silbert, Doris",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Smith, Gertrude P.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Sprager, Tanya",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Stadelmann, Li",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Stephan, Mary Jane",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Sterk, Walter",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Straus, Trudi",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Strickland, Bertram",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Sudock, S.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Swackhamer, John",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Tibbetts, Paul",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Torrence, Jane",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Trümpy, Bethe",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Turgeon, F. King",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "van den Borren, Charles",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Vielberth, Otto",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Vogt, Karl",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Wallace, James",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Walter, Georg A.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Watson, Mrs.",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Washington, Henry",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Weinberg, Edwin",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Welch, Roy Dickinson",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Welliver, Harry",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Wenzinger, August",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Wenzinger, Maya",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "White, Joseph",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Wild, Erika",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Wohlgemuth, Evelyn",
+		"https://bmlo.de/": "person"
+	},
+	{
+		"URLBASE for BMLO": "Zenck, Hermann",
+		"https://bmlo.de/": "person"
+	}
+]
