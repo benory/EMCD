@@ -209,7 +209,7 @@ function buildComposerSelect(data) {
 
 //////////////////////////////
 //
-// buildGenreSelect --
+// buildGenreSelect -- generate menu for genres, sort by count
 //
 
 function buildGenreSelect(data) {
