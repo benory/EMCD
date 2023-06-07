@@ -18,4 +18,4 @@ The Early Music Concerts Database catalogues programs of medieval and Renaissanc
 + 158 musicologists, singers, and musicians catalogued
 + archival material from 10 archives
 
-![concerts by year](concerts_by_year.png)
+![concerts by year](concerts_by_year.svg)
