@@ -237,7 +237,9 @@ function buildGenreSelect(data) {
 	let output = "<select class='genre' onchange='doSearch()'>\n";
 	output += `<option value=''>Any genre [${genreCount}]</options>`;
 	for (let genre of keys) {
-		output += `<option value="${genre}">${genre} (${genres[genre]})</option>`;
+		if (genre !== "undefined") {
+			output += `<option value="${genre}">${genre} (${genres[genre]})</option>`;
+		}
 	}
 	output += "</select>";
 	return output;
