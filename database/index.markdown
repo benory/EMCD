@@ -14,7 +14,7 @@ title: database
 	table.browse td, table.browse th {padding-left: 2px; padding-top: 2px; padding: 2px}
 	table.browse tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
-	#search-interface { margin-bottom: 30px; }
+	span.browse-interface { margin-top: 30px; margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
 	table.browse td:nth-child(2) {min-width: 125px;}
 	table.browse td:nth-child(4) {white-space: nowrap;}
@@ -24,7 +24,8 @@ title: database
 	select.source {max-width: 250px}
 	span.sheet-button {
 		display: inline-block;
-		padding-right: 40px;
+		padding-bottom: 20px;
+		padding-right: 20px;
 	}
 </style>
 
@@ -57,7 +58,7 @@ function displaySheet(name) {
 	let list = document.querySelectorAll(".sheet-display");
 	for (let i=0; i<list.length; i++) {
 		let sheet = list[i];
-		let sheetName = sheet.dataset.name;
+		let sheetName = sheet.dataset.sheet;
 		sheet.style.display = (name == sheetName ? "block" : "none");
 	}
 }
@@ -87,7 +88,7 @@ function displaySheet(name) {
 
 let EMC = {};
 EMC.results = {};  // elements for displaying search results by sheet name.
-EMC.activeResults = NULL;
+EMC.activeResults = null;
 EMC.index = {};    // header name mapping by sheet.
 EMC.index.works = {};  // header names for works sheet.
 EMC.index.concerts = {};  // header names for works concerts.
@@ -122,7 +123,7 @@ EMC.index.concerts = EMC.index.works;
 
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
-	displayBrowseTable(EMC.METADATA);
+	displayBrowseTableWorks(EMC.METADATA.works);
 });
 
 
@@ -141,17 +142,16 @@ function buildSearchInterfaces(metadata, selector) {
 	let browsers = element.querySelectorAll("div.sheet-display");
 	for (let i=0; i<browsers.length; i++) {
 		let sheetName = browsers[i].dataset.sheet;
-		console.warn("SHEET", sheetName);
 		let browseElement = browsers[i].querySelector("div.search-interface");
 		let tableElement = browsers[i].querySelector("div.results-list");
 		if (!tableElement) {
 			console.error("ERROR: No search results list element for", sheetName);
 			return;
 		}
-		EMC.results["sheetName"] = tableElement;
+		EMC.results[sheetName] = tableElement;
 		if (sheetName === "works") {
 			buildSearchInterfaceWorks(metadata.works, browseElement);
-		} elseif (sheetName === "concerts") {
+		} else if (sheetName === "concerts") {
 			buildSearchInterfaceConcerts(metadata.concerts, browseElement);
 		}
 	}
@@ -187,6 +187,7 @@ function buildSearchInterfaceWorks(data, element) {
 //
 
 function buildSearchInterfaceConcerts(data, browseElement) {
+	let element = EMC.results.concerts;
 	if (!element) {
 		console.error("ERROR: Cannot find search interface element", element);
 		return;
@@ -322,7 +323,7 @@ function buildComposerSelect(data) {
 		let entry = data[i];
 		let composer = entry[EMC.index.works.composer];
 		if (!composer) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A COMPOSER");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A COMPOSER");
 			continue;
 		}
 		counter[composer] = (counter[composer] === undefined) ? 1 : counter[composer] + 1;
@@ -386,7 +387,6 @@ function buildGenreSelect(data) {
 //
 
 function getSource(entry) {
-	console.warn(entry);
 	let source = "";
 	if (typeof entry["Source of Work Listed in Program"] !== "undefined") {
 		source = entry["Source of Work Listed in Program"];
@@ -415,7 +415,6 @@ function getSource(entry) {
 //
 
 function getEdition(entry) {
-	console.warn(entry);
 	let edition = "";
 	if (typeof entry["Edition of Work Listed in Program"] !== "undefined") {
 		edition = entry["Edition of Work Listed in Program"];
@@ -464,7 +463,7 @@ function buildLanguageSelect(data) {
 		let entry = data[i];
 		let language = entry[EMC.index.works.language];
 		if (!language) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A LANGUAGE");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A LANGUAGE");
 			continue;
 		}
 		counter[language] = (counter[language] === undefined) ? 1 : counter[language] + 1;
@@ -496,7 +495,7 @@ function buildMonoPolySelect(data) {
 		let entry = data[i];
 		let monopoly = entry[EMC.index.works.monopoly];
 		if (!monopoly) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A MONOPHONIC/POLYPHONIC DESIGNATION");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A MONOPHONIC/POLYPHONIC DESIGNATION");
 			continue;
 		}
 		counter[monopoly] = (counter[monopoly] === undefined) ? 1 : counter[monopoly] + 1;
@@ -528,7 +527,7 @@ function buildSacredSecularSelect(data) {
 		let entry = data[i];
 		let sacredsecular = entry[EMC.index.works.sacrsec];
 		if (!sacredsecular) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A SACRED/SECULAR DESIGNATION");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A SACRED/SECULAR DESIGNATION");
 			continue;
 		}
 		counter[sacredsecular] = (counter[sacredsecular] === undefined) ? 1 : counter[sacredsecular] + 1;
@@ -560,7 +559,7 @@ function buildVocInstrSelect(data) {
 		let entry = data[i];
 		let vocinstr = entry[EMC.index.works.vocinstr];
 		if (!vocinstr) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A VOCAL/INSTRUMENTAL DESIGNATION");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A VOCAL/INSTRUMENTAL DESIGNATION");
 			continue;
 		}
 		counter[vocinstr] = (counter[vocinstr] === undefined) ? 1 : counter[vocinstr] + 1;
@@ -591,7 +590,7 @@ function buildSourceSelect(data) {
 		let entry = data[i];
 		let source = entry[EMC.index.works.source];
 		if (!source) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
 			continue;
 		}
 		counter[source] = (counter[source] === undefined) ? 1 : counter[source] + 1;
@@ -622,7 +621,7 @@ function buildVoiceSelect(data) {
 		let entry = data[i];
 		let voice = entry[EMC.index.works.voices];
 		if (!voice) {
-			console.error("WARNING: ", entry, " DOES NOT HAVE A VOICE COUNT");
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A VOICE COUNT");
 			continue;
 		}
 		counter[voice] = (counter[voice] === undefined) ? 1 : counter[voice] + 1;
@@ -656,6 +655,7 @@ function doSearchConcerts(data) {
 //
 
 function doSearchWorks(data) {
+	console.error("input data for doSearchWorks", data);
 	if (!data) {
 		data = EMC.METADATA.works;
 	}
@@ -821,7 +821,7 @@ function doSearchWorks(data) {
 	}
 
 
-	displayBrowseTable(data);
+	displayBrowseTableWorks(data);
 }
 
 </script>
