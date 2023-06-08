@@ -3,10 +3,6 @@ layout: page
 title: database
 ---
 
-<div id="search-interface"></div>
-
-<div id="list"></div>
-
 <style>
 	body {font: 400 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
 	h1 { font-size: 40px; }
@@ -28,10 +24,25 @@ title: database
 	select.source {max-width: 250px}
 </style>
 
+<div id="browse-interface">
+	<div class="sheet-display" data-sheet="works">
+		<div class="search-interface"></div>
+		<div class="list"></div>
+	</div>
+	<div class="sheet-display" data-sheet="concerts">
+		<div class="search-interface"></div>
+		<div class="list"></div>
+	</div>
+</div>
+
 <script>
 // vim: ts=3:nowrap
 
-let METADATA = [];
+let EMC = {};
+EMC.METADATA = {};
+EMC.METADATA.works = {% include_relative works.json %};
+EMC.METADATA.concerts = {% include_relative concerts.json %};
+
 let INDEX_name        	= "Standardized Name of Work";
 let INDEX_composer    	= "Probable Composer";
 let INDEX_voices       	= "Voices";
@@ -56,30 +67,44 @@ let INDEX_ModernEd		= "Modern Edition";
 let INDEX_Repeatcon		= "Repeat Concerts";
 
 document.addEventListener("DOMContentLoaded", function () {
-	//var id = "AKfycbye6akuTA_UHOqrdZJwC9utsK1FTnUJIxTLndGibFgyNVPa0xW4FEsygSPfVsuHjsIsCg";
-	//var url = `https://script.google.com/macros/s/${id}/exec`;
-
-	//fetch(url)
-	//.then((response) => response.json())
-	//.then((data) => {
-	//	METADATA = data;
-	METADATA = {% include_relative works.json %};
-	buildSearchInterface(METADATA, "#search-interface");
-	displayBrowseTable(METADATA, "#list"); 
-	//})
-	//.catch((error) => console.error("Error downloading metadata: ", error));
-
+	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
+	displayBrowseTable(EMC.METADATA, "#list");
 });
+
+//////////////////////////////
+//
+// buildSearchInterfaces --
+//
+
+function buildSearchInterfaces(metadata, selector) {
+	let element = document.querySelector(selector);
+	if (!element) {
+		console.error("ERROR: Cannot find", selector, "element");
+		return;
+	}
+	let browsers = element.querySelectorAll("div.sheet-display");
+	for (let i=0; i<browsers.length; i++) {
+		let sheet = browers[i].dataset.sheet;
+		console.warn("SHEET", sheet);
+		<div class="search-interface"></div>
+		<div class="list"></div>
+		if (sheet === "works") {
+			buildSearchInterfaceWorks(metadata.works);
+		} elseif (sheet === "concerts") {
+			buildSearchInterfaceConcerts(metadata.concerts);
+		}
+	}
+}
 
 
 //////////////////////////////
 //
-// buildSearchInterface --
+// buildSearchInterfaceWorks --
 //
 
-function buildSearchInterface(data, selector) {
+function buildSearchInterfaceWorks(data, selector) {
 	if (!selector) {
-		selector = "#search-interface";
+		selector = "#browse-interface";
 	}
 	let element = document.querySelector(selector);
 	if (!element) {
@@ -98,6 +123,32 @@ function buildSearchInterface(data, selector) {
 	element.innerHTML = output;
 }
 
+
+//////////////////////////////
+//
+// buildSearchInterfaceConcerts --
+//
+
+function buildSearchInterfaceConcerts(data, browseElement, resultsElement) {
+	if (!selector) {
+		selector = "#search-interface";
+	}
+	let element = document.querySelector(selector);
+	if (!element) {
+		console.error(`Error: cannot find ${selector} element to create search interface`);
+		return;
+	}
+	let output = "";
+	//output += buildComposerSelect(data);
+	//output += buildVoiceSelect(data);
+	//output += buildGenreSelect(data);
+	//output += buildLanguageSelect(data);
+	//output += buildMonoPolySelect(data);
+	//output += buildSacredSecularSelect(data);
+	//output += buildVocInstrSelect(data);
+	//output += buildSourceSelect(data);
+	element.innerHTML = output;
+}
 
 
 //////////////////////////////
@@ -214,7 +265,7 @@ function buildComposerSelect(data) {
 
 function buildGenreSelect(data) {
 	let genres = {};
-	for (let entry of METADATA) {
+	for (let entry of EMC.METADATA.works) {
 		let genre = entry.Genre;
 		if (typeof genres[genre] !== "undefined") {
 			genres[genre]++;
@@ -512,7 +563,7 @@ function buildVoiceSelect(data) {
 
 function doSearch(data) {
 	if (!data) {
-		data = METADATA;
+		data = EMC.METADATA.works;
 	}
 
 	let searchInterface = document.querySelector("#search-interface");
