@@ -88,6 +88,7 @@ function displaySheet(name) {
 
 let EMC = {};
 EMC.results = {};  // elements for displaying search results by sheet name.
+EMC.menus = {}; // elements for displaying search menus by sheet name.
 EMC.activeResults = null;
 EMC.index = {};    // header name mapping by sheet.
 EMC.index.works = {};  // header names for works sheet.
@@ -143,6 +144,11 @@ function buildSearchInterfaces(metadata, selector) {
 	for (let i=0; i<browsers.length; i++) {
 		let sheetName = browsers[i].dataset.sheet;
 		let browseElement = browsers[i].querySelector("div.search-interface");
+		if (!browseElement) {
+			console.error("ERROR: No browseElement for", sheetName);
+			return;
+		}
+		EMC.menus[sheetName] = browseElement;
 		let tableElement = browsers[i].querySelector("div.results-list");
 		if (!tableElement) {
 			console.error("ERROR: No search results list element for", sheetName);
@@ -655,18 +661,21 @@ function doSearchConcerts(data) {
 //
 
 function doSearchWorks(data) {
-	console.error("input data for doSearchWorks", data);
 	if (!data) {
 		data = EMC.METADATA.works;
 	}
+	console.error("input data for doSearchWorks", data);
 
-	let searchInterface = EMC.results.works;
+
+	let searchInterface = EMC.menus.works;
+	console.warn("print search interface", searchInterface);
 	if (!searchInterface) {
 		console.log("Problem finding search interface for works");
 		return;
 	}
 
 	let composerField = searchInterface.querySelector("select.composer");
+	console.warn("print composerField", composerField);
 	if (!composerField) {
 		console.log("Problem finding composer field in search interface");
 		return;
