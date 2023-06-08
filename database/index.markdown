@@ -22,16 +22,63 @@ title: database
 	table.browse td:nth-child(6) {min-width: 150px;}
 	table.browse td:nth-child(7) {min-width: 200px;}
 	select.source {max-width: 250px}
+	span.sheet-button {
+		display: inline-block;
+		padding-right: 40px;
+	}
 </style>
+
+<script>
+
+
+//////////////////////////////
+//
+// Click manager for selecting which worksheet data to browse:
+//
+
+document.addEventListener("click", function (event) {
+	let clickedElement = event.target;
+	let targetButton = clickedElement.closest(".sheet-button");
+	if (!targetButton) {
+		return;
+	}
+	let name = targetButton.dataset.sheet;
+	displaySheet(name);
+});
+
+
+
+//////////////////////////////
+//
+// displaySheet -- Select the browse interface for a specific worksheet.
+//
+
+function displaySheet(name) {
+	let list = document.querySelectorAll(".sheet-display");
+	for (let i=0; i<list.length; i++) {
+		let sheet = list[i];
+		let sheetName = sheet.dataset.name;
+		sheet.style.display = (name == sheetName ? "block" : "none");
+	}
+}
+
+
+</script>
+
+
+<div id="sheet-select">
+	<span class="sheet-button" data-sheet="works">Works</span>
+	<span class="sheet-button" data-sheet="concerts">Concerts</span>
+</div>
 
 <div id="browse-interface">
 	<div class="sheet-display" data-sheet="works">
 		<div class="search-interface"></div>
-		<div class="list"></div>
+		<div class="results-list"></div>
 	</div>
 	<div class="sheet-display" data-sheet="concerts">
 		<div class="search-interface"></div>
-		<div class="list"></div>
+		<div class="results-list"></div>
 	</div>
 </div>
 
@@ -39,37 +86,46 @@ title: database
 // vim: ts=3:nowrap
 
 let EMC = {};
+EMC.results = {};  // elements for displaying search results by sheet name.
+EMC.activeResults = NULL;
+EMC.index = {};    // header name mapping by sheet.
+EMC.index.works = {};  // header names for works sheet.
+EMC.index.concerts = {};  // header names for works concerts.
 EMC.METADATA = {};
 EMC.METADATA.works = {% include_relative works.json %};
 EMC.METADATA.concerts = {% include_relative concerts.json %};
 
-let INDEX_name        	= "Standardized Name of Work";
-let INDEX_composer    	= "Probable Composer";
-let INDEX_voices       	= "Voices";
-let INDEX_composername  = "Composer Name as Listed in Program";
-let INDEX_conflattr     = "Conflicting Attributions";
-let INDEX_language		= "Language";
-let INDEX_language2		= "Second Language";
-let INDEX_monopoly		= "Monophonic/Polyphonic";
-let INDEX_sacrsec		= "Sacred/Secular";
-let INDEX_vocinstr		= "Vocal/Instrumental";
-let INDEX_genre			= "Genre";
-let INDEX_source 		= "Source of Work Listed in Program";
-let INDEX_folios		= "Folios/No.";
-let INDEX_edition		= "Edition of Work Listed in Program";
-let INDEX_pages			= "Nos./Page Numbers";
-let INDEX_scanedition	= "Scan of Edition";
-let INDEX_ProgID		= "Program ID";
-let INDEX_ProgDate		= "Program Date";
-let INDEX_ProgOrder		= "Order in Program";
-let INDEX_NotesWork		= "Notes on Work";
-let INDEX_ModernEd		= "Modern Edition";
-let INDEX_Repeatcon		= "Repeat Concerts";
+EMC.index.works.name          = "Standardized Name of Work";
+EMC.index.works.composer      = "Probable Composer";
+EMC.index.works.voices        = "Voices";
+EMC.index.works.composername  = "Composer Name as Listed in Program";
+EMC.index.works.conflattr     = "Conflicting Attributions";
+EMC.index.works.language	   = "Language";
+EMC.index.works.language2	   = "Second Language";
+EMC.index.works.monopoly	   = "Monophonic/Polyphonic";
+EMC.index.works.sacrsec	      = "Sacred/Secular";
+EMC.index.works.vocinstr	   = "Vocal/Instrumental";
+EMC.index.works.genre   	   = "Genre";
+EMC.index.works.source    	   = "Source of Work Listed in Program";
+EMC.index.works.folios	      = "Folios/No.";
+EMC.index.works.edition	      = "Edition of Work Listed in Program";
+EMC.index.works.pages	      = "Nos./Page Numbers";
+EMC.index.works.scanedition   = "Scan of Edition";
+EMC.index.works.ProgID	      = "Program ID";
+EMC.index.works.ProgDate	   = "Program Date";
+EMC.index.works.ProgOrder	   = "Order in Program";
+EMC.index.works.NotesWork	   = "Notes on Work";
+EMC.index.works.ModernEd	   = "Modern Edition";
+EMC.index.works.Repeatcon	   = "Repeat Concerts";
+
+EMC.index.concerts = EMC.index.works;
 
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
-	displayBrowseTable(EMC.METADATA, "#list");
+	displayBrowseTable(EMC.METADATA);
 });
+
+
 
 //////////////////////////////
 //
@@ -84,14 +140,19 @@ function buildSearchInterfaces(metadata, selector) {
 	}
 	let browsers = element.querySelectorAll("div.sheet-display");
 	for (let i=0; i<browsers.length; i++) {
-		let sheet = browers[i].dataset.sheet;
-		console.warn("SHEET", sheet);
-		<div class="search-interface"></div>
-		<div class="list"></div>
-		if (sheet === "works") {
-			buildSearchInterfaceWorks(metadata.works);
-		} elseif (sheet === "concerts") {
-			buildSearchInterfaceConcerts(metadata.concerts);
+		let sheetName = browsers[i].dataset.sheet;
+		console.warn("SHEET", sheetName);
+		let browseElement = browsers[i].querySelector("div.search-interface");
+		let tableElement = browsers[i].querySelector("div.results-list");
+		if (!tableElement) {
+			console.error("ERROR: No search results list element for", sheetName);
+			return;
+		}
+		EMC.results["sheetName"] = tableElement;
+		if (sheetName === "works") {
+			buildSearchInterfaceWorks(metadata.works, browseElement);
+		} elseif (sheetName === "concerts") {
+			buildSearchInterfaceConcerts(metadata.concerts, browseElement);
 		}
 	}
 }
@@ -102,13 +163,9 @@ function buildSearchInterfaces(metadata, selector) {
 // buildSearchInterfaceWorks --
 //
 
-function buildSearchInterfaceWorks(data, selector) {
-	if (!selector) {
-		selector = "#browse-interface";
-	}
-	let element = document.querySelector(selector);
+function buildSearchInterfaceWorks(data, element) {
 	if (!element) {
-		console.error(`Error: cannot find ${selector} element to create search interface`);
+		console.error("ERROR: Cannot find search interface element", element);
 		return;
 	}
 	let output = "";
@@ -129,13 +186,9 @@ function buildSearchInterfaceWorks(data, selector) {
 // buildSearchInterfaceConcerts --
 //
 
-function buildSearchInterfaceConcerts(data, browseElement, resultsElement) {
-	if (!selector) {
-		selector = "#search-interface";
-	}
-	let element = document.querySelector(selector);
+function buildSearchInterfaceConcerts(data, browseElement) {
 	if (!element) {
-		console.error(`Error: cannot find ${selector} element to create search interface`);
+		console.error("ERROR: Cannot find search interface element", element);
 		return;
 	}
 	let output = "";
@@ -153,19 +206,50 @@ function buildSearchInterfaceConcerts(data, browseElement, resultsElement) {
 
 //////////////////////////////
 //
-// displayBrowseTable --
+// displayBrowseTableWorks --
 //
 
-function displayBrowseTable(data, selector) {
-	if (!selector) {
-		selector = "#list";
-	}
-	let element = document.querySelector(selector);
+function displayBrowseTableWorks(data) {
+	let element = EMC.results.works;
 	if (!element) {
-		console.error(`Error: cannot find ${selector} element to display work table`);
+		console.warn("Cannot find search results element for works");
 		return;
 	}
-	let headings = [INDEX_name, INDEX_composer, INDEX_voices, INDEX_ProgDate, INDEX_genre, INDEX_source, INDEX_edition, INDEX_ModernEd];
+
+	let headings = [EMC.index.works.name, EMC.index.works.composer,
+	EMC.index.works.voices, EMC.index.works.ProgDate,
+	EMC.index.works.genre, EMC.index.works.source,
+	EMC.index.works.edition, EMC.index.works.ModernEd];
+
+	let contents = "";
+	contents += "<table class='browse'>\n";
+	contents += "<thead>\n";
+	contents += makeTableHeader(headings);
+	contents += "</thead>\n";
+	contents += "<tbody>\n";
+	contents += makeTableBody(headings, data);
+	contents += "</tbody>\n";
+	contents += "</table>\n";
+	element.innerHTML = contents;
+}
+
+//////////////////////////////
+//
+// displayBrowseTableConcerts --
+//
+
+function displayBrowseTableConcerts(data) {
+	let element = EMC.results.concerts;
+	if (!element) {
+		console.warn("Cannot find search results element for works");
+		return;
+	}
+
+	let headings = [EMC.index.works.name, EMC.index.works.composer,
+	EMC.index.works.voices, EMC.index.works.ProgDate,
+	EMC.index.works.genre, EMC.index.works.source,
+	EMC.index.works.edition, EMC.index.works.ModernEd];
+
 	let contents = "";
 	contents += "<table class='browse'>\n";
 	contents += "<thead>\n";
@@ -207,11 +291,11 @@ function makeTableBody(headings, data) {
 			}
 			output += "<td>";
 
-			if (headings[i] == INDEX_edition) {
+			if (headings[i] == EMC.index.works.edition) {
 				let editioncombined = getEdition(entry);
 				let url = getEditionUrl(entry);
 				output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
-			} else if (headings[i] == INDEX_source){
+			} else if (headings[i] == EMC.index.works.source){
 				let sourcecombined = getSource(entry);
 				output += sourcecombined;
 			} else {
@@ -236,7 +320,7 @@ function buildComposerSelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let composer = entry[INDEX_composer];
+		let composer = entry[EMC.index.works.composer];
 		if (!composer) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A COMPOSER");
 			continue;
@@ -246,7 +330,7 @@ function buildComposerSelect(data) {
 
 	let clist = Object.keys(counter).sort();
 	let composerCount = clist.length;
-	let output = "<select class='composer' onchange='doSearch()'>\n";
+	let output = "<select class='composer' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any composers [${composerCount}]</option>`;
 	for (let i=0; i<clist.length; i++) {
 		let name = clist[i];
@@ -285,7 +369,7 @@ function buildGenreSelect(data) {
 	});
 	let genreCount = keys.length;
 
-	let output = "<select class='genre' onchange='doSearch()'>\n";
+	let output = "<select class='genre' onchange='doSearchWorks()'>\n";
 	output += `<option value=''>Any genre [${genreCount}]</options>`;
 	for (let genre of keys) {
 		if (genre !== "undefined") {
@@ -378,7 +462,7 @@ function buildLanguageSelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let language = entry[INDEX_language];
+		let language = entry[EMC.index.works.language];
 		if (!language) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A LANGUAGE");
 			continue;
@@ -388,7 +472,7 @@ function buildLanguageSelect(data) {
 
 	let llist = Object.keys(counter).sort();
 	let languageCount = llist.length;
-	let output = "<select class='language' onchange='doSearch()'>\n";
+	let output = "<select class='language' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any language [${languageCount}]</option>`;
 	for (let i=0; i<llist.length; i++) {
 		let name = llist[i];
@@ -410,7 +494,7 @@ function buildMonoPolySelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let monopoly = entry[INDEX_monopoly];
+		let monopoly = entry[EMC.index.works.monopoly];
 		if (!monopoly) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A MONOPHONIC/POLYPHONIC DESIGNATION");
 			continue;
@@ -420,7 +504,7 @@ function buildMonoPolySelect(data) {
 
 	let mlist = Object.keys(counter).sort();
 	let monopolyCount = mlist.length;
-	let output = "<select class='monopoly' onchange='doSearch()'>\n";
+	let output = "<select class='monopoly' onchange='doSearchWorks()'>\n";
 	output += `<option value="">monophonic/polyphonic [${monopolyCount}]</option>`;
 	for (let i=0; i<mlist.length; i++) {
 		let name = mlist[i];
@@ -442,7 +526,7 @@ function buildSacredSecularSelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let sacredsecular = entry[INDEX_sacrsec];
+		let sacredsecular = entry[EMC.index.works.sacrsec];
 		if (!sacredsecular) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A SACRED/SECULAR DESIGNATION");
 			continue;
@@ -452,7 +536,7 @@ function buildSacredSecularSelect(data) {
 
 	let slist = Object.keys(counter).sort();
 	let sacredsecularCount = slist.length;
-	let output = "<select class='sacredsecular' onchange='doSearch()'>\n";
+	let output = "<select class='sacredsecular' onchange='doSearchWorks()'>\n";
 	output += `<option value="">sacred/secular [${sacredsecularCount}]</option>`;
 	for (let i=0; i<slist.length; i++) {
 		let name = slist[i];
@@ -474,7 +558,7 @@ function buildVocInstrSelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let vocinstr = entry[INDEX_vocinstr];
+		let vocinstr = entry[EMC.index.works.vocinstr];
 		if (!vocinstr) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A VOCAL/INSTRUMENTAL DESIGNATION");
 			continue;
@@ -484,7 +568,7 @@ function buildVocInstrSelect(data) {
 
 	let vilist = Object.keys(counter).sort();
 	let vocinstrCount = vilist.length;
-	let output = "<select class='vocinstr' onchange='doSearch()'>\n";
+	let output = "<select class='vocinstr' onchange='doSearchWorks()'>\n";
 	output += `<option value="">vocal/instrumental [${vocinstrCount}]</option>`;
 	for (let i=0; i<vilist.length; i++) {
 		let name = vilist[i];
@@ -505,7 +589,7 @@ function buildSourceSelect(data) {
 	let sum = data.length;
 	for (let i=0; i<sum; i++) {
 		let entry = data[i];
-		let source = entry[INDEX_source];
+		let source = entry[EMC.index.works.source];
 		if (!source) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A SOURCE");
 			continue;
@@ -515,7 +599,7 @@ function buildSourceSelect(data) {
 
 	let solist = Object.keys(counter).sort();
 	let sourceCount = solist.length;
-	let output = "<select class='source' onchange='doSearch()'>\n";
+	let output = "<select class='source' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any source [${sourceCount}]</option>`;
 	for (let i=0; i<solist.length; i++) {
 		let name = solist[i];
@@ -536,7 +620,7 @@ function buildVoiceSelect(data) {
 	let fileCount = data.length;
 	for (let i=0; i<fileCount; i++) {
 		let entry = data[i];
-		let voice = entry[INDEX_voices];
+		let voice = entry[EMC.index.works.voices];
 		if (!voice) {
 			console.error("WARNING: ", entry, " DOES NOT HAVE A VOICE COUNT");
 			continue;
@@ -545,7 +629,7 @@ function buildVoiceSelect(data) {
 	}
 
 	let vlist = Object.keys(counter).sort();
-	let output = "<select class='voice' onchange='doSearch()'>\n";
+	let output = "<select class='voice' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any voice count</option>`;
 	for (let i=0; i<vlist.length; i++) {
 		let vcount = vlist[i];
@@ -558,17 +642,27 @@ function buildVoiceSelect(data) {
 
 //////////////////////////////
 //
-// doSearch --
+// doSearchConcerts --
 //
 
-function doSearch(data) {
+function doSearchConcerts(data) {
+
+}
+
+
+//////////////////////////////
+//
+// doSearchWorks --
+//
+
+function doSearchWorks(data) {
 	if (!data) {
 		data = EMC.METADATA.works;
 	}
 
-	let searchInterface = document.querySelector("#search-interface");
+	let searchInterface = EMC.results.works;
 	if (!searchInterface) {
-		console.log("Problem finding search interface");
+		console.log("Problem finding search interface for works");
 		return;
 	}
 
@@ -633,7 +727,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let composer = entry[INDEX_composer];
+			let composer = entry[EMC.index.works.composer];
 			if (composer === composerQuery) {
 				tempdata.push(entry);
 			}
@@ -645,7 +739,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let voice = entry[INDEX_voices];
+			let voice = entry[EMC.index.works.voices];
 			if (voice == voiceQuery) {
 				tempdata.push(entry);
 			}
@@ -657,7 +751,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let genre = entry[INDEX_genre];
+			let genre = entry[EMC.index.works.genre];
 			if (genre == genreQuery) {
 				tempdata.push(entry);
 			}
@@ -669,7 +763,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let language = entry[INDEX_language];
+			let language = entry[EMC.index.works.language];
 			if (language == languageQuery) {
 				tempdata.push(entry);
 			}
@@ -682,7 +776,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let monopoly = entry[INDEX_monopoly];
+			let monopoly = entry[EMC.index.works.monopoly];
 			if (monopoly == monopolyQuery) {
 				tempdata.push(entry);
 			}
@@ -694,7 +788,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let sacredsecular = entry[INDEX_sacrsec];
+			let sacredsecular = entry[EMC.index.works.sacrsec];
 			if (sacredsecular == sacredsecularQuery) {
 				tempdata.push(entry);
 			}
@@ -706,7 +800,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let source = entry[INDEX_source];
+			let source = entry[EMC.index.works.source];
 			if (source == sourceQuery) {
 				tempdata.push(entry);
 			}
@@ -718,7 +812,7 @@ function doSearch(data) {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
 			let entry = data[i];
-			let vocinstr = entry[INDEX_vocinstr];
+			let vocinstr = entry[EMC.index.works.vocinstr];
 			if (vocinstr == vocinstrQuery) {
 				tempdata.push(entry);
 			}
