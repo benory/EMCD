@@ -190,9 +190,9 @@ function buildSearchInterfaces(metadata, selector) {
 // buildSearchInterfaceWorks --
 //
 
-function buildSearchInterfaceWorks(data, element) {
-	if (!element) {
-		console.error("ERROR: Cannot find search interface element", element);
+function buildSearchInterfaceWorks(data, browseElement) {
+	if (!browseElement) {
+		console.error("ERROR: Cannot find search interface element", browseElement);
 		return;
 	}
 	let output = "";
@@ -204,7 +204,7 @@ function buildSearchInterfaceWorks(data, element) {
 	output += buildSacredSecularSelect(data);
 	output += buildVocInstrSelect(data);
 	output += buildSourceSelect(data);
-	element.innerHTML = output;
+	browseElement.innerHTML = output;
 }
 
 
@@ -214,14 +214,14 @@ function buildSearchInterfaceWorks(data, element) {
 //
 
 function buildSearchInterfaceConcerts(data, browseElement) {
-	let element = EMC.results.concerts;
-	if (!element) {
-		console.error("ERROR: Cannot find search interface element", element);
+	if (!browseElement) {
+		console.error("ERROR: Cannot find search interface element", browseElement);
 		return;
 	}
 	let output = "";
-	//output += buildComposerSelect(data);
-	element.innerHTML = output;
+	output += buildCountrySelect(data);
+	output += buildYearSelect(data);
+	browseElement.innerHTML = output;
 }
 
 
@@ -722,6 +722,70 @@ function getLocationGoogleMaps(entry) {
 	return "";
 }
 
+//////////////////////////////
+//
+// buildCountrySelect --
+//
+
+function buildCountrySelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let country = entry[EMC.index.concerts.country];
+		if (!country) {
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A COUNTRY DESIGNATION");
+			continue;
+		}
+		counter[country] = (counter[country] === undefined) ? 1 : counter[country] + 1;
+	}
+
+	let clist = Object.keys(counter).sort();
+	let country = clist.length;
+	let output = "<select class='country' onchange='doSearchConcerts()'>\n";
+	output += `<option value="">Country [${country}]</option>`;
+	for (let i=0; i<clist.length; i++) {
+		let name = clist[i];
+		let count = counter[clist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
+//////////////////////////////
+//
+// buildYearSelect --
+//
+
+function buildYearSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let year = entry[EMC.index.concerts.year];
+		if (!year) {
+			//console.error("WARNING: ", entry, " DOES NOT HAVE A YEAR DESIGNATION");
+			continue;
+		}
+		counter[year] = (counter[year] === undefined) ? 1 : counter[year] + 1;
+	}
+
+	let ylist = Object.keys(counter).sort();
+	let year = ylist.length;
+	let output = "<select class='year' onchange='doSearchConcerts()'>\n";
+	output += `<option value="">Year [${year}]</option>`;
+	for (let i=0; i<ylist.length; i++) {
+		let name = ylist[i];
+		let count = counter[ylist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
+
 
 //////////////////////////////
 //
@@ -730,16 +794,58 @@ function getLocationGoogleMaps(entry) {
 
 function doSearchConcerts(data) {
 	if (!data) {
-		data = EMC.METADATA.works;
+		data = EMC.METADATA.concerts;
 	}
 	console.error("input data for doSearchWorks", data);
 
-	let searchInterface = EMC.menus.works;
+	let searchInterface = EMC.menus.concerts;
 	console.warn("print search interface", searchInterface);
 	if (!searchInterface) {
-		console.log("Problem finding search interface for works");
+		console.log("Problem finding search interface for concerts");
 		return;
 	}
+
+	let countryField = searchInterface.querySelector("select.country");
+	if (!countryField) {
+		console.log("Problem finding country field in search interface");
+		return;
+	}
+	let countryQuery = countryField.value;
+
+	let yearField = searchInterface.querySelector("select.year");
+	if (!yearField) {
+		console.log("Problem finding year field in search interface");
+		return;
+	}
+	let yearQuery = yearField.value;
+
+	if (countryQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let country = entry[EMC.index.concerts.country];
+			if (country == countryQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+	if (yearQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let year = entry[EMC.index.concerts.year];
+			if (year == yearQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
+
+
+	displayBrowseTableConcerts(data);
+
 }
 
 
@@ -818,7 +924,6 @@ function doSearchWorks(data) {
 		return;
 	}
 	let vocinstrQuery = vocinstrField.value;
-
 
 	if (composerQuery) {
 		let tempdata = [];
@@ -916,7 +1021,6 @@ function doSearchWorks(data) {
 		}
 		data = tempdata;
 	}
-
 
 	displayBrowseTableWorks(data);
 }
