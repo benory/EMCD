@@ -119,12 +119,33 @@ EMC.index.works.ProgOrder	   = "Order in Program";
 EMC.index.works.NotesWork	   = "Notes on Work";
 EMC.index.works.ModernEd	   = "Modern Edition";
 EMC.index.works.Repeatcon	   = "Repeat Concerts";
-
-EMC.index.concerts = EMC.index.works;
+EMC.index.concerts.ID          = "ID";
+EMC.index.concerts.year        = "Year";
+EMC.index.concerts.month       = "Month";
+EMC.index.concerts.day         = "Day";
+EMC.index.concerts.date        = "Date";
+EMC.index.concerts.ProgTitle   = "Program Title";
+EMC.index.concerts.ensemble    = "Ensemble/Larger Org.";
+EMC.index.concerts.loc         = "Location";
+EMC.index.concerts.city        = "City";
+EMC.index.concerts.state       = "State";
+EMC.index.concerts.country     = "Country";
+EMC.index.concerts.gmaps       = "Google Maps URL";
+EMC.index.concerts.loccoord    = "Location Coordinates";
+EMC.index.concerts.intro       = "Introduction";
+EMC.index.concerts.direction   = "Direction";
+EMC.index.concerts.performers  = "Performers";
+EMC.index.concerts.archive     = "Archive (ARC)";
+EMC.index.concerts.signature   = "Signature";
+EMC.index.concerts.notes       = "Notes on Program";
+EMC.index.concerts.literature  = "Literature";
+EMC.index.concerts.image       = "Image";
+EMC.index.concerts.extimage    = "Externally Hosted Image";
 
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
 	displayBrowseTableWorks(EMC.METADATA.works);
+	displayBrowseTableConcerts(EMC.METADATA.concerts);
 });
 
 
@@ -200,13 +221,6 @@ function buildSearchInterfaceConcerts(data, browseElement) {
 	}
 	let output = "";
 	//output += buildComposerSelect(data);
-	//output += buildVoiceSelect(data);
-	//output += buildGenreSelect(data);
-	//output += buildLanguageSelect(data);
-	//output += buildMonoPolySelect(data);
-	//output += buildSacredSecularSelect(data);
-	//output += buildVocInstrSelect(data);
-	//output += buildSourceSelect(data);
 	element.innerHTML = output;
 }
 
@@ -252,10 +266,7 @@ function displayBrowseTableConcerts(data) {
 		return;
 	}
 
-	let headings = [EMC.index.works.name, EMC.index.works.composer,
-	EMC.index.works.voices, EMC.index.works.ProgDate,
-	EMC.index.works.genre, EMC.index.works.source,
-	EMC.index.works.edition, EMC.index.works.ModernEd];
+	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.archive, EMC.index.concerts.signature];
 
 	let contents = "";
 	contents += "<table class='browse'>\n";
@@ -302,9 +313,17 @@ function makeTableBody(headings, data) {
 				let editioncombined = getEdition(entry);
 				let url = getEditionUrl(entry);
 				output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
-			} else if (headings[i] == EMC.index.works.source){
+			} else if (headings[i] == EMC.index.works.source) {
 				let sourcecombined = getSource(entry);
 				output += sourcecombined;
+			} else if (headings[i] == EMC.index.concerts.ProgTitle) {
+				let ProgTitle = value;
+				let ProgUrl = getProgUrl(entry);
+				output += `${ProgTitle} [<a target="_blank" href="${ProgUrl}">Image</a>]`;
+			} else if (headings[i] == EMC.index.concerts.loc) {
+				let loccombined = getLocation(entry);
+				let locmaps = getLocationGoogleMaps(entry);
+ 				output += `<a target="_blank" href="${locmaps}">${loccombined}</a>`;
 			} else {
 				output += value;
 			}
@@ -644,6 +663,65 @@ function buildVoiceSelect(data) {
 	return output;
 }
 
+//////////////////////////////
+//
+// getProgUrl -- Generate a source link based on "Scan of Edition".
+//
+
+function getProgUrl(entry) {
+	let ProgUrl = "";
+	if (typeof entry["Image"] !== "undefined") {
+		ProgUrl = entry["Image"];
+		return ProgUrl;
+	}
+	return "";
+	console.warn("ProgUrl", ProgUrl);
+}
+
+//////////////////////////////
+//
+// getLocation -- Generate Location + City + Country
+//
+
+function getLocation(entry) {
+	let location = "";
+	let city = "";
+	let country = "";
+	if (typeof entry["Location"] !== "undefined") {
+		location = entry["Location"];
+	}
+	if (typeof entry["City"] !== "undefined") {
+		city = entry["City"];
+	}
+	if (typeof entry["Country"] !== "undefined") {
+		country = entry["Country"];
+	}
+	if (!location.match(/^\s*$/) && !city.match(/^\s*$/) && !country.match (/^\s*$/)) {
+		return `${location}, ${city}, ${country}`;
+	} else if (!location.match(/^\s*$/) && !country.match (/^\s*$/)){
+		return `${location}, ${country}`;
+	}
+	if (location.match(/^\s*$/)) {
+		return "";
+	} else {
+		return location;
+	}
+}
+
+//////////////////////////////
+//
+// getLocationGoogleMaps -- Generate a source link based on "Scan of Edition".
+//
+
+function getLocationGoogleMaps(entry) {
+	let locmapsurl = "";
+	if (typeof entry["Google Maps URL"] !== "undefined") {
+		locmapsurl = entry["Google Maps URL"];
+		return locmapsurl;
+	}
+	return "";
+}
+
 
 //////////////////////////////
 //
@@ -651,7 +729,17 @@ function buildVoiceSelect(data) {
 //
 
 function doSearchConcerts(data) {
+	if (!data) {
+		data = EMC.METADATA.works;
+	}
+	console.error("input data for doSearchWorks", data);
 
+	let searchInterface = EMC.menus.works;
+	console.warn("print search interface", searchInterface);
+	if (!searchInterface) {
+		console.log("Problem finding search interface for works");
+		return;
+	}
 }
 
 
