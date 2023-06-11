@@ -739,8 +739,8 @@ function getLocationGoogleMaps(entry) {
 function getCleanedDirection(entry) {
 	let cleandirection = "";
 	if (typeof entry["Direction"] !== "undefined") {
-		cleandirection = entry["Direction"].replace("\{", '');
-		cleandirection = cleandirection.replace("\}", '');
+		cleandirection = entry["Direction"].replace(/{/g, '');
+		cleandirection = cleandirection.replace(/}/g, '');
 		console.warn("cleandirection", cleandirection);
 		return cleandirection;
 	}
