@@ -23,14 +23,19 @@ title: database
 	table.browse td:nth-child(7) {min-width: 200px;}
 	select.source {max-width: 250px}
 	span.sheet-button {
+		font: 400 18px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+		color: #0645AD;
 		display: inline-block;
 		padding-bottom: 20px;
 		padding-right: 20px;
 	}
+	span.sheet-button:hover {
+ 		text-decoration: underline;
+ 	}
+
 </style>
 
 <script>
-
 
 //////////////////////////////
 //
@@ -221,6 +226,7 @@ function buildSearchInterfaceConcerts(data, browseElement) {
 	let output = "";
 	output += buildCountrySelect(data);
 	output += buildYearSelect(data);
+	output += buildProgramSourceSelect(data);
 	browseElement.innerHTML = output;
 }
 
@@ -266,7 +272,7 @@ function displayBrowseTableConcerts(data) {
 		return;
 	}
 
-	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.archive, EMC.index.concerts.signature];
+	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive, EMC.index.concerts.signature];
 
 	let contents = "";
 	contents += "<table class='browse'>\n";
@@ -324,6 +330,9 @@ function makeTableBody(headings, data) {
 				let loccombined = getLocation(entry);
 				let locmaps = getLocationGoogleMaps(entry);
  				output += `<a target="_blank" href="${locmaps}">${loccombined}</a>`;
+			} else if (headings[i] == EMC.index.concerts.direction){
+				let directioncleaned = getCleanedDirection(entry);
+				output += directioncleaned;
 			} else {
 				output += value;
 			}
@@ -724,6 +733,22 @@ function getLocationGoogleMaps(entry) {
 
 //////////////////////////////
 //
+// getCleanedDirection -- Remove {}.
+//
+
+function getCleanedDirection(entry) {
+	let cleandirection = "";
+	if (typeof entry["Direction"] !== "undefined") {
+		cleandirection = entry["Direction"].replace("\{", '');
+		cleandirection = cleandirection.replace("\}", '');
+		console.warn("cleandirection", cleandirection);
+		return cleandirection;
+	}
+	return "";
+}
+
+//////////////////////////////
+//
 // buildCountrySelect --
 //
 
@@ -786,6 +811,37 @@ function buildYearSelect(data) {
 }
 
 
+//////////////////////////////
+//
+// buildProgramSourceSelect --
+//
+
+function buildProgramSourceSelect(data) {
+	let counter = {};
+	let sum = data.length;
+	for (let i=0; i<sum; i++) {
+		let entry = data[i];
+		let programsource = entry[EMC.index.concerts.archive];
+		if (!programsource) {
+			//console.error("WARNING: ", entry, " DOES NOT HAVE AN PROGRAM SOURCE DESIGNATION");
+			continue;
+		}
+		counter[programsource] = (counter[programsource] === undefined) ? 1 : counter[programsource] + 1;
+	}
+
+	let pslist = Object.keys(counter).sort();
+	let programsource = pslist.length;
+	let output = "<select class='programsource' onchange='doSearchConcerts()'>\n";
+	output += `<option value="">Source of Program [${programsource}]</option>`;
+	for (let i=0; i<pslist.length; i++) {
+		let name = pslist[i];
+		let count = counter[pslist[i]];
+		output += `<option value="${name}">${name} (${count})</option>`;
+	}
+	output += "</select>\n";
+	return output;
+}
+
 
 //////////////////////////////
 //
@@ -819,6 +875,13 @@ function doSearchConcerts(data) {
 	}
 	let yearQuery = yearField.value;
 
+	let programsourceField = searchInterface.querySelector("select.programsource");
+	if (!programsourceField) {
+		console.log("Problem finding country field in search interface");
+		return;
+	}
+	let programsourceQuery = programsourceField.value;
+
 	if (countryQuery !== "") {
 		let tempdata = [];
 		for (let i=0; i<data.length; i++) {
@@ -843,6 +906,17 @@ function doSearchConcerts(data) {
 		data = tempdata;
 	}
 
+	if (programsourceQuery !== "") {
+		let tempdata = [];
+		for (let i=0; i<data.length; i++) {
+			let entry = data[i];
+			let programsource = entry[EMC.index.concerts.archive];
+			if (programsource == programsourceQuery) {
+				tempdata.push(entry);
+			}
+		}
+		data = tempdata;
+	}
 
 	displayBrowseTableConcerts(data);
 
