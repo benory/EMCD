@@ -152,8 +152,6 @@ EMC.index.concerts.literature  = "Literature";
 EMC.index.concerts.image       = "Image";
 EMC.index.concerts.extimage    = "Externally Hosted Image";
 
-let INDEX_programsource 	   = "Program Source";
-
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
 	displayBrowseTableWorks(EMC.METADATA.works);
@@ -279,7 +277,7 @@ function displayBrowseTableConcerts(data) {
 		return;
 	}
 
-	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, INDEX_programsource, EMC.index.concerts.archive, EMC.index.concerts.signature];
+	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive, EMC.index.concerts.signature];
 
 	let contents = "";
 	contents += "<table class='browse-concerts'>\n";
