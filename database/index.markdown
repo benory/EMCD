@@ -7,27 +7,32 @@ title: database
 	body {font: 400 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
 	h1 { font-size: 40px; }
 	th { text-align: left; }
-	table.browse { min-width: 1000px;}
-	table.browse { margin-left: auto; margin-right: auto; } /* center table */
-	table.browse { border-collapse: collapse; } /* don't put gaps between cells */
-	table.browse th { background:skyblue; }
-	table.browse td, table.browse th {padding-left: 2px; padding-top: 2px; padding: 2px}
-	table.browse tr:hover { background:#ff000011; }
+	table.browse-works, table.browse-concerts { min-width: 1000px;}
+	table.browse-works, table.browse-concerts { margin-left: auto; margin-right: auto; } /* center table */
+	table.browse-works, table.browse-concerts { border-collapse: collapse; } /* don't put gaps between cells */
+	table.browse-works th, table.browse-concerts th { background:skyblue; }
+	table.browse-works td, table.browse-concerts td, table.browse th, table.browse-concerts th {padding-left: 2px; padding-top: 2px; padding: 2px}
+	table.browse-works tr:hover, table.browse-concerts tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
 	span.browse-interface { margin-top: 30px; margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
-	table.browse td:nth-child(2) {min-width: 125px;}
-	table.browse td:nth-child(4) {white-space: nowrap;}
-	table.browse td:nth-child(5) {min-width: 100px}
-	table.browse td:nth-child(6) {min-width: 150px;}
-	table.browse td:nth-child(7) {min-width: 200px;}
+	table.browse-works td:nth-child(2) {min-width: 125px;}
+	table.browse-works td:nth-child(4) {white-space: nowrap;}
+	table.browse-works td:nth-child(5) {min-width: 100px}
+	table.browse-works td:nth-child(6) {min-width: 150px;}
+	table.browse-works td:nth-child(7) {min-width: 200px;}
+	table.browse-concerts td:nth-child(1) {white-space: nowrap;}
+	table.browse-concerts td:nth-child(2) {min-width: 250px;}
+	table.browse-concerts td:nth-child(3) {min-width: 200px;}
+	table.browse-concerts td:nth-child(4) {min-width: 200px;}
+	table.browse-concerts td:nth-child(5) {min-width: 200px;}
 	select.source {max-width: 250px}
 	span.sheet-button {
 		font: 400 18px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 		color: #0645AD;
 		display: inline-block;
-		padding-bottom: 20px;
-		padding-right: 20px;
+		padding-bottom: 25px;
+		padding-right: 25px;
 	}
 	span.sheet-button:hover {
  		text-decoration: underline;
@@ -147,6 +152,8 @@ EMC.index.concerts.literature  = "Literature";
 EMC.index.concerts.image       = "Image";
 EMC.index.concerts.extimage    = "Externally Hosted Image";
 
+let INDEX_programsource 	   = "Program Source";
+
 document.addEventListener("DOMContentLoaded", function () {
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
 	displayBrowseTableWorks(EMC.METADATA.works);
@@ -249,7 +256,7 @@ function displayBrowseTableWorks(data) {
 	EMC.index.works.edition, EMC.index.works.ModernEd];
 
 	let contents = "";
-	contents += "<table class='browse'>\n";
+	contents += "<table class='browse-works'>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";
@@ -272,10 +279,10 @@ function displayBrowseTableConcerts(data) {
 		return;
 	}
 
-	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive, EMC.index.concerts.signature];
+	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, INDEX_programsource, EMC.index.concerts.archive, EMC.index.concerts.signature];
 
 	let contents = "";
-	contents += "<table class='browse'>\n";
+	contents += "<table class='browse-concerts'>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";

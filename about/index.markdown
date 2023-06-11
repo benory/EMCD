@@ -13,6 +13,12 @@ This project aims to meet this challenge by creating a relational database and m
 
 Collecting this information is not simple: these programs are rarely published or digitized, but are instead often only found buried in personnel and institute files in university archives. This project seeks to collate and map materials, and provide context for important concerts. It also aims to enable users to flexibly manipulate this data to answer their own research questions.
 
+### Why 1915 to 1960?
+
+Sporadic performances of medieval and Renaissance music can be traced back to the ninteenth and even the eighteenth centuries, but until the 1910s, concerts of these repertoires were rare. All of this changed in Europe in the years following World War I: early music rapidly came into vogue. A generation of young scholars, captivated by informal music making movements and the emerging scholarly study of music history, began to direct concerts and devote themselves to specialized knowledge about music from before 1600. The project's chronological bound of 1915 reflects this newfound interest.
+
+After 1945, the center of early music scholarship shifted to the United States. Homegrown and émigré scholars alike led performance ensembles and taught generations of students who themselves came to focus on early music. Interest in early music increased rapidly throughout the 1950s, and by the 1960s, the number performances had exploded. Ending the project's focus at 1960 enables the project to concentrate on the emergence of the modern early music tradition without being overwhelmed by the expansive concert data from ensuing decades.  
+
 ### Entering programs
 
 For each program of early music:
