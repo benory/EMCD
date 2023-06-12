@@ -369,6 +369,7 @@ function buildComposerSelect(data) {
 	}
 
 	let clist = Object.keys(counter).sort();
+	clist.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 	let composerCount = clist.length;
 	let output = "<select class='composer' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any composers [${composerCount}]</option>`;
@@ -667,6 +668,7 @@ function buildVoiceSelect(data) {
 	}
 
 	let vlist = Object.keys(counter).sort();
+	vlist.sort((a, b) => (a - b));
 	let output = "<select class='voice' onchange='doSearchWorks()'>\n";
 	output += `<option value="">Any voice count</option>`;
 	for (let i=0; i<vlist.length; i++) {
@@ -746,7 +748,6 @@ function getCleanedDirection(entry) {
 	if (typeof entry["Direction"] !== "undefined") {
 		cleandirection = entry["Direction"].replace(/{/g, '');
 		cleandirection = cleandirection.replace(/}/g, '');
-		console.warn("cleandirection", cleandirection);
 		return cleandirection;
 	}
 	return "";
