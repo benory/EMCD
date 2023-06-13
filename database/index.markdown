@@ -14,7 +14,7 @@ title: database
 	table.browse-works td, table.browse-concerts td, table.browse th, table.browse-concerts th {padding-left: 2px; padding-top: 2px; padding: 2px}
 	table.browse-works tr:hover, table.browse-concerts tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
-	div.search-interface { margin-top: 30px; margin-bottom: 30px; }
+	div.search-interface { margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
 	table.browse-works td:nth-child(2) {min-width: 125px;}
 	table.browse-works td:nth-child(4) {white-space: nowrap;}
