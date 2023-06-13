@@ -1,634 +1,1186 @@
 [
 	{
-		"URLBASE for BMLO": "Person",
-		"https://bmlo.de/": "ID Type"
+		"ID": "Arendt, John",
+		"Person": "Arendt, John",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Armstrong, Thomas",
+		"Person": "Armstrong, Thomas",
+		"ID Type": "person",
+		"Birth Year": "1989",
+		"Death Year": "1994",
+		"Position": "organist, conductor",
+		"Doctoral Degree": "DMus, University of Oxford",
+		"Year of Doctorate": "1929",
+		"Places Active": "Exeter, Oxford, London",
+		"Employers": "Exeter Cathedral, Christ Church Oxford, Royal Academy of Music",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Ballard, William",
+		"Person": "Ballard, William",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Beck, Margaret",
+		"Person": "Beck, Margaret",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Beck, Sydney",
+		"Person": "Beck, Sydney",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Becking, Gustav",
+		"Person": "Becking, Gustav",
+		"ID Type": "person",
+		"Birth Year": "1894",
+		"Death Year": "1945",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Leipzig",
+		"Year of Doctorate": "1920",
+		"Habilitation": "Universität Erlangen",
+		"Year of Habilitation": "1928",
+		"Doctoral Advisor": "Hugo Riemann",
+		"Places Active": "Leipzig, Erlangen, Utrecht, Prague",
+		"Employers": "Universität Leipzig, Universität Erlangen, University of Utrecht, University of Prague",
+		"BMLO ID": "b0320",
+		"BMLO Link": "https://bmlo.de/b0320",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Berberich, Ludwig",
+		"Person": "Berberich, Ludwig",
+		"ID Type": "person",
+		"BMLO ID": "b0419",
+		"BMLO Link": "https://bmlo.de/b0419"
+	},
+	{
+		"ID": "Besseler, Heinrich",
+		"Person": "Besseler, Heinrich",
+		"ID Type": "person",
+		"Birth Year": "1900",
+		"Death Year": "1969",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Freiburg",
+		"Year of Doctorate": "1923",
+		"Habilitation": "Universität Freiburg",
+		"Year of Habilitation": "1925",
+		"Doctoral Advisor": "Wilibald Gurlitt",
+		"Places Active": "Heidelberg, Jena, Leipzig",
+		"Employers": "Universität Heidelberg, Staatliches Institut für Deutsche Musikforschung, Universität Jena, Universität Erlangen",
+		"BMLO ID": "b2759",
+		"BMLO Link": "https://bmlo.de/b2759",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Borkholder, Otto",
+		"Person": "Borkholder, Otto",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Bostwick, Alan",
+		"Person": "Bostwick, Alan",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Bozeman, George",
+		"Person": "Bozeman, George",
+		"ID Type": "person",
+		"Birth Year": "1936",
+		"Position": "organ builder, organist",
+		"Places Active": "Denton; Lowell, Massachusetts",
+		"Employers": "Bozeman, Gibson & Company",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Brask, Harriet",
+		"Person": "Brask, Harriet",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Brenner, Hans",
+		"Person": "Brenner, Hans",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Brown, Bailey",
+		"Person": "Brown, Bailey",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Brown, Howard Mayer",
+		"Person": "Brown, Howard Mayer",
+		"ID Type": "person",
+		"Birth Year": "1930",
+		"Death Year": "1993",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Harvard University",
+		"Year of Doctorate": "1959",
+		"Doctoral Advisor": "John Ward",
+		"Places Active": "Cambridge, Wellesley, Chicago, London",
+		"Employers": "Wellesley College, University of Chicago, King's College, London",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Arendt, John",
-		"https://bmlo.de/": "person"
+		"ID": "Brown, Sam",
+		"Person": "Brown, Sam",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Armstrong, Thomas",
-		"https://bmlo.de/": "person"
+		"ID": "Bukofzer, Manfred F.",
+		"Person": "Bukofzer, Manfred F.",
+		"ID Type": "person",
+		"Birth Year": "1910",
+		"Death Year": "1955",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Basel",
+		"Year of Doctorate": "1936",
+		"Doctoral Advisor": "Jacques Handschin",
+		"Places Active": "Heidelberg, Basel, Cleveland, Berkeley",
+		"Employers": "Volkschule der Universität Basel, Case Western Reserve University, University of California, Berkeley",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Ballard, William",
-		"https://bmlo.de/": "person"
+		"ID": "Castle, Conan",
+		"Person": "Castle, Conan",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Beck, Margaret",
-		"https://bmlo.de/": "person"
+		"ID": "Cazeaux, Isabelle",
+		"Person": "Cazeaux, Isabelle",
+		"ID Type": "person",
+		"Birth Year": "1926",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Columbia University",
+		"Year of Doctorate": "1961",
+		"Places Active": "New York, Bryn Mawr",
+		"Employers": "New York Public Library, Bryn Mawr College",
+		"Narrative Description of Person": "Cazeaux did graduate work under {Alfred Einstein} and graduated in 1946 with an MA from Smith College. She subsequently studied at the Paris Conservatoire and in 1961 received a Ph.D. in musicology from Columbia University. She worked at the New York Public Library from 1957 to 1963, and then became faculty at Bryn Mawr College, where she taught from 1963 to 1992.",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Beck, Sydney",
-		"https://bmlo.de/": "person"
+		"ID": "Chan, Jean",
+		"Person": "Chan, Jean",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Becking, Gustav",
-		"https://bmlo.de/": "person"
+		"ID": "Currier, Gwendolyn",
+		"Person": "Currier, Gwendolyn",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Berberich, Ludwig",
-		"https://bmlo.de/": "person"
+		"ID": "Cuyler, Louise",
+		"Person": "Cuyler, Louise",
+		"ID Type": "person",
+		"Birth Year": "1905",
+		"Death Year": "1998",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Eastman School of Music",
+		"Year of Doctorate": "1948",
+		"Places Active": "Ann Arbor",
+		"Employers": "University of Michigan",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Besseler, Heinrich",
-		"https://bmlo.de/": "person"
+		"ID": "Dale, Martha",
+		"Person": "Dale, Martha",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Borkholder, Otto",
-		"https://bmlo.de/": "person"
+		"ID": "Dart, Thurston",
+		"Person": "Dart, Thurston",
+		"ID Type": "person",
+		"Birth Year": "1921",
+		"Death Year": "1971",
+		"Position": "musicologist, harpsichordist, teacher",
+		"Places Active": "Cambridge, London",
+		"Employers": "University of Cambridge, King's College, London",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Bostwick, Alan",
-		"https://bmlo.de/": "person"
+		"ID": "Delaney, George Jerome",
+		"Person": "Delaney, George Jerome",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Bozeman, George",
-		"https://bmlo.de/": "person"
+		"ID": "Deller, Alfred",
+		"Person": "Deller, Alfred",
+		"ID Type": "person",
+		"Birth Year": "1912",
+		"Death Year": "1979",
+		"Position": "countertenor",
+		"Places Active": "Canterbury, London",
+		"Employers": "Canterbury Cathedral, St. Paul's Cathedral, Deller Consort",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Brask, Harriet",
-		"https://bmlo.de/": "person"
+		"ID": "DeLoriea, George",
+		"Person": "DeLoriea, George",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Brenner, Hans",
-		"https://bmlo.de/": "person"
+		"ID": "Denrenging, Eloise",
+		"Person": "Denrenging, Eloise",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Brown, Bailey",
-		"https://bmlo.de/": "person"
+		"ID": "DeRonde, Marion",
+		"Person": "DeRonde, Marion",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Brown, Howard Mayer",
-		"https://bmlo.de/": "person"
+		"ID": "Dietrich, Fritz",
+		"Person": "Dietrich, Fritz",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Brown, Sam",
-		"https://bmlo.de/": "person"
+		"ID": "Dischner, Oskar",
+		"Person": "Dischner, Oskar",
+		"ID Type": "person",
+		"Death Year": "1970",
+		"Position": "composer, musicologist",
+		"Places Active": "Erlangen",
+		"Source of Information": "BIB:Wohnhaas_1971",
+		"Literature": "BIB:Wohnhaas_1971",
+		"Pages": "p. 54"
 	},
 	{
-		"URLBASE for BMLO": "Bukofzer, Manfred F.",
-		"https://bmlo.de/": "person"
+		"ID": "Doe, Edith",
+		"Person": "Doe, Edith",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Castle, Conan",
-		"https://bmlo.de/": "person"
+		"ID": "Douglass, Robert",
+		"Person": "Douglass, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Cazeaux, Isabelle",
-		"https://bmlo.de/": "person"
+		"ID": "Dupré, Desmond",
+		"Person": "Dupré, Desmond",
+		"ID Type": "person",
+		"Birth Year": "1916",
+		"Death Year": "1974",
+		"Position": "lutenist",
+		"Places Active": "England",
+		"Employers": "Lute Society",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Chan, Jean",
-		"https://bmlo.de/": "person"
+		"ID": "Durrance, Samuel",
+		"Person": "Durrance, Samuel",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Currier, Gwendolyn",
-		"https://bmlo.de/": "person"
+		"ID": "Eckerman, Nathaniel",
+		"Person": "Eckerman, Nathaniel",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Cuyler, Louise",
-		"https://bmlo.de/": "person"
+		"ID": "Einstein, Alfred",
+		"Person": "Einstein, Alfred",
+		"ID Type": "person",
+		"Birth Year": "1880",
+		"Death Year": "1952",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Ludwig-Maximilians-Universität München",
+		"Year of Doctorate": "1903",
+		"Doctoral Advisor": "Adolf Sandberger",
+		"Places Active": "Germany, Mezzomonte, Northampton, Berkeley",
+		"Employers": "Zeitschrift für Musikwissenschaft, Berliner Tageblatt, Smith College, University of California, Berkeley",
+		"BMLO ID": "e0158",
+		"BMLO Link": "https://bmlo.de/e0158",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Dale, Martha",
-		"https://bmlo.de/": "person"
+		"ID": "Eitel, Priscilla",
+		"Person": "Eitel, Priscilla",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Dart, Thurston",
-		"https://bmlo.de/": "person"
+		"ID": "Estrin, Mark",
+		"Person": "Estrin, Mark",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Delaney, George Jerome",
-		"https://bmlo.de/": "person"
+		"ID": "Exon, George",
+		"Person": "Exon, George",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Deller, Alfred",
-		"https://bmlo.de/": "person"
+		"ID": "Ficker, Rudolf von",
+		"Person": "Ficker, Rudolf von",
+		"ID Type": "person",
+		"Birth Year": "1886",
+		"Death Year": "1954",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Wien",
+		"Year of Doctorate": "1913",
+		"Habilitation": "Universität Wien",
+		"Year of Habilitation": "1920",
+		"Doctoral Advisor": "Guido Adler",
+		"Places Active": "Vienna, Innsbruck, Munich",
+		"Employers": "Universität Innsbruck; Universität Wien",
+		"BMLO ID": "f0216",
+		"BMLO Link": "https://bmlo.de/f0216",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "DeLoriea, George",
-		"https://bmlo.de/": "person"
+		"ID": "Finney, Ross Lee",
+		"Person": "Finney, Ross Lee",
+		"ID Type": "person",
+		"Birth Year": "1906",
+		"Death Year": "1997",
+		"Position": "composer, educator",
+		"Places Active": "Northampton, Ann Arbor",
+		"Employers": "Smith College, University of Michigan",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Denrenging, Eloise",
-		"https://bmlo.de/": "person"
+		"ID": "Flügel, Gertrud",
+		"Person": "Flügel, Gertrud",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "DeRonde, Marion",
-		"https://bmlo.de/": "person"
+		"ID": "Gardner, Lucile",
+		"Person": "Gardner, Lucile",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Dietrich, Fritz",
-		"https://bmlo.de/": "person"
+		"ID": "Gartside, Robert",
+		"Person": "Gartside, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Dischner, Oskar",
-		"https://bmlo.de/": "person"
+		"ID": "Garvin, David",
+		"Person": "Garvin, David",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Doe, Edith",
-		"https://bmlo.de/": "person"
+		"ID": "Geering, Arnold",
+		"Person": "Geering, Arnold",
+		"ID Type": "person",
+		"Birth Year": "1902",
+		"Death Year": "1982",
+		"Doctoral Degree": "Ph.D., Universität Basel",
+		"Year of Doctorate": "1931",
+		"Habilitation": "Universität Basel",
+		"Year of Habilitation": "1947",
+		"Doctoral Advisor": "Karl Nef",
+		"Places Active": "Basel, Zürich, Bern",
+		"Employers": "Schola Cantorum Basiliensis, Universität Bern, Schweizerisches Volksliedarchiv",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Douglass, Robert",
-		"https://bmlo.de/": "person"
+		"ID": "Glover, Robert",
+		"Person": "Glover, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Dupré, Desmond",
-		"https://bmlo.de/": "person"
+		"ID": "Gore, William",
+		"Person": "Gore, William",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Durrance, Samuel",
-		"https://bmlo.de/": "person"
+		"ID": "Götsch, Georg",
+		"Person": "Götsch, Georg",
+		"ID Type": "person",
+		"Birth Year": "1895",
+		"Death Year": "1956",
+		"Position": "music pedagogue",
+		"Places Active": "Berlin, Frankfurt an der Oder, Bodensee, Hessen, Jugenheim, Fürsteneck/Rhön",
+		"Employers": "Deutschen Hochschule für Leibesübungen, Musikheims Frankfurt an der Oder, Heimvolkshochschule Fürsteneck/Rhön",
+		"Source of Information": "Musik in der Geschichte und Gegenwart Online"
 	},
 	{
-		"URLBASE for BMLO": "Eckerman, Nathaniel",
-		"https://bmlo.de/": "person"
+		"ID": "Götz, Willi",
+		"Person": "Götz, Willi",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Einstein, Alfred",
-		"https://bmlo.de/": "person"
+		"ID": "Granderson, Robert",
+		"Person": "Granderson, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Eitel, Priscilla",
-		"https://bmlo.de/": "person"
+		"ID": "Grimmeisen, Erwin",
+		"Person": "Grimmeisen, Erwin",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Grudzinski, Theodore",
+		"Person": "Grudzinski, Theodore",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Gurlitt, Wilibald",
+		"Person": "Gurlitt, Wilibald",
+		"ID Type": "person",
+		"Birth Year": "1889",
+		"Death Year": "1963",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Univeristät Leipzig",
+		"Year of Doctorate": "1914",
+		"Doctoral Advisor": "Hugo Riemann",
+		"Places Active": "Freiburg",
+		"Employers": "Universität Freiburg",
+		"BMLO ID": "g0904",
+		"BMLO Link": "https://bmlo.de/g0904",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Hamlin, Anna",
+		"Person": "Hamlin, Anna",
+		"ID Type": "person",
+		"Position": "opera singer, teacher",
+		"Places Active": "Chicago",
+		"Employers": "Chicago Civic Opera",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Handschin, Jacques",
+		"Person": "Handschin, Jacques",
+		"ID Type": "person",
+		"Birth Year": "1885",
+		"Death Year": "1955",
+		"Position": "musicologist, organist",
+		"Doctoral Degree": "Ph.D., Universität Basel",
+		"Year of Doctorate": "1921",
+		"Habilitation": "Universität Basel",
+		"Doctoral Advisor": "Karl Nef",
+		"Places Active": "St. Petersburg, Basel",
+		"Employers": "St. Petersburg Conservatory, Universität Basel",
+		"BMLO ID": "h0321",
+		"BMLO Link": "https://bmlo.de/h0321",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Härtl, Valentin",
+		"Person": "Härtl, Valentin",
+		"ID Type": "person",
+		"Birth Year": "1894",
+		"Death Year": "1966",
+		"Position": "violinist, music pedagogue, violist",
+		"BMLO ID": "h0087",
+		"BMLO Link": "https://bmlo.de/h0087",
+		"Source of Information": "Bayerisches Musiker Lexicon Online"
+	},
+	{
+		"ID": "Hathaway, Marcia",
+		"Person": "Hathaway, Marcia",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Haugh, Harold",
+		"Person": "Haugh, Harold",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Heartz, Daniel",
+		"Person": "Heartz, Daniel",
+		"ID Type": "person",
+		"Birth Year": "1928",
+		"Death Year": "2019",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Harvard University",
+		"Year of Doctorate": "1957",
+		"Doctoral Advisor": "John Ward",
+		"Places Active": "Chicago, Berkeley",
+		"Employers": "University of Chicago, University of California, Berkeley",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Helsing, Hedda",
+		"Person": "Helsing, Hedda",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Hertzmann, Erich",
+		"Person": "Hertzmann, Erich",
+		"ID Type": "person",
+		"Birth Year": "1902",
+		"Death Year": "1963",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Friedrich-Wilhelms-Universität, Berlin",
+		"Year of Doctorate": "1931",
+		"Doctoral Advisor": "Johannes Wolf and Arnold Schering",
+		"Places Active": "Berlin, Breslau(?), New York",
+		"Employers": "Columbia University",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Hess, William",
+		"Person": "Hess, William",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Hewitt, Helen",
+		"Person": "Hewitt, Helen",
+		"ID Type": "person",
+		"Birth Year": "1900",
+		"Death Year": "1977",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Harvard University, 1938",
+		"Year of Doctorate": "1938",
+		"Doctoral Advisor": "Hugo Leichtentritt (and Heinrich Besseler)",
+		"Places Active": "Heidelberg, Boston, New York, Tallahassee, Denton",
+		"Employers": "State Normal School, Potsdam, Florida State College for Women, Hunter College, North Texas State University",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Heyde, Norma Swinney",
+		"Person": "Heyde, Norma Swinney",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Hibberd, Lloyd",
+		"Person": "Hibberd, Lloyd",
+		"ID Type": "person",
+		"Birth Year": "1904",
+		"Death Year": "1965",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., University of California, Berkeley",
+		"Year of Doctorate": "1934",
+		"Places Active": "Denton",
+		"Employers": "North Texas State University",
+		"Source of Information": "BIB:Hewitt_1966"
+	},
+	{
+		"ID": "Hindemith, Paul",
+		"Person": "Hindemith, Paul",
+		"ID Type": "person",
+		"Birth Year": "1895",
+		"Death Year": "1963",
+		"Position": "composer, conductor, theorist",
+		"Places Active": "Frankfurt, Berlin, New Haven, Zurich",
+		"Employers": "Frankfurt Opera, Berlin Musikhochschule, Yale University, Universität Zürich",
+		"BMLO ID": "h0960",
+		"BMLO Link": "https://bmlo.de/h0960",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Hornung, Hilde",
+		"Person": "Hornung, Hilde",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Huber, Anton",
+		"Person": "Huber, Anton",
+		"ID Type": "person",
+		"Birth Year": "1888",
+		"Death Year": "1966",
+		"Position": "violinist, violist, concertmaster",
+		"BMLO ID": "h2824",
+		"BMLO Link": "https://bmlo.de/h2824"
+	},
+	{
+		"ID": "Hunt, Thomas Webb",
+		"Person": "Hunt, Thomas Webb",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Jackson, Roland",
+		"Person": "Jackson, Roland",
+		"ID Type": "person",
+		"Birth Year": "1925",
+		"Death Year": "2015",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., University of California, Berkeley",
+		"Year of Doctorate": "1964",
+		"Doctoral Advisor": "Joseph Kerman",
+		"Places Active": "Freiburg, Basel, Berkeley, Ashland, Fayetteville, Athens (OH), Chicago, Claremont",
+		"Employers": "Northland College, University of Arkansas, Ohio University, Roosevelt University in Chicago, Claremont Graduate School",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Jarrel, Mrs.",
+		"Person": "Jarrel, Mrs.",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Jöde, Fritz",
+		"Person": "Jöde, Fritz",
+		"ID Type": "person",
+		"Birth Year": "1887",
+		"Death Year": "1970",
+		"Position": "music pedagogue",
+		"Places Active": "Leipzig, Berlin, Munich, Salzburg, Braunschweig, Bad Reichenhall, Hamburg, Trossingen",
+		"Employers": "Berlin Akademie für Kirchen- und Schulmusik, Salzburg Mozarteum, Staatsmusikschule in Braunschweig, Amt für Jugend- und Musikpflege in Hamburg, Internationales Institut für Jugend- und Volksmusik",
+		"BMLO ID": "j0104",
+		"BMLO Link": "https://bmlo.de/j0104",
+		"Source of Information": "Oxford Music Online, Musik in der Geschichte und Gegenwart Online"
+	},
+	{
+		"ID": "Johnson, Dean",
+		"Person": "Johnson, Dean",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Jones, Sheila",
+		"Person": "Jones, Sheila",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Karp, Theodore",
+		"Person": "Karp, Theodore",
+		"ID Type": "person",
+		"Birth Year": "1926",
+		"Death Year": "2015",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., New York University",
+		"Year of Doctorate": "1960",
+		"Doctoral Advisor": "Curt Sachs and Gustave Reese",
+		"Places Active": "Davis, Chicago",
+		"Employers": "University of California, Davis, Northwestern University",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
+		"ID": "Kessler, Maurice",
+		"Person": "Kessler, Maurice",
+		"ID Type": "person",
+		"Position": "conductor",
+		"Places Active": "Oberlin",
+		"Employers": "Oberlin College",
+		"Source of Information": "Oberlin College",
+		"Link": "https://www2.oberlin.edu/asiatour/documents/press-orchestrahistory.pdf"
+	},
+	{
+		"ID": "Kestenberg, Leo",
+		"Person": "Kestenberg, Leo",
+		"ID Type": "person",
+		"Birth Year": "1882",
+		"Death Year": "1962",
+		"Position": "music pedagogue, pianist",
+		"Places Active": "Berlin, Prague, Tel-Aviv",
+		"Employers": "Inst. für Kirchenmusik zur Akad. für Kirchen- und Schulmusik, Kunstabteilung des Zentralinstituts für Erziehung und Unterricht, Internationalen Gesellschaft für Musikerziehung, Palestine Orchestra",
+		"BMLO ID": "k2262",
+		"BMLO Link": "https://bmlo.de/k2262",
+		"Source of Information": "Oxford Music Online, Musik in der Geschichte und Gegenwart Online"
+	},
+	{
+		"ID": "Kiefer, E.",
+		"Person": "Kiefer, E.",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Klein, Maynard",
+		"Person": "Klein, Maynard",
+		"ID Type": "person"
 	},
-	{
-		"URLBASE for BMLO": "Estrin, Mark",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Exon, George",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Ficker, Rudolf von",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Finney, Ross Lee",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Flügel, Gertrud",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Gardner, Lucile",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Gartside, Robert",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Garvin, David",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Geering, Arnold",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Glover, Robert",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Gore, William",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Götsch, Georg",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Götz, Willi",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Granderson, Robert",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Grimmeisen, Erwin",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Grudzinski, Theodore",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Gurlitt, Wilibald",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hamlin, Anna",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Handschin, Jacques",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Härtl, Valentin",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hathaway, Marcia",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Haugh, Harold",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Heartz, Daniel",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Helsing, Hedda",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hertzmann, Erich",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hess, William",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hewitt, Helen",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Heyde, Norma Swinney",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hibberd, Lloyd",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hindemith, Paul",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hornung, Hilde",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Huber, Anton",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Hunt, Thomas Webb",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Jackson, Roland",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Jarrel, Mrs.",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Jöde, Fritz",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Johnson, Dean",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Jones, Sheila",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Karp, Theodore",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Kessler, Maurice",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Kestenberg, Leo",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Kiefer, E.",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Klein, Maynard",
-		"https://bmlo.de/": "person"
-	},
-	{
-		"URLBASE for BMLO": "Köhler, Josef",
-		"https://bmlo.de/": "person"
+	{
+		"ID": "Köhler, Josef",
+		"Person": "Köhler, Josef",
+		"ID Type": "person",
+		"BMLO ID": "k1983",
+		"BMLO Link": "https://bmlo.de/k1983"
 	},
 	{
-		"URLBASE for BMLO": "König, Peter",
-		"https://bmlo.de/": "person"
+		"ID": "König, Peter",
+		"Person": "König, Peter",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Kurtz, Kenneth",
-		"https://bmlo.de/": "person"
+		"ID": "Kurtz, Kenneth",
+		"Person": "Kurtz, Kenneth",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Laban, Juana de",
-		"https://bmlo.de/": "person"
+		"ID": "Laban, Juana de",
+		"Person": "Laban, Juana de",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Lang, Paul Henry",
-		"https://bmlo.de/": "person"
+		"ID": "Lang, Paul Henry",
+		"Person": "Lang, Paul Henry",
+		"ID Type": "person",
+		"Birth Year": "1901",
+		"Death Year": "1991",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Cornell University",
+		"Year of Doctorate": "1934",
+		"Doctoral Advisor": "Frederick Mason",
+		"Places Active": "Heidelberg, Paris, New York",
+		"Employers": "Revue musicale, Vassar College, Wells College, Columbia University",
+		"BMLO ID": "l0920",
+		"BMLO Link": "https://bmlo.de/l0920",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Larzelere, Robert",
-		"https://bmlo.de/": "person"
+		"ID": "Larzelere, Robert",
+		"Person": "Larzelere, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Liegner, J.",
-		"https://bmlo.de/": "person"
+		"ID": "Liegner, J.",
+		"Person": "Liegner, J.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Lienhardt, John",
-		"https://bmlo.de/": "person"
+		"ID": "Lienhardt, John",
+		"Person": "Lienhardt, John",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Loft, A.",
-		"https://bmlo.de/": "person"
+		"ID": "Loft, A.",
+		"Person": "Loft, A.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Lowinsky, Edward",
-		"https://bmlo.de/": "person"
+		"ID": "Lowinsky, Edward",
+		"Person": "Lowinsky, Edward",
+		"ID Type": "person",
+		"Birth Year": "1908",
+		"Death Year": "1985",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., University of Heidelberg",
+		"Year of Doctorate": "1936",
+		"Doctoral Advisor": "Heinrich Besseler",
+		"Places Active": "Heidelberg, Netherlands, North Carolina, New York, Berkeley, Chicago",
+		"Employers": "Black Mountain College, Queens College, University of California Berkeley, University of Chicago",
+		"Narrative Description of Person": "Lowinsky studied under {Heinrich Besseler} in Heidelberg, but emigrated to the Netherlands in July 1933 upon completion of his dissertation. He published the dissertation through the assistance of Albert Smijers and in 1936 received his degree. He then emigrated to the United States, and after waiting more than a year in Cuba, arrived in 1940 in New York. Lowinsky became professor at Black Mountain College (1942–47), where he led a series of musical performances, as well as at Queens College (1947–56), where he also led a small vocal ensemble. He subsequently held positions at the University of California, Berkeley (1956–61), and the University of Chicago (1961–76).",
+		"Source of Information": "Oxford Music Online",
+		"Literature": "BIB:Wohnhaas_1971"
 	},
 	{
-		"URLBASE for BMLO": "Lowinsky, Gretel",
-		"https://bmlo.de/": "person"
+		"ID": "Lowinsky, Gretel",
+		"Person": "Lowinsky, Gretel",
+		"ID Type": "person",
+		"Birth Year": "1920",
+		"Death Year": "2018"
 	},
 	{
-		"URLBASE for BMLO": "Majer, Marianne",
-		"https://bmlo.de/": "person"
+		"ID": "Majer, Marianne",
+		"Person": "Majer, Marianne",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Maples, Janet",
-		"https://bmlo.de/": "person"
+		"ID": "Maples, Janet",
+		"Person": "Maples, Janet",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "McLain, R.",
-		"https://bmlo.de/": "person"
+		"ID": "McLain, R.",
+		"Person": "McLain, R.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Mearns, James",
-		"https://bmlo.de/": "person"
+		"ID": "Mearns, James",
+		"Person": "Mearns, James",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Minor, Andrew",
-		"https://bmlo.de/": "person"
+		"ID": "Minor, Andrew",
+		"Person": "Minor, Andrew",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Mishkin, Henry G.",
-		"https://bmlo.de/": "person"
+		"ID": "Mishkin, Henry G.",
+		"Person": "Mishkin, Henry G.",
+		"ID Type": "person",
+		"Position": "musicologist",
+		"Literature": "BIB:Mishkin_1941"
 	},
 	{
-		"URLBASE for BMLO": "Mohr, Ernst",
-		"https://bmlo.de/": "person"
+		"ID": "Mohr, Ernst",
+		"Person": "Mohr, Ernst",
+		"ID Type": "person",
+		"Birth Year": "1902",
+		"Death Year": "1985",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Basel",
+		"Year of Doctorate": "1927",
+		"Doctoral Advisor": "Karl Nef",
+		"Places Active": "Basel",
+		"Employers": "Musik-Akademie Basel, Universität Basel",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Moore, Mary",
-		"https://bmlo.de/": "person"
+		"ID": "Moore, Mary",
+		"Person": "Moore, Mary",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Moruzeanu, Larisa",
-		"https://bmlo.de/": "person"
+		"ID": "Moruzeanu, Larisa",
+		"Person": "Moruzeanu, Larisa",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Mugdan, Klaus",
-		"https://bmlo.de/": "person"
+		"ID": "Mugdan, Klaus",
+		"Person": "Mugdan, Klaus",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Müller, Liselotte",
-		"https://bmlo.de/": "person"
+		"ID": "Müller, Liselotte",
+		"Person": "Müller, Liselotte",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Najera, Edmund",
-		"https://bmlo.de/": "person"
+		"ID": "Najera, Edmund",
+		"Person": "Najera, Edmund",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Nobel, Felix de",
-		"https://bmlo.de/": "person"
+		"ID": "Nobel, Felix de",
+		"Person": "Nobel, Felix de",
+		"ID Type": "person",
+		"Birth Year": "1907",
+		"Death Year": "1981",
+		"Position": "conductor, pianist",
+		"Places Active": "Netherlands",
+		"Employers": "Nederlands Kammerkoor",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Olson, Phyllis",
-		"https://bmlo.de/": "person"
+		"ID": "Olson, Phyllis",
+		"Person": "Olson, Phyllis",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Oswald, Genevieve",
-		"https://bmlo.de/": "person"
+		"ID": "Oswald, Genevieve",
+		"Person": "Oswald, Genevieve",
+		"ID Type": "person",
+		"Birth Year": "1923",
+		"Death Year": "2019",
+		"Position": "archivist",
+		"Places Active": "New York",
+		"Employers": "New York Public Library, New York University",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Otter, Margaret",
-		"https://bmlo.de/": "person"
+		"ID": "Otter, Margaret",
+		"Person": "Otter, Margaret",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Ottman, Robert",
-		"https://bmlo.de/": "person"
+		"ID": "Ottman, Robert",
+		"Person": "Ottman, Robert",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Peters, Jean",
-		"https://bmlo.de/": "person"
+		"ID": "Peters, Jean",
+		"Person": "Peters, Jean",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Piette, Ruth",
-		"https://bmlo.de/": "person"
+		"ID": "Piette, Ruth",
+		"Person": "Piette, Ruth",
+		"ID Type": "person",
+		"Birth Year": "1931",
+		"Death Year": "2019",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Catholic University of America",
+		"Year of Doctorate": "1963",
+		"Places Active": "New York, Berkeley, Washington",
+		"Employers": "Catholic University of America",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Plamenac, Dragan",
-		"https://bmlo.de/": "person"
+		"ID": "Plamenac, Dragan",
+		"Person": "Plamenac, Dragan",
+		"ID Type": "person",
+		"Birth Year": "1895",
+		"Death Year": "1983",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Wien",
+		"Year of Doctorate": "1925",
+		"Doctoral Advisor": "Guido Adler",
+		"Places Active": "Berlin, Zagreb, Urbana-Champaign",
+		"Employers": "Städtische Oper, Berlin, University of Zagreb, University of Illinois",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Reichenbach, Hermann",
-		"https://bmlo.de/": "person"
+		"ID": "Reichenbach, Hermann",
+		"Person": "Reichenbach, Hermann",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Rein, Walter",
-		"https://bmlo.de/": "person"
+		"ID": "Rein, Walter",
+		"Person": "Rein, Walter",
+		"ID Type": "person",
+		"Birth Year": "1893",
+		"Death Year": "1955",
+		"Position": "composer, ethnomusicologist",
+		"BMLO ID": "r0293",
+		"BMLO Link": "https://bmlo.de/r0293"
 	},
 	{
-		"URLBASE for BMLO": "Reisman, Lincoln",
-		"https://bmlo.de/": "person"
+		"ID": "Reisman, Lincoln",
+		"Person": "Reisman, Lincoln",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Rögele, Reinhold",
-		"https://bmlo.de/": "person"
+		"ID": "Rögele, Reinhold",
+		"Person": "Rögele, Reinhold",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Rood, Louise",
-		"https://bmlo.de/": "person"
+		"ID": "Rood, Louise",
+		"Person": "Rood, Louise",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Rosenblum, Myron",
-		"https://bmlo.de/": "person"
+		"ID": "Rosenblum, Myron",
+		"Person": "Rosenblum, Myron",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Sawade, Irmtraud",
-		"https://bmlo.de/": "person"
+		"ID": "Sawade, Irmtraud",
+		"Person": "Sawade, Irmtraud",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schee, Dagny",
-		"https://bmlo.de/": "person"
+		"ID": "Schee, Dagny",
+		"Person": "Schee, Dagny",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schmid, Willi",
-		"https://bmlo.de/": "person"
+		"ID": "Schmid, Willi",
+		"Person": "Schmid, Willi",
+		"ID Type": "person",
+		"Birth Year": "1893",
+		"Death Year": "1934",
+		"Position": "music critic, gambist",
+		"BMLO ID": "s4002",
+		"BMLO Link": "https://bmlo.de/s4002",
+		"Narrative Description of Person": "murdered during the Night of Long Knives in a case of mistaken identity"
 	},
 	{
-		"URLBASE for BMLO": "Schindler, Rudolf",
-		"https://bmlo.de/": "person"
+		"ID": "Schindler, Rudolf",
+		"Person": "Schindler, Rudolf",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schmidlin, Ella",
-		"https://bmlo.de/": "person"
+		"ID": "Schmidlin, Ella",
+		"Person": "Schmidlin, Ella",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schmidt-Görg, Joseph",
-		"https://bmlo.de/": "person"
+		"ID": "Schmidt-Görg, Joseph",
+		"Person": "Schmidt-Görg, Joseph",
+		"ID Type": "person",
+		"Birth Year": "1897",
+		"Death Year": "1981",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Bonn",
+		"Year of Doctorate": "1926",
+		"Habilitation": "Universität Bonn",
+		"Year of Habilitation": "1930",
+		"Doctoral Advisor": "Ludwig Schiedermair",
+		"Places Active": "Bonn",
+		"Employers": "Universität Bonn, Beethovenhaus Bonn",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Schönfelder, Willi",
-		"https://bmlo.de/": "person"
+		"ID": "Schönfelder, Willi",
+		"Person": "Schönfelder, Willi",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schultze, Katharine",
-		"https://bmlo.de/": "person"
+		"ID": "Schultze, Katharine",
+		"Person": "Schultze, Katharine",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Schwarzmaier, Ernst",
-		"https://bmlo.de/": "person"
+		"ID": "Schwarzmaier, Ernst",
+		"Person": "Schwarzmaier, Ernst",
+		"ID Type": "person",
+		"Birth Year": "1904",
+		"Death Year": "2000",
+		"Position": "conductor, high school teacher",
+		"Source of Information": "Deutsche Digitale Bibliothek",
+		"Link": "https://www.deutsche-digitale-bibliothek.de/item/2ALMGLEH2KULD6A6BDMECLMKU6EINYB3"
 	},
 	{
-		"URLBASE for BMLO": "Silbert, Doris",
-		"https://bmlo.de/": "person"
+		"ID": "Silbert, Doris",
+		"Person": "Silbert, Doris",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Smith, Gertrude P.",
-		"https://bmlo.de/": "person"
+		"ID": "Smith, Gertrude P.",
+		"Person": "Smith, Gertrude P.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Sprager, Tanya",
-		"https://bmlo.de/": "person"
+		"ID": "Sprager, Tanya",
+		"Person": "Sprager, Tanya",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Stadelmann, Li",
-		"https://bmlo.de/": "person"
+		"ID": "Stadelmann, Li",
+		"Person": "Stadelmann, Li",
+		"ID Type": "person",
+		"Birth Year": "1900",
+		"Death Year": "1993",
+		"Position": "pianist, harpischordist",
+		"BMLO ID": "s1617",
+		"BMLO Link": "https://bmlo.de/s1617",
+		"Source of Information": "Bayerisches Musiker Lexicon Online"
 	},
 	{
-		"URLBASE for BMLO": "Stephan, Mary Jane",
-		"https://bmlo.de/": "person"
+		"ID": "Stephan, Mary Jane",
+		"Person": "Stephan, Mary Jane",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Sterk, Walter",
-		"https://bmlo.de/": "person"
+		"ID": "Sterk, Walter",
+		"Person": "Sterk, Walter",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Straus, Trudi",
-		"https://bmlo.de/": "person"
+		"ID": "Straus, Trudi",
+		"Person": "Straus, Trudi",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Strickland, Bertram",
-		"https://bmlo.de/": "person"
+		"ID": "Strickland, Bertram",
+		"Person": "Strickland, Bertram",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Sudock, S.",
-		"https://bmlo.de/": "person"
+		"ID": "Sudock, S.",
+		"Person": "Sudock, S.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Swackhamer, John",
-		"https://bmlo.de/": "person"
+		"ID": "Swackhamer, John",
+		"Person": "Swackhamer, John",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Tibbetts, Paul",
-		"https://bmlo.de/": "person"
+		"ID": "Tibbetts, Paul",
+		"Person": "Tibbetts, Paul",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Torrence, Jane",
-		"https://bmlo.de/": "person"
+		"ID": "Torrence, Jane",
+		"Person": "Torrence, Jane",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Trümpy, Bethe",
-		"https://bmlo.de/": "person"
+		"ID": "Trümpy, Bethe",
+		"Person": "Trümpy, Bethe",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Turgeon, F. King",
-		"https://bmlo.de/": "person"
+		"ID": "Turgeon, F. King",
+		"Person": "Turgeon, F. King",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "van den Borren, Charles",
-		"https://bmlo.de/": "person"
+		"ID": "van den Borren, Charles",
+		"Person": "van den Borren, Charles",
+		"ID Type": "person",
+		"Birth Year": "1874",
+		"Death Year": "1966",
+		"Position": "musicologist",
+		"Places Active": "Brussels, Liège",
+		"Employers": "Brussels Conservatory, Free University, University of Liège",
+		"BMLO ID": "b1896",
+		"BMLO Link": "https://bmlo.de/b1896",
+		"Source of Information": "Oxford Music Online"
 	},
 	{
-		"URLBASE for BMLO": "Vielberth, Otto",
-		"https://bmlo.de/": "person"
+		"ID": "Vielberth, Otto",
+		"Person": "Vielberth, Otto",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Vogt, Karl",
-		"https://bmlo.de/": "person"
+		"ID": "Vogt, Karl",
+		"Person": "Vogt, Karl",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Wallace, James",
-		"https://bmlo.de/": "person"
+		"ID": "Wallace, James",
+		"Person": "Wallace, James",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Walter, Georg A.",
-		"https://bmlo.de/": "person"
+		"ID": "Walter, Georg A.",
+		"Person": "Walter, Georg A.",
+		"ID Type": "person",
+		"Birth Year": "1857",
+		"Death Year": "1931",
+		"Position": "conductor",
+		"BMLO ID": "w1868",
+		"BMLO Link": "https://bmlo.de/w1868"
 	},
 	{
-		"URLBASE for BMLO": "Watson, Mrs.",
-		"https://bmlo.de/": "person"
+		"ID": "Watson, Mrs.",
+		"Person": "Watson, Mrs.",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Washington, Henry",
-		"https://bmlo.de/": "person"
+		"ID": "Washington, Henry",
+		"Person": "Washington, Henry",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Weinberg, Edwin",
-		"https://bmlo.de/": "person"
+		"ID": "Weinberg, Edwin",
+		"Person": "Weinberg, Edwin",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Welch, Roy Dickinson",
-		"https://bmlo.de/": "person"
+		"ID": "Welch, Roy Dickinson",
+		"Person": "Welch, Roy Dickinson",
+		"ID Type": "person",
+		"Literature": "#N/A",
+		"Pages": "p. 327"
 	},
 	{
-		"URLBASE for BMLO": "Welliver, Harry",
-		"https://bmlo.de/": "person"
+		"ID": "Welliver, Harry",
+		"Person": "Welliver, Harry",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Wenzinger, August",
-		"https://bmlo.de/": "person"
+		"ID": "Wenzinger, August",
+		"Person": "Wenzinger, August",
+		"ID Type": "person",
+		"Birth Year": "1905",
+		"Death Year": "1996",
+		"Position": "cellist, viola player",
+		"Places Active": "Bremen, Basel, Hamburg",
+		"Employers": "Bremen Philharmonische Gesellschaft, Basle Orchester Gesellschaft, Schola Cantorum Basiliensis, Herrenhausen",
+		"Source of Information": "Oxford Music Online",
+		"Literature": "Haskell_1988",
+		"Pages": "pp. 62–63"
 	},
 	{
-		"URLBASE for BMLO": "Wenzinger, Maya",
-		"https://bmlo.de/": "person"
+		"ID": "Wenzinger, Maya",
+		"Person": "Wenzinger, Maya",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "White, Joseph",
-		"https://bmlo.de/": "person"
+		"ID": "White, Joseph",
+		"Person": "White, Joseph",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Wild, Erika",
-		"https://bmlo.de/": "person"
+		"ID": "Wild, Erika",
+		"Person": "Wild, Erika",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Wohlgemuth, Evelyn",
-		"https://bmlo.de/": "person"
+		"ID": "Wohlgemuth, Evelyn",
+		"Person": "Wohlgemuth, Evelyn",
+		"ID Type": "person"
 	},
 	{
-		"URLBASE for BMLO": "Zenck, Hermann",
-		"https://bmlo.de/": "person"
+		"ID": "Zenck, Hermann",
+		"Person": "Zenck, Hermann",
+		"ID Type": "person",
+		"Birth Year": "1898",
+		"Death Year": "1950",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Leipzig, 1924",
+		"Habilitation": "Universität Leipzig",
+		"Year of Habilitation": "1929",
+		"Doctoral Advisor": "Theodor Kroyer",
+		"Places Active": "Heidelberg, Leipzig, Göttingen, Freiburg",
+		"Employers": "Universität Göttingen, Universität Freiburg",
+		"BMLO ID": "z0135",
+		"BMLO Link": "https://bmlo.de/z0135",
+		"Source of Information": "Oxford Music Online"
 	}
 ]

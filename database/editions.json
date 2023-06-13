@@ -1,6 +1,7 @@
 [
 	{
 		"ID": "Adler_Koller_1900",
+		"Edition": "Adler_Koller_1900",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Sechs Trienter Codices: Geistliche und Weltliche Kompositionen des XV. Jhrs.",
 		"Editor": "Guido Adler and Oswald Koller",
@@ -11,6 +12,7 @@
 	},
 	{
 		"ID": "Ambros_Kade_1882",
+		"Edition": "Ambros_Kade_1882",
 		"ID Type": "edition",
 		"Composer/Author": "August Wilhlem Ambros and Otto Kade",
 		"Name of Volume/Journal": "Geschichte der Musik",
@@ -21,6 +23,7 @@
 	},
 	{
 		"ID": "Arnold_1867",
+		"Edition": "Arnold_1867",
 		"ID Type": "edition",
 		"Composer/Author": "Friedrich Wilhelm Arnold",
 		"Name of Article": "Das Locheimer Liederbuch nebst der Ars organisandi von Conrad Baumann",
@@ -34,6 +37,7 @@
 	},
 	{
 		"ID": "Aubry_1907",
+		"Edition": "Aubry_1907",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Estampies et Danses Royales",
 		"Editor": "Pierre Aubry",
@@ -43,6 +47,7 @@
 	},
 	{
 		"ID": "Aubry_1908",
+		"Edition": "Aubry_1908",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Cent Motets du XIIIe Siècle publiés d'après le Manuscrit Ed.IV.6 de Bamberg",
 		"Editor": "Pierre Aubry",
@@ -53,6 +58,7 @@
 	},
 	{
 		"ID": "Aubry_1909",
+		"Edition": "Aubry_1909",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Trouvères et Troubadours",
 		"Editor": "Pierre Aubry",
@@ -62,6 +68,7 @@
 	},
 	{
 		"ID": "Byrd_1920",
+		"Edition": "Byrd_1920",
 		"ID Type": "edition",
 		"Composer/Author": "William Byrd",
 		"Name of Volume/Journal": "Psalms Songs and Sonnets, Some Solemn Others Joyful to 3. 4. 5. and 6. Parts",
@@ -74,6 +81,7 @@
 	},
 	{
 		"ID": "Byrd_1922",
+		"Edition": "Byrd_1922",
 		"ID Type": "edition",
 		"Composer/Author": "William Byrd",
 		"Name of Volume/Journal": "Mass for Three Voices",
@@ -84,6 +92,7 @@
 	},
 	{
 		"ID": "Coussemaker_1865",
+		"Edition": "Coussemaker_1865",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "L'art harmonique aux XIIe & XIIIe Siècles",
 		"Editor": "Charles Edmond Henri de Coussemaker",
@@ -93,6 +102,7 @@
 	},
 	{
 		"ID": "Coussemaker_1872",
+		"Edition": "Coussemaker_1872",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Oeuvres complètes du trouvère Adam de la Halle",
 		"Editor": "Charles Edmond Henri de Coussemaker",
@@ -102,6 +112,7 @@
 	},
 	{
 		"ID": "Dennerlein_1926",
+		"Edition": "Dennerlein_1926",
 		"ID Type": "edition",
 		"Composer/Author": "Hanns Dennerlein",
 		"Name of Article": "Zwei Ebracher Marienlieder",
@@ -112,6 +123,7 @@
 	},
 	{
 		"ID": "Dowland_1923a",
+		"Edition": "Dowland_1923a",
 		"ID Type": "edition",
 		"Composer/Author": "John Dowland",
 		"Name of Volume/Journal": "Third Book of Airs, 1603",
@@ -123,6 +135,7 @@
 	},
 	{
 		"ID": "Dowland_1923b",
+		"Edition": "Dowland_1923b",
 		"ID Type": "edition",
 		"Composer/Author": "John Dowland",
 		"Name of Volume/Journal": "Third Book of Airs, 1603",
@@ -134,16 +147,17 @@
 	},
 	{
 		"ID": "Einstein_1927",
+		"Edition": "3",
 		"ID Type": "edition",
 		"Composer/Author": "Alfred Einstein",
 		"Name of Volume/Journal": "Beispielsammlung zur älteren Musikgeschichte",
-		"Edition": "3",
 		"Location": "Leipzig",
 		"Publisher": "B.G. Teubner",
 		"Publication Year": "1927"
 	},
 	{
 		"ID": "Ficker_Orel_1920",
+		"Edition": "Ficker_Orel_1920",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Sechs Trienter Codices: Geistliche und Weltliche Kompositionen des XV. Jhrs., 4. Auswahl",
 		"Editor": "Rudolf Ficker and Alfred Orel",
@@ -155,6 +169,7 @@
 	},
 	{
 		"ID": "Gennrich_1921",
+		"Edition": "Gennrich_1921",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Rondeaux, Virelais und Balladen",
 		"Editor": "Friedrich Gennrich",
@@ -165,6 +180,7 @@
 	},
 	{
 		"ID": "Gennrich_1925",
+		"Edition": "Gennrich_1925",
 		"ID Type": "edition",
 		"Composer/Author": "Friedrich Gennrich",
 		"Name of Article": "Sieben Melodien zu mittelhochdeutschen Minneliedern",
@@ -175,6 +191,7 @@
 	},
 	{
 		"ID": "Gerberto_1784",
+		"Edition": "Gerberto_1784",
 		"ID Type": "edition",
 		"Composer/Author": "Martino Geberto",
 		"Name of Volume/Journal": "Scriptores ecclesiastici de musica sacra potissimum",
@@ -185,6 +202,7 @@
 	},
 	{
 		"ID": "Josquin_1923",
+		"Edition": "Josquin_1923",
 		"ID Type": "edition",
 		"Composer/Author": "Josquin des Prez",
 		"Name of Volume/Journal": "Motetten Bundel II",
@@ -196,6 +214,7 @@
 	},
 	{
 		"ID": "Josquin_1924",
+		"Edition": "Josquin_1924",
 		"ID Type": "edition",
 		"Composer/Author": "Josquin des Prez",
 		"Name of Volume/Journal": "Wereldlijke Werken II",
@@ -207,6 +226,7 @@
 	},
 	{
 		"ID": "Isaac_1907",
+		"Edition": "Isaac_1907",
 		"ID Type": "edition",
 		"Composer/Author": "Heinrich Isaac",
 		"Name of Volume/Journal": "Weltliche Werke",
@@ -219,6 +239,7 @@
 	},
 	{
 		"ID": "Lisio_1893",
+		"Edition": "Lisio_1893",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Una Stanza del Petrarca Musicata Dal Du Fay",
 		"Editor": "Giuseppe Lisio",
@@ -228,6 +249,7 @@
 	},
 	{
 		"ID": "Ludwig_1923",
+		"Edition": "Ludwig_1923",
 		"ID Type": "edition",
 		"Composer/Author": "Friedrich Ludwig",
 		"Name of Article": "Die Quellen der Motetten ältesten Stils",
@@ -238,6 +260,7 @@
 	},
 	{
 		"ID": "Ludwig_1924a",
+		"Edition": "Ludwig_1924a",
 		"ID Type": "edition",
 		"Composer/Author": "Friedrich Ludwig",
 		"Name of Article": "Die Quellen der Motetten ältesten Stils (Schluß)",
@@ -248,6 +271,7 @@
 	},
 	{
 		"ID": "Ludwig_1924b",
+		"Edition": "Ludwig_1924b",
 		"ID Type": "edition",
 		"Composer/Author": "Friedrich Ludwig",
 		"Name of Article": "Die französische Schule des 14. Jahrhunderts; die isorhythmische Motette des 14. und beginenden 15. Jahrhunderts; die italienischen Madrigale, Balladen und Caccie. Etwa 1300–1430",
@@ -260,6 +284,7 @@
 	},
 	{
 		"ID": "Machaut_1926",
+		"Edition": "Machaut_1926",
 		"ID Type": "edition",
 		"Composer/Author": "Guillaume de Machaut",
 		"Name of Volume/Journal": "Musikalische Werke: Balladen, Rondeaux, und Virelais",
@@ -272,6 +297,7 @@
 	},
 	{
 		"ID": "Mayer_Rietsch_1896",
+		"Edition": "Mayer_Rietsch_1896",
 		"ID Type": "edition",
 		"Composer/Author": "F. Arnold Mayer and Heinrich Rietsch",
 		"Name of Article": "Die Mondsee-Wieder Liedershandschrift und der Mönch von Salzburg: Eine Untrersuchung zur Litteratur- und Musikgeschichte, Part II",
@@ -283,6 +309,7 @@
 	},
 	{
 		"ID": "Molitor_1911",
+		"Edition": "Molitor_1911",
 		"ID Type": "edition",
 		"Composer/Author": "Raphael Molitor",
 		"Name of Article": "Die Lieder des Münsterischen Fragments",
@@ -293,6 +320,7 @@
 	},
 	{
 		"ID": "Müller-Blattau_1923",
+		"Edition": "Müller-Blattau_1923",
 		"ID Type": "edition",
 		"Composer/Author": "Joseph Müller-Blattau",
 		"Name of Volume/Journal": "Grundzüge einer Geschichte der Fuge",
@@ -304,6 +332,7 @@
 	},
 	{
 		"ID": "Niemann_1902",
+		"Edition": "Niemann_1902",
 		"ID Type": "edition",
 		"Composer/Author": "Walter Niemann",
 		"Name of Article": "Studien zur deutschen Musikgeschichte des XV. Jahrhunderts",
@@ -314,6 +343,7 @@
 	},
 	{
 		"ID": "Obrecht_1921",
+		"Edition": "Obrecht_1921",
 		"ID Type": "edition",
 		"Composer/Author": "Jacob Obrecht",
 		"Name of Volume/Journal": "Motetten, Bundel IV",
@@ -326,6 +356,7 @@
 	},
 	{
 		"ID": "Rietsch_1919",
+		"Edition": "Rietsch_1919",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Gesänge von Frauenlob, Reinmar v. Zweter und Alexander",
 		"Editor": "Heinrich Rietsch",
@@ -337,6 +368,7 @@
 	},
 	{
 		"ID": "Schubiger_1858",
+		"Edition": "Schubiger_1858",
 		"ID Type": "edition",
 		"Composer/Author": "P. Anselm Schubiger",
 		"Name of Volume/Journal": "Die Sängerschule St. Gallens vom achten bis zwölften Jahrhundert",
@@ -346,6 +378,7 @@
 	},
 	{
 		"ID": "Squire_1901a",
+		"Edition": "Squire_1901a",
 		"ID Type": "edition",
 		"Composer/Author": "W. Barclay Squire",
 		"Name of Volume/Journal": "Ausgewählte Madrigale und Mehrstimmige Gesänge",
@@ -356,6 +389,7 @@
 	},
 	{
 		"ID": "Squire_1901b",
+		"Edition": "Squire_1901b",
 		"ID Type": "edition",
 		"Composer/Author": "W. Barclay Squire",
 		"Name of Article": "Notes on an Undescribed Collection of English 15th Century Music",
@@ -366,6 +400,7 @@
 	},
 	{
 		"ID": "Stainer_1898",
+		"Edition": "Stainer_1898",
 		"ID Type": "edition",
 		"Name of Volume/Journal": "Dufay and his Contemporaries: Fifty Compositions Transcribed from MS. Canonici misc. 213, in the Bodleian Library, Oxford",
 		"Editor": "J. F. R. Stainer and C. Stainer",
@@ -376,6 +411,7 @@
 	},
 	{
 		"ID": "Terry_1924",
+		"Edition": "Terry_1924",
 		"ID Type": "edition",
 		"Composer/Author": "Richard R. Terry",
 		"Name of Volume/Journal": "John Taverner c. 1495–1545, Part II",
@@ -387,6 +423,7 @@
 	},
 	{
 		"ID": "Ursprung_1923",
+		"Edition": "Ursprung_1923",
 		"ID Type": "edition",
 		"Composer/Author": "Otto Ursprung",
 		"Name of Article": "Vier Studien zur Geschichte des deutschen Liedes: II. Die Mondseer Liederhandschrift und Hermann, der Münch von Salzburg",
@@ -397,6 +434,7 @@
 	},
 	{
 		"ID": "Ventadorn_1915",
+		"Edition": "Ventadorn_1915",
 		"ID Type": "edition",
 		"Composer/Author": "Bernart von Ventadorn",
 		"Name of Volume/Journal": "Seine Lieder mit Einleitung und Glossar",
@@ -407,6 +445,7 @@
 	},
 	{
 		"ID": "Wolf_1904",
+		"Edition": "Wolf_1904",
 		"ID Type": "edition",
 		"Composer/Author": "Johannes Wolf",
 		"Name of Volume/Journal": "Geschichte der Mensural-Notation von 1250 bis 1460",
@@ -417,6 +456,7 @@
 	},
 	{
 		"ID": "Wolf_1918",
+		"Edition": "Wolf_1918",
 		"ID Type": "edition",
 		"Composer/Author": "Johannes Wolf",
 		"Name of Article": "Die Tänze des Mittelalters: Eine Untersuchung des Wesens der ältesten Instrumentalmusik",
@@ -427,6 +467,7 @@
 	},
 	{
 		"ID": "Wooldridge_1897",
+		"Edition": "Wooldridge_1897",
 		"ID Type": "edition",
 		"Composer/Author": "H. E. Wooldridge",
 		"Name of Volume/Journal": "Early English Harmony from the 10th to the 15th Century",
@@ -436,6 +477,7 @@
 	},
 	{
 		"ID": "Wooldridge_1901",
+		"Edition": "Wooldridge_1901",
 		"ID Type": "edition",
 		"Composer/Author": "H. E. Wooldridge",
 		"Name of Volume/Journal": "The Polyphonic Period, Part I: Method of Musical Art, 330–1330",
@@ -447,6 +489,7 @@
 	},
 	{
 		"ID": "Wooldridge_1905",
+		"Edition": "Wooldridge_1905",
 		"ID Type": "edition",
 		"Composer/Author": "H. E. Wooldridge",
 		"Name of Volume/Journal": "The Polyphonic Period, Part II: Method of Musical Art, 1300–1600",
@@ -458,6 +501,7 @@
 	},
 	{
 		"ID": "Willaert_1915",
+		"Edition": "Willaert_1915",
 		"ID Type": "edition",
 		"Composer/Author": "Adrian Willaert",
 		"Name of Volume/Journal": "Missa Super Benedicta",

@@ -14,7 +14,7 @@ title: database
 	table.browse-works td, table.browse-concerts td, table.browse th, table.browse-concerts th {padding-left: 2px; padding-top: 2px; padding: 2px}
 	table.browse-works tr:hover, table.browse-concerts tr:hover { background:#ff000011; }
 	a { text-decoration: none; }
-	span.browse-interface { margin-top: 30px; margin-bottom: 30px; }
+	div.search-interface { margin-top: 30px; margin-bottom: 30px; }
 	.wrapper {margin-left: 10px;}
 	table.browse-works td:nth-child(2) {min-width: 125px;}
 	table.browse-works td:nth-child(4) {white-space: nowrap;}
@@ -103,9 +103,12 @@ EMC.activeResults = null;
 EMC.index = {};    // header name mapping by sheet.
 EMC.index.works = {};  // header names for works sheet.
 EMC.index.concerts = {};  // header names for works concerts.
+EMC.index.archives = {}; // header names for archives sheet.
+EMC.lookup = {};
 EMC.METADATA = {};
 EMC.METADATA.works = {% include_relative works.json %};
 EMC.METADATA.concerts = {% include_relative concerts.json %};
+EMC.METADATA.archives = {% include_relative archives.json %};
 
 EMC.index.works.name          = "Standardized Name of Work";
 EMC.index.works.composer      = "Probable Composer";
@@ -151,14 +154,63 @@ EMC.index.concerts.notes       = "Notes on Program";
 EMC.index.concerts.literature  = "Literature";
 EMC.index.concerts.image       = "Image";
 EMC.index.concerts.extimage    = "Externally Hosted Image";
+EMC.index.archives.archID      = "Archive ID (ARC)";
+EMC.index.archives.country     = "Country";
+EMC.index.archives.name        = "Name";
+EMC.index.archives.urlde       = "URL (DE)";
+EMC.index.archives.urlen       = "URL (EN)";
+EMC.index.archives.archloc     = "Archive Location";
 
 document.addEventListener("DOMContentLoaded", function () {
+	buildLookupTables();
 	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
 	displayBrowseTableWorks(EMC.METADATA.works);
 	displayBrowseTableConcerts(EMC.METADATA.concerts);
 });
 
+//////////////////////////////
+//
+// buildLookupTables –- 
+//
 
+function buildLookupTables() {
+	let metadata = EMC.METADATA;
+	if (!metadata){
+		console.warn("No METADATA!");
+		return;
+	}
+	for (sheet in metadata) {
+		if (sheet === "works"){
+			continue;
+		}
+		buildLookupTable(sheet);
+	}
+}
+
+//////////////////////////////
+//
+// buildLookupTable –-
+//
+
+function buildLookupTable(sheet) {
+	let sheetArray = EMC.METADATA[sheet];
+	if (!sheetArray && Array.isArray(sheetArray)){
+		console.warn("No METADATA FOR", sheet);
+		return;
+	}
+	EMC.lookup[sheet] = {};
+	const lookup = EMC.lookup[sheet];
+	for (let entry of sheetArray) {
+		let id = entry.ID;
+		if (!id){
+			console.warn("NO ID FOR ENTRY");
+			continue;
+		}
+		lookup[id] = entry;
+	}
+}
+
+	
 
 //////////////////////////////
 //
@@ -297,7 +349,17 @@ function displayBrowseTableConcerts(data) {
 //
 
 function makeTableHeader(headings) {
-	let output = `<th>${headings.join("</th><th>")}</th>\n`;
+	let output = "";
+	let archivename = "Program Source";
+	for (let i=0; i<headings.length; i++ ) {
+		output += "<th>";
+		if (headings[i] == EMC.index.concerts.archive){
+			output += archivename;
+		} else {
+			output += headings[i];
+		}
+		output += "</th>";
+	}
 	return output;
 }
 
@@ -338,6 +400,27 @@ function makeTableBody(headings, data) {
 			} else if (headings[i] == EMC.index.concerts.direction){
 				let directioncleaned = getCleanedDirection(entry);
 				output += directioncleaned;
+			} else if (headings[i] == EMC.index.concerts.archive) {
+				if (value){
+					if (value.match(";")){
+						value = value.trim().split(/\s*;\s*/);
+						console.warn("value match", value);
+					} else {
+						value = [ value ];
+						console.warn("value", value);
+					}
+					console.warn("value", value);
+					for (let i=0; i<value.length; i++){
+						let aentry = EMC.lookup.archives[value[i]];
+						console.warn("aentry", aentry);
+						let name = aentry[EMC.index.archives.name];
+						console.warn("name", name);
+						output += name;
+						if (i < value.length - 1){
+							output += "; ";
+						}
+					}
+				}
 			} else {
 				output += value;
 			}
