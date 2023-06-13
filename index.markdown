@@ -3,8 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page 
-
 ---
+
+<style>
+	main.page-content {padding: 0px;}
+</style>
 
 ![sample program](sample_program.png)
 
@@ -16,6 +19,5 @@ The Early Music Concerts Database catalogues programs of medieval and Renaissanc
 + 48 catalogued concerts
 + 497 individual performed works, including pieces by 130 individual composers 
 + 158 musicologists, singers, and musicians catalogued
-+ archival material from 10 archives
 
 ![concerts by year](Concerts_by_year.svg)
