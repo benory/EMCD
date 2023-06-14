@@ -45,7 +45,7 @@ Concert programs have been located so far in the following archives:
 + Universitätsarchiv Humboldt Universität
 + Universitätsarchiv Leipzig
 
-Do you know of concert programs in either public or private archives that should be included in this project? [Let us know](mailto:benjaminory@gmail.com).
+Do you know of concert programs in either public or private archives that should be included in this project? [Let us know](mailto:concertsdatabase@gmail.com).
 
 ### Support
 
