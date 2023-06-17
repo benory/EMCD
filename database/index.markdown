@@ -153,6 +153,7 @@ EMC.index.concerts.signature   = "Signature";
 EMC.index.concerts.notes       = "Notes on Program";
 EMC.index.concerts.literature  = "Literature";
 EMC.index.concerts.image       = "Image";
+EMC.index.concerts.imageperm   = "Image Permissions";
 EMC.index.concerts.extimage    = "Externally Hosted Image";
 EMC.index.archives.archID      = "Archive ID (ARC)";
 EMC.index.archives.country     = "Country";
@@ -391,8 +392,14 @@ function makeTableBody(headings, data) {
 				output += sourcecombined;
 			} else if (headings[i] == EMC.index.concerts.ProgTitle) {
 				let ProgTitle = value;
+				let imageperm = entry["Image Permissions"];
 				let ProgUrl = getProgUrl(entry);
-				output += `${ProgTitle} [<a target="_blank" href="${ProgUrl}">Image</a>]`;
+				if (imageperm == "yes"){
+					output += `${ProgTitle} [<a target="_blank" href="${ProgUrl}">Image</a>]`;
+				}
+				else {
+					output += ProgTitle;
+				}
 			} else if (headings[i] == EMC.index.concerts.loc) {
 				let loccombined = getLocation(entry);
 				let locmaps = getLocationGoogleMaps(entry);
