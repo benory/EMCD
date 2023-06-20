@@ -10,5 +10,6 @@ download:
 	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=archives" -O archives.json
 	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=composers" -O composers.json
 	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=editions" -O editions.json
+	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=sources" -O sources.json
 	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=people" -O people.json
 	wget "https://script.google.com/macros/s/$(SID)/exec?sheet=bibliography" -O bibliography.json

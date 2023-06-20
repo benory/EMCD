@@ -26,6 +26,7 @@ title: database
 	table.browse-concerts td:nth-child(3) {min-width: 200px;}
 	table.browse-concerts td:nth-child(4) {min-width: 200px;}
 	table.browse-concerts td:nth-child(5) {min-width: 200px;}
+	table.browse-concerts td:nth-child(6) {min-width: 200px;}
 	select.source {max-width: 250px}
 	span.sheet-button {
 		font: 400 18px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -104,11 +105,17 @@ EMC.index = {};    // header name mapping by sheet.
 EMC.index.works = {};  // header names for works sheet.
 EMC.index.concerts = {};  // header names for works concerts.
 EMC.index.archives = {}; // header names for archives sheet.
+EMC.index.bibliography = {}; // header names for bibliography sheet.
+EMC.index.editions = {}; //header names for editions sheet
+EMC.index.sources = {}; //header names for sources sheet
 EMC.lookup = {};
 EMC.METADATA = {};
 EMC.METADATA.works = {% include_relative works.json %};
 EMC.METADATA.concerts = {% include_relative concerts.json %};
 EMC.METADATA.archives = {% include_relative archives.json %};
+EMC.METADATA.bibliography = {% include_relative bibliography.json %};
+EMC.METADATA.editions = {% include_relative editions.json %};
+EMC.METADATA.sources = {% include_relative sources.json %};
 
 EMC.index.works.name          = "Standardized Name of Work";
 EMC.index.works.composer      = "Probable Composer";
@@ -161,6 +168,29 @@ EMC.index.archives.name        = "Name";
 EMC.index.archives.urlde       = "URL (DE)";
 EMC.index.archives.urlen       = "URL (EN)";
 EMC.index.archives.archloc     = "Archive Location";
+EMC.index.bibliography.ID      = "ID";
+EMC.index.bibliography.author  = "Author";
+EMC.index.bibliography.article = "Name of Article";
+EMC.index.bibliography.volname = "Name of Volume/Journal";
+EMC.index.bibliography.editor  = "Editor";
+EMC.index.bibliography.volnum  = "Volume";
+EMC.index.bibliography.loc     = "Location";
+EMC.index.bibliography.pub	   = "Publisher";
+EMC.index.bibliography.pubyear = "Publication Year";
+EMC.index.bibliography.pages   = "Pages";
+EMC.index.bibliography.url     = "URL";
+EMC.index.editions.ID          = "ID";
+EMC.index.editions.compauthor  = "Composer/Author";
+EMC.index.editions.article     = "Name of Article";
+EMC.index.editions.volume      = "Name of Volume/Journal";
+EMC.index.editions.loc         = "Location";
+EMC.index.editions.pub         = "Publisher";
+EMC.index.editions.pubyear     = "Publication Year";
+EMC.index.editions.pages       = "Pages";
+EMC.index.sources.ID           = "ID";
+EMC.index.sources.alias        = "Source Alias";
+EMC.index.sources.DIAMM        = "DIAMM Source Link";
+EMC.index.sources.RISM         = "RISM Source Link";
 
 document.addEventListener("DOMContentLoaded", function () {
 	buildLookupTables();
@@ -330,7 +360,7 @@ function displayBrowseTableConcerts(data) {
 		return;
 	}
 
-	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive, EMC.index.concerts.signature];
+	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive];
 
 	let contents = "";
 	contents += "<table class='browse-concerts'>\n";
@@ -384,12 +414,93 @@ function makeTableBody(headings, data) {
 			output += "<td>";
 
 			if (headings[i] == EMC.index.works.edition) {
-				let editioncombined = getEdition(entry);
-				let url = getEditionUrl(entry);
-				output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
+				//need to add case for BIB: values
+				//need to add page numbers
+				if (value){
+					if (value.match(";")){
+						value = value.trim().split(/\s*;\s*/);
+					} else {
+						value = [ value ];
+					}
+					for (let i=0; i<value.length; i++){
+						let eentry = EMC.lookup.editions[value[i]];
+						if (eentry){
+							let ecompauthor = eentry[EMC.index.editions.compauthor];
+							let earticle = eentry[EMC.index.editions.article];
+							let evolume = eentry[EMC.index.editions.volume];
+							let eloc = eentry[EMC.index.editions.loc];
+							let epub = eentry[EMC.index.editions.pub];
+							let epubyear = eentry[EMC.index.editions.pubyear];
+							let epages = eentry[EMC.index.editions.pages];
+							let editionfull = "";
+							let editionurl = "";
+							if (ecompauthor) {
+								editionfull += `${ecompauthor}, `;
+							}
+							if (earticle) {
+								editionfull += `"${earticle}," `;
+							}
+							if (evolume) {
+								editionfull += `<i>${evolume}</i> `;
+							}
+							if (eloc) {
+								editionfull += `(${eloc}: `;
+							}
+							if (epub) {
+								editionfull += `${epub}, `;
+							}
+							if (eloc && epub && epubyear || eloc && epubyear) {
+								editionfull += `${epubyear})`;
+							}
+							else if (epubyear) {
+								editionfull += `${epubyear}`;
+							}
+							if (epages) {
+								editionfull += `, ${epages}`;
+							}
+							if (editionurl){
+								output += `<a target="_blank" href="${editionurl}">${editionfull}</a>`;
+							} else {
+								output += `${editionfull}`;
+							}
+						}
+						if (i < value.length - 1){
+							output += "; ";
+						}
+					}
+					output += ".";
+				} 
+
+				//let editioncombined = getEdition(entry);
+				//let url = getEditionUrl(entry);
+				//output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
+
 			} else if (headings[i] == EMC.index.works.source) {
-				let sourcecombined = getSource(entry);
-				output += sourcecombined;
+				let surl = "";
+				if (value.match(";")){
+						value = value.trim().split(/\s*;\s*/);
+					} else {
+						value = [ value ];
+					}
+				for (let i=0; i<value.length; i++){
+					let sentry = EMC.lookup.sources[value[i]];
+					if (sentry){
+						let ID = sentry[EMC.index.sources.ID];
+						let DIAMM = sentry[EMC.index.sources.DIAMM];
+						let RISM = sentry[EMC.index.sources.RISM];
+						if (DIAMM) {
+							output += `<a target="_blank" href="${DIAMM}">${ID}</a>`;
+						} 
+						if (RISM) {
+							output += `<a target="_blank" href="${RISM}">${ID}</a>`;
+						} 
+						if (i < value.length - 1){
+							output += "; ";
+						}
+					}
+				}
+
+				//let sourcecombined = getSource(entry);
 			} else if (headings[i] == EMC.index.concerts.ProgTitle) {
 				let ProgTitle = value;
 				let imageperm = entry["Image Permissions"];
@@ -411,22 +522,21 @@ function makeTableBody(headings, data) {
 				if (value){
 					if (value.match(";")){
 						value = value.trim().split(/\s*;\s*/);
-						console.warn("value match", value);
 					} else {
 						value = [ value ];
-						console.warn("value", value);
 					}
-					console.warn("value", value);
 					for (let i=0; i<value.length; i++){
 						let aentry = EMC.lookup.archives[value[i]];
-						console.warn("aentry", aentry);
 						let name = aentry[EMC.index.archives.name];
-						console.warn("name", name);
-						output += name;
+						let archsig = getSignature(entry);
+						output += `${name}, ${archsig}`;
 						if (i < value.length - 1){
 							output += "; ";
 						}
 					}
+				} else {
+					let archsig = getSignature(entry);
+					output += `${archsig}`;
 				}
 			} else {
 				output += value;
@@ -549,6 +659,7 @@ function getEdition(entry) {
 	if (typeof entry["Edition of Work Listed in Program"] !== "undefined") {
 		edition = entry["Edition of Work Listed in Program"];
 	}
+	
 	let editionpages = "";
 	if (typeof entry["Nos./Page Numbers"] !== "undefined") {
 		editionpages = entry["Nos./Page Numbers"];
@@ -565,6 +676,20 @@ function getEdition(entry) {
 	} else {
 		return edition;
 	}
+}
+
+//////////////////////////////
+//
+// getSignature -- Generate the archival signature.
+//
+
+function getSignature(entry) {
+	let signature = "";
+	if (typeof entry["Signature"] !== "undefined") {
+		signature = entry["Signature"];
+		return signature;
+	}
+	return "";
 }
 
 //////////////////////////////
