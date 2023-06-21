@@ -1170,14 +1170,13 @@ function buildProgramSourceSelect(data) {
 	let programsource = pslist.length;
 	let output = "<select class='programsource' onchange='doSearchConcerts()'>\n";
 	output += `<option value="">Source of Program [${programsource}]</option>`;
-	for (let i=0; i<pslist.length; i++) {
-		
+	for (let i=0; i<pslist.length; i++) {	
+		let archid = pslist[i];
 		let aentry = EMC.lookup.archives[pslist[i]];
-		console.warn("aentry", aentry);
 		if (aentry){
 			let archive = aentry[EMC.index.archives.name];
 			let count = counter[pslist[i]];
-			output += `<option value="${archive}">${archive} (${count})</option>`;
+			output += `<option value="${archid}">${archive} (${count})</option>`;
 		}
 	}
 	output += "</select>\n";
