@@ -182,7 +182,9 @@ EMC.index.bibliography.url     = "URL";
 EMC.index.editions.ID          = "ID";
 EMC.index.editions.compauthor  = "Composer/Author";
 EMC.index.editions.article     = "Name of Article";
-EMC.index.editions.volume      = "Name of Volume/Journal";
+EMC.index.editions.volname     = "Name of Volume/Journal";
+EMC.index.editions.editor      = "Editor";
+EMC.index.editions.volnum      = "Volume";
 EMC.index.editions.loc         = "Location";
 EMC.index.editions.pub         = "Publisher";
 EMC.index.editions.pubyear     = "Publication Year";
@@ -423,45 +425,108 @@ function makeTableBody(headings, data) {
 						value = [ value ];
 					}
 					for (let i=0; i<value.length; i++){
-						let eentry = EMC.lookup.editions[value[i]];
-						if (eentry){
-							let ecompauthor = eentry[EMC.index.editions.compauthor];
-							let earticle = eentry[EMC.index.editions.article];
-							let evolume = eentry[EMC.index.editions.volume];
-							let eloc = eentry[EMC.index.editions.loc];
-							let epub = eentry[EMC.index.editions.pub];
-							let epubyear = eentry[EMC.index.editions.pubyear];
-							let epages = eentry[EMC.index.editions.pages];
-							let editionfull = "";
-							let editionurl = "";
-							if (ecompauthor) {
-								editionfull += `${ecompauthor}, `;
+						//dealing with editions found in bibliography items
+						let valueshort = value[i].substring(0,3);
+						if (valueshort == "BIB"){
+							let bentry = EMC.lookup.bibliography[value[i]];
+							if (bentry) {
+								let bauthor = bentry[EMC.index.bibliography.author];
+								let barticle = bentry[EMC.index.bibliography.article];
+								let bvolume = bentry[EMC.index.bibliography.volname];
+								let bedit = bentry[EMC.index.bibliography.editor];
+								let bvolnum = bentry[EMC.index.bibliography.volnum];
+								let bpub = bentry[EMC.index.bibliography.pub];
+								let bloc = bentry[EMC.index.bibliography.loc];
+								let bpubyear = bentry[EMC.index.bibliography.pubyear];
+								let bpages = bentry[EMC.index.bibliography.pages];
+								let bibfull = "";
+								let biburl = "";
+								if (bauthor) {
+									bibfull += `${bauthor}, `;
+								}
+								if (barticle) {
+									bibfull += `"${barticle}," `;
+								}
+								if (bvolume) {
+									bibfull += `<i>${bvolume}</i> `;
+								}
+								if (bedit) {
+									bibfull += `, ed. ${bedit}`;
+								}
+								if (bvolnum) {
+									bibfull += `${bvolnum} `;
+								}
+								if (bloc) {
+									bibfull += ` (${bloc}: `;
+								}
+								if (bpub) {
+									bibfull += `${bpub}, `;
+								}
+								if (bloc && bpub && bpubyear || bloc && bpubyear) {
+									bibfull += `${bpubyear})`;
+								}
+								else if (bpubyear) {
+									bibfull += ` (${bpubyear})`;
+								}
+								if (bpages) {
+									bibfull += `, ${bpages}`;
+								}
+								if (biburl){
+									output += `<a target="_blank" href="${biburl}">${bibfull}</a>`;
+								} else {
+									output += `${bibfull}`;
+								}
 							}
-							if (earticle) {
-								editionfull += `"${earticle}," `;
-							}
-							if (evolume) {
-								editionfull += `<i>${evolume}</i> `;
-							}
-							if (eloc) {
-								editionfull += `(${eloc}: `;
-							}
-							if (epub) {
-								editionfull += `${epub}, `;
-							}
-							if (eloc && epub && epubyear || eloc && epubyear) {
-								editionfull += `${epubyear})`;
-							}
-							else if (epubyear) {
-								editionfull += `${epubyear}`;
-							}
-							if (epages) {
-								editionfull += `, ${epages}`;
-							}
-							if (editionurl){
-								output += `<a target="_blank" href="${editionurl}">${editionfull}</a>`;
-							} else {
-								output += `${editionfull}`;
+						}
+						else {
+							let eentry = EMC.lookup.editions[value[i]];
+							if (eentry){
+								let ecompauthor = eentry[EMC.index.editions.compauthor];
+								let earticle = eentry[EMC.index.editions.article];
+								let evolume = eentry[EMC.index.editions.volname];
+								let evolnum = eentry[EMC.index.editions.volnum];
+								let eloc = eentry[EMC.index.editions.loc];
+								let eedit = eentry[EMC.index.editions.editor];
+								let epub = eentry[EMC.index.editions.pub];
+								let epubyear = eentry[EMC.index.editions.pubyear];
+								let epages = eentry[EMC.index.editions.pages];
+								let editionfull = "";
+								let editionurl = "";
+								if (ecompauthor) {
+									editionfull += `${ecompauthor}, `;
+								}
+								if (earticle) {
+									editionfull += `"${earticle}," `;
+								}
+								if (evolume) {
+									editionfull += `<i>${evolume}</i>`;
+								}
+								if (evolnum) {
+									editionfull += ` ${evolnum}`;
+								}
+								if (eedit) {
+									editionfull += `, ed. ${eedit}`;
+								}
+								if (eloc) {
+									editionfull += ` (${eloc}: `;
+								}
+								if (epub) {
+									editionfull += `${epub}, `;
+								}
+								if (eloc && epub && epubyear || eloc && epubyear) {
+									editionfull += `${epubyear})`;
+								}
+								else if (epubyear) {
+									editionfull += ` (${epubyear})`;
+								}
+								if (epages) {
+									editionfull += `, ${epages}`;
+								}
+								if (editionurl){
+									output += `<a target="_blank" href="${editionurl}">${editionfull}</a>`;
+								} else {
+									output += `${editionfull}`;
+								}
 							}
 						}
 						if (i < value.length - 1){
@@ -470,10 +535,6 @@ function makeTableBody(headings, data) {
 					}
 					output += ".";
 				} 
-
-				//let editioncombined = getEdition(entry);
-				//let url = getEditionUrl(entry);
-				//output += `<a target="_blank" href="${url}">${editioncombined}</a>`;
 
 			} else if (headings[i] == EMC.index.works.source) {
 				let surl = "";
@@ -536,8 +597,63 @@ function makeTableBody(headings, data) {
 					}
 				} else {
 					let archsig = getSignature(entry);
-					output += `${archsig}`;
-				}
+					if (archsig){
+						let valueshort = archsig.substring(0,3);
+							if (valueshort == "BIB"){
+								let bentry = EMC.lookup.bibliography[archsig];
+								if (bentry) {
+									let bauthor = bentry[EMC.index.bibliography.author];
+									let barticle = bentry[EMC.index.bibliography.article];
+									let bvolume = bentry[EMC.index.bibliography.volname];
+									let bedit = bentry[EMC.index.bibliography.editor];
+									let bvolnum = bentry[EMC.index.bibliography.volnum];
+									let bpub = bentry[EMC.index.bibliography.pub];
+									let bloc = bentry[EMC.index.bibliography.loc];
+									let bpubyear = bentry[EMC.index.bibliography.pubyear];
+									let bpages = bentry[EMC.index.bibliography.pages];
+									let bibfull = "";
+									let biburl = "";
+									if (bauthor) {
+										bibfull += `${bauthor}, `;
+									}
+									if (barticle) {
+										bibfull += `"${barticle}," `;
+									}
+									if (bvolume) {
+										bibfull += `<i>${bvolume}</i> `;
+									}
+									if (bedit) {
+										bibfull += `, ed. ${bedit}`;
+									}
+									if (bvolnum) {
+										bibfull += `${bvolnum} `;
+									}
+									if (bloc) {
+										bibfull += ` (${bloc}: `;
+									}
+									if (bpub) {
+										bibfull += `${bpub}, `;
+									}
+									if (bloc && bpub && bpubyear || bloc && bpubyear) {
+										bibfull += `${bpubyear})`;
+									}
+									else if (bpubyear) {
+										bibfull += ` (${bpubyear})`;
+									}
+									if (bpages) {
+										bibfull += `, ${bpages}`;
+									}
+									if (biburl){
+										output += `<a target="_blank" href="${biburl}">${bibfull}</a>`;
+									} else {
+										output += `${bibfull}.`;
+									}
+								}
+							} else {
+								output += `${archsig}`;
+							}
+						}
+					}
 			} else {
 				output += value;
 			}
@@ -1055,9 +1171,14 @@ function buildProgramSourceSelect(data) {
 	let output = "<select class='programsource' onchange='doSearchConcerts()'>\n";
 	output += `<option value="">Source of Program [${programsource}]</option>`;
 	for (let i=0; i<pslist.length; i++) {
-		let name = pslist[i];
-		let count = counter[pslist[i]];
-		output += `<option value="${name}">${name} (${count})</option>`;
+		
+		let aentry = EMC.lookup.archives[pslist[i]];
+		console.warn("aentry", aentry);
+		if (aentry){
+			let archive = aentry[EMC.index.archives.name];
+			let count = counter[pslist[i]];
+			output += `<option value="${archive}">${archive} (${count})</option>`;
+		}
 	}
 	output += "</select>\n";
 	return output;
