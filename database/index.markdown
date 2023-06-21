@@ -416,16 +416,23 @@ function makeTableBody(headings, data) {
 			output += "<td>";
 
 			if (headings[i] == EMC.index.works.edition) {
-				//need to add case for BIB: values
 				//need to add page numbers
+				let pagenumbers = entry["Nos./Page Numbers"];
+				let editionurl = entry["Scan of Edition"];
 				if (value){
 					if (value.match(";")){
 						value = value.trim().split(/\s*;\s*/);
+						pagenumbers = pagenumbers.trim().split(/\s*;\s*/);
+						editionurl = editionurl.trim().split(/\s*;\s*/);
 					} else {
 						value = [ value ];
+						pagenumbers = [ pagenumbers ];
+						editionurl = [ editionurl ];
 					}
 					for (let i=0; i<value.length; i++){
 						//dealing with editions found in bibliography items
+						let pagesentry = pagenumbers[i];
+						let url =  editionurl[i];
 						let valueshort = value[i].substring(0,3);
 						if (valueshort == "BIB"){
 							let bentry = EMC.lookup.bibliography[value[i]];
@@ -471,8 +478,11 @@ function makeTableBody(headings, data) {
 								if (bpages) {
 									bibfull += `, ${bpages}`;
 								}
-								if (biburl){
-									output += `<a target="_blank" href="${biburl}">${bibfull}</a>`;
+								if (pagesentry) {
+									bibfull += `, at ${pagesentry}`;
+								}
+								if (url){
+									output += `<a target="_blank" href="${url}">${bibfull}</a>`;
 								} else {
 									output += `${bibfull}`;
 								}
@@ -522,29 +532,39 @@ function makeTableBody(headings, data) {
 								if (epages) {
 									editionfull += `, ${epages}`;
 								}
-								if (editionurl){
-									output += `<a target="_blank" href="${editionurl}">${editionfull}</a>`;
+								if (pagesentry) {
+									editionfull += `, at ${pagesentry}`;
+								}
+								if (url){
+									output += `<a target="_blank" href="${url}">${editionfull}</a>`;
 								} else {
 									output += `${editionfull}`;
 								}
+								
 							}
 						}
 						if (i < value.length - 1){
 							output += "; ";
+						} else {
+							output += ".";
 						}
 					}
-					output += ".";
+					
 				} 
 
 			} else if (headings[i] == EMC.index.works.source) {
+				let pagenumbers = entry["Folios/No."];
 				let surl = "";
 				if (value.match(";")){
 						value = value.trim().split(/\s*;\s*/);
+						pagenumbers = pagenumbers.trim().split(/\s*;\s*/);
 					} else {
 						value = [ value ];
+						pagenumbers = [ pagenumbers ];
 					}
 				for (let i=0; i<value.length; i++){
 					let sentry = EMC.lookup.sources[value[i]];
+					let pagesentry = pagenumbers[i];
 					if (sentry){
 						let ID = sentry[EMC.index.sources.ID];
 						let DIAMM = sentry[EMC.index.sources.DIAMM];
@@ -552,16 +572,22 @@ function makeTableBody(headings, data) {
 						if (DIAMM) {
 							output += `<a target="_blank" href="${DIAMM}">${ID}</a>`;
 						} 
-						if (RISM) {
+						else if (RISM) {
 							output += `<a target="_blank" href="${RISM}">${ID}</a>`;
 						} 
+						else {
+							output += ID;
+						}
+						if (pagesentry) {
+							output += `, ${pagesentry}`;
+						}
 						if (i < value.length - 1){
 							output += "; ";
+						} else {
+							output += ".";
 						}
 					}
 				}
-
-				//let sourcecombined = getSource(entry);
 			} else if (headings[i] == EMC.index.concerts.ProgTitle) {
 				let ProgTitle = value;
 				let imageperm = entry["Image Permissions"];
@@ -739,63 +765,6 @@ function buildGenreSelect(data) {
 
 //////////////////////////////
 //
-// getSource -- Generate Source + Folios/Pages 
-//
-
-function getSource(entry) {
-	let source = "";
-	if (typeof entry["Source of Work Listed in Program"] !== "undefined") {
-		source = entry["Source of Work Listed in Program"];
-	}
-	let sourcepages = "";
-	if (typeof entry["Folios/No."] !== "undefined") {
-		sourcepages = entry["Folios/No."];
-	}
-	if (!sourcepages.match(/^\s*$/)) {
-		if (!source.match(/^\s*$/)) {
-			return `${source}, ${sourcepages}`;
-		} else {
-			return `${sourcepages}`;
-		}
-	}
-	if (source.match(/^\s*$/)) {
-		return "";
-	} else {
-		return source;
-	}
-}
-
-//////////////////////////////
-//
-// getEdition -- Generate Edition + Pages 
-//
-
-function getEdition(entry) {
-	let edition = "";
-	if (typeof entry["Edition of Work Listed in Program"] !== "undefined") {
-		edition = entry["Edition of Work Listed in Program"];
-	}
-	
-	let editionpages = "";
-	if (typeof entry["Nos./Page Numbers"] !== "undefined") {
-		editionpages = entry["Nos./Page Numbers"];
-	}
-	if (!editionpages.match(/^\s*$/)) {
-		if (!edition.match(/^\s*$/)) {
-			return `${edition}, ${editionpages}`;
-		} else {
-			return `${editionpages}`;
-		}
-	}
-	if (edition.match(/^\s*$/)) {
-		return "";
-	} else {
-		return edition;
-	}
-}
-
-//////////////////////////////
-//
 // getSignature -- Generate the archival signature.
 //
 
@@ -804,20 +773,6 @@ function getSignature(entry) {
 	if (typeof entry["Signature"] !== "undefined") {
 		signature = entry["Signature"];
 		return signature;
-	}
-	return "";
-}
-
-//////////////////////////////
-//
-// getEditionUrl -- Generate a source link based on "Scan of Edition".
-//
-
-function getEditionUrl(entry) {
-	let editionurl = "";
-	if (typeof entry["Scan of Edition"] !== "undefined") {
-		editionurl = entry["Scan of Edition"];
-		return editionurl;
 	}
 	return "";
 }
