@@ -416,7 +416,6 @@ function makeTableBody(headings, data) {
 			output += "<td>";
 
 			if (headings[i] == EMC.index.works.edition) {
-				//need to add page numbers
 				let pagenumbers = entry["Nos./Page Numbers"];
 				let editionurl = entry["Scan of Edition"];
 				if (value){
@@ -501,7 +500,6 @@ function makeTableBody(headings, data) {
 								let epubyear = eentry[EMC.index.editions.pubyear];
 								let epages = eentry[EMC.index.editions.pages];
 								let editionfull = "";
-								let editionurl = "";
 								if (ecompauthor) {
 									editionfull += `${ecompauthor}, `;
 								}
@@ -548,10 +546,8 @@ function makeTableBody(headings, data) {
 						} else {
 							output += ".";
 						}
-					}
-					
-				} 
-
+					}	
+				}
 			} else if (headings[i] == EMC.index.works.source) {
 				let pagenumbers = entry["Folios/No."];
 				let surl = "";
@@ -670,7 +666,7 @@ function makeTableBody(headings, data) {
 										bibfull += `, ${bpages}`;
 									}
 									if (biburl){
-										output += `<a target="_blank" href="${biburl}">${bibfull}</a>`;
+										output += `<a target="_blank" href="${biburl}">${bibfull}.</a>`;
 									} else {
 										output += `${bibfull}.`;
 									}
