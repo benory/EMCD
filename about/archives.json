@@ -1,0 +1,91 @@
+[
+	{
+		"ID": "ARC:DE_UA_Bonn",
+		"Archive ID (ARC)": "ARC:DE_UA_Bonn",
+		"Country": "Deutschland",
+		"City": "Bonn",
+		"Name": "Universitätsarchiv Bonn",
+		"URL (DE)": "https://www.uni-bonn.de/de/universitaet/organisation/weitere-einrichtungen/archiv-der-universitaet",
+		"Archive Location": "50.73420546539783, 7.102690461805324"
+	},
+	{
+		"ID": "ARC:DE_UA_Freiburg",
+		"Archive ID (ARC)": "ARC:DE_UA_Freiburg",
+		"Country": "Deutschland",
+		"City": "Freiburg",
+		"Name": "Universitätsarchiv Freiburg",
+		"URL (DE)": "https://www.uniarchiv.uni-freiburg.de",
+		"Archive Location": "47.992586641284895, 7.845301862164243"
+	},
+	{
+		"ID": "ARC:DE_UA_Humboldt",
+		"Archive ID (ARC)": "ARC:DE_UA_Humboldt",
+		"Country": "Deutschland",
+		"City": "Berlin",
+		"Name": "Universitätsarchiv Humboldt Universität",
+		"URL (DE)": "https://www.ub.hu-berlin.de/de/standorte/archiv",
+		"URL (EN)": "https://www.ub.hu-berlin.de/en/locations/archive/collage-01?set_language=en",
+		"Archive Location": "52.438027825357835, 13.53445588334833"
+	},
+	{
+		"ID": "ARC:DE_UA_Leipzig",
+		"Archive ID (ARC)": "ARC:DE_UA_Leipzig",
+		"Country": "Deutschland",
+		"City": "Leipzig",
+		"Name": "Universitätsarchiv Leipzig",
+		"URL (DE)": "https://www.universitaetsarchivleipzig.de",
+		"Archive Location": "51.33587250631357, 12.388703512116019"
+	},
+	{
+		"ID": "ARC:DE_SDTA_Munchen",
+		"Archive ID (ARC)": "ARC:DE_SDTA_Munchen",
+		"Country": "Deutschland",
+		"City": "Munich",
+		"Name": "Stadtarchiv München",
+		"URL (DE)": "https://stadt.muenchen.de/rathaus/verwaltung/direktorium/stadtarchiv.html",
+		"Archive Location": "48.16063263366055, 11.562894375163575"
+	},
+	{
+		"ID": "ARC:PN_WG",
+		"Archive ID (ARC)": "ARC:PN_WG",
+		"Country": "Sweden",
+		"City": "Laholm",
+		"Name": "Privat Nachlass Walter Gerstenberg"
+	},
+	{
+		"ID": "ARC:US_HU_TC",
+		"Archive ID (ARC)": "ARC:US_HU_TC",
+		"Country": "United States",
+		"City": "Cambridge",
+		"Name": "Harvard Theatre Collection, Houghton Library",
+		"URL (EN)": "https://library.harvard.edu/collections/harvard-theatre-collection",
+		"Archive Location": "42.373116227949886, -71.11528917862246"
+	},
+	{
+		"ID": "ARC:US_NYPL",
+		"Archive ID (ARC)": "ARC:US_NYPL",
+		"Country": "United States",
+		"City": "New York",
+		"Name": "New York Public Library for the Performing Arts, Music Division",
+		"URL (EN)": "https://www.nypl.org/locations/lpa/music-division",
+		"Archive Location": "40.773567244715764, -73.98410683081381"
+	},
+	{
+		"ID": "ARC:US_UC",
+		"Archive ID (ARC)": "ARC:US_UC",
+		"Country": "United States",
+		"City": "Chicago",
+		"Name": "University of Chicago Special Collections",
+		"URL (EN)": "https://www.lib.uchicago.edu/scrc/",
+		"Archive Location": "41.79541254876555, -87.59226344635543"
+	},
+	{
+		"ID": "ARC:US_UCB",
+		"Archive ID (ARC)": "ARC:US_UCB",
+		"Country": "United States",
+		"City": "Berkeley",
+		"Name": "University of California, Berkeley, Music Library",
+		"URL (EN)": "https://www.lib.berkeley.edu/visit/music",
+		"Archive Location": "37.870596548069116, -122.25578955689716"
+	}
+]
