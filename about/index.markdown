@@ -2,6 +2,19 @@
 layout: page
 title: about
 ---
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+	     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+	     crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+
+<style>
+	#map { height: 350px; }
+</style>
+
 
 We're often told how informal performance in European musicological seminars played important roles in the revival of medieval and Renaissance music performance following World War I. 
 
@@ -33,6 +46,30 @@ For each program of early music:
 For more details, read the [documentation](https://docs.google.com/document/d/18vVdL4CHMyDCxVk4t6r65NyTIwJbDcgxFDfYwpFgedg/edit){:target="_blank"} for the project (updated 19 May 2023).
 
 ### The archives
+
+<div id="map">
+	<script> 
+		archives = {% include_relative archives.json %};
+		archives.archID      = "Archive ID (ARC)";
+		archives.name        = "Name";		
+		archives.archloc     = "Archive Location";
+
+		let map = L.map('map').setView([50, -25], 2);
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    		maxZoom: 19,
+   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map); 
+		
+		/*for (let i=0; i<archives.length; i++ ) {
+			let entry = archives[i];
+			if (entry[archives.archloc]){
+				L.marker = L.marker(entry[archives.archloc]).addTo(map);	
+			}
+  		}*/
+
+	</script>
+</div>	
+
 
 Concert programs have been located so far in the following archives:
 + Harvard University, Harvard Theatre Collection

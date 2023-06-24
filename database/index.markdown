@@ -480,7 +480,7 @@ function makeTableBody(headings, data) {
 								if (pagesentry) {
 									bibfull += `, at ${pagesentry}`;
 								}
-								if (url){
+								if (url && bpubyear < "1928"){
 									output += `<a target="_blank" href="${url}">${bibfull}</a>`;
 								} else {
 									output += `${bibfull}`;
@@ -533,7 +533,7 @@ function makeTableBody(headings, data) {
 								if (pagesentry) {
 									editionfull += `, at ${pagesentry}`;
 								}
-								if (url){
+								if (url && epubyear < "1928"){
 									output += `<a target="_blank" href="${url}">${editionfull}</a>`;
 								} else {
 									output += `${editionfull}`;
@@ -548,17 +548,17 @@ function makeTableBody(headings, data) {
 						}
 					}	
 				}
-			} else if (headings[i] == EMC.index.works.source) {
+			} 
+			else if (headings[i] == EMC.index.works.source) {
 				let pagenumbers = entry["Folios/No."];
 				let surl = "";
 				if (value.match(";")){
-						value = value.trim().split(/\s*;\s*/);
-						pagenumbers = pagenumbers.trim().split(/\s*;\s*/);
-					} else {
-						value = [ value ];
-						pagenumbers = [ pagenumbers ];
-					}
-				for (let i=0; i<value.length; i++){
+					value = value.trim().split(/\s*;\s*/);
+					pagenumbers = pagenumbers.trim().split(/\s*;\s*/);
+				} else {
+					value = [ value ];
+					pagenumbers = [ pagenumbers ];
+				} for (let i=0; i<value.length; i++){
 					let sentry = EMC.lookup.sources[value[i]];
 					let pagesentry = pagenumbers[i];
 					if (sentry){
@@ -584,7 +584,8 @@ function makeTableBody(headings, data) {
 						}
 					}
 				}
-			} else if (headings[i] == EMC.index.concerts.ProgTitle) {
+			} 
+			else if (headings[i] == EMC.index.concerts.ProgTitle) {
 				let ProgTitle = value;
 				let imageperm = entry["Image Permissions"];
 				let ProgUrl = getProgUrl(entry);
@@ -594,14 +595,17 @@ function makeTableBody(headings, data) {
 				else {
 					output += ProgTitle;
 				}
-			} else if (headings[i] == EMC.index.concerts.loc) {
+			} 
+			else if (headings[i] == EMC.index.concerts.loc) {
 				let loccombined = getLocation(entry);
 				let locmaps = getLocationGoogleMaps(entry);
  				output += `<a target="_blank" href="${locmaps}">${loccombined}</a>`;
-			} else if (headings[i] == EMC.index.concerts.direction){
+			} 
+			else if (headings[i] == EMC.index.concerts.direction){
 				let directioncleaned = getCleanedDirection(entry);
 				output += directioncleaned;
-			} else if (headings[i] == EMC.index.concerts.archive) {
+			} 
+			else if (headings[i] == EMC.index.concerts.archive) {
 				if (value){
 					if (value.match(";")){
 						value = value.trim().split(/\s*;\s*/);
@@ -665,7 +669,7 @@ function makeTableBody(headings, data) {
 									if (bpages) {
 										bibfull += `, ${bpages}`;
 									}
-									if (biburl){
+									if (biburl && bpubyear < "1928"){
 										output += `<a target="_blank" href="${biburl}">${bibfull}.</a>`;
 									} else {
 										output += `${bibfull}.`;
@@ -676,7 +680,8 @@ function makeTableBody(headings, data) {
 							}
 						}
 					}
-			} else {
+			} 
+			else {
 				output += value;
 			}
 			output += "</td>";
