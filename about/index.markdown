@@ -12,7 +12,7 @@ title: about
 </head>
 
 <style>
-	#map { height: 350px; }
+	#map { height: 0px; }
 </style>
 
 
@@ -54,13 +54,13 @@ For more details, read the [documentation](https://docs.google.com/document/d/18
 		archives.name        = "Name";		
 		archives.archloc     = "Archive Location";
 
-		let map = L.map('map').setView([50, -25], 2);
+		/*let map = L.map('map').setView([50, -25], 2);
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     		maxZoom: 19,
    			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map); 
 		
-		/*for (let i=0; i<archives.length; i++ ) {
+		for (let i=0; i<archives.length; i++ ) {
 			let entry = archives[i];
 			if (entry[archives.archloc]){
 				L.marker = L.marker(entry[archives.archloc]).addTo(map);	
