@@ -86,4 +86,4 @@ Do you know of concert programs in either public or private archives that should
 
 ### Support
 
-This project has been supported by a 2023 [Ora Frischberg Saloman Fund Award from the American Musicological Society](https://www.amsmusicology.org/page/Saloman_Winners){:target="_blank"}.
+This project has been supported by a 2023 [Ora Frishberg Saloman Fund Award from the American Musicological Society](https://www.amsmusicology.org/page/Saloman_Winners){:target="_blank"}.
