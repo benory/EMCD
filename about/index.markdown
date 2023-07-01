@@ -12,7 +12,21 @@ title: about
 </head>
 
 <style>
-	#map { height: 0px; }
+	.grid {
+		display: flex;
+	}
+
+	#map {
+  		flex: 1;
+  		height: 350px;
+	}
+
+	#map2 {
+  		flex: 1;
+  		height: 350px;
+  		margin-left: 2em;
+	}
+
 </style>
 
 
@@ -47,42 +61,58 @@ For more details, read the [documentation](https://docs.google.com/document/d/18
 
 ### The archives
 
-<div id="map">
-	<script> 
-		archives = {% include_relative archives.json %};
-		archives.archID      = "Archive ID (ARC)";
-		archives.name        = "Name";		
-		archives.archloc     = "Archive Location";
-
-		/*let map = L.map('map').setView([50, -25], 2);
-		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    		maxZoom: 19,
-   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-		}).addTo(map); 
-		
-		for (let i=0; i<archives.length; i++ ) {
-			let entry = archives[i];
-			if (entry[archives.archloc]){
-				L.marker = L.marker(entry[archives.archloc]).addTo(map);	
-			}
-  		}*/
-
-	</script>
-</div>	
-
-
 Concert programs have been located so far in the following archives:
-+ Harvard University, Harvard Theatre Collection
-+ New York Public Library, Music Division
-+ Stadtsarchiv München
-+ Universitätsarchiv Bonn
-+ University of California, Berkeley, Music Library
-+ University of Chicago, Special Collections
-+ Universitätsarchiv Freiburg
-+ Universitätsarchiv Humboldt Universität
-+ Universitätsarchiv Leipzig
+<div class="grid">
+	<div id="map">
+		<script> 
+			archives = {% include_relative archives.json %};
+			archives.archID      = "Archive ID (ARC)";
+			archives.name        = "Name";		
+			archives.archloc     = "Archive Location";
 
-Do you know of concert programs in either public or private archives that should be included in this project? [Let us know](mailto:concertsdatabase@gmail.com).
+			let map = L.map('map').setView([50, 25], 4);
+
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    		maxZoom: 19,
+	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			L.marker([50.73420546539783, 7.102690461805324]).addTo(map)
+	    		.bindPopup('Universitätsarchiv Bonn')
+	    	L.marker([47.992586641284895, 7.845301862164243]).addTo(map)
+	    		.bindPopup('Universitätsarchiv Freiburg')
+	    	L.marker([52.438027825357835, 13.53445588334833]).addTo(map)
+	    		.bindPopup('Universitätsarchiv der Humboldt-Universität zu Berlin')
+	    	L.marker([51.33587250631357, 12.388703512116019]).addTo(map)
+	    		.bindPopup('Universitätsarchiv Leipzig')
+	    	L.marker([48.16063263366055, 11.562894375163575]).addTo(map)
+	    		.bindPopup('Stadtarchiv München')
+	    	L.marker([56.505583949298945, 13.047239412811416]).addTo(map)
+	    		.bindPopup('Privat Nachlass Walter Gerstenberg')
+		</script>
+	</div>
+	<div id="map2">
+		<script> 
+			let map2 = L.map('map2').setView([37, -100], 3);
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    		maxZoom: 19,
+	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map2);
+			L.marker([42.373116227949886, -71.11528917862246]).addTo(map2)
+	    		.bindPopup('Harvard Theatre Collection, Houghton Library')
+	    	L.marker([40.773567244715764, -73.98410683081381]).addTo(map2)
+	    		.bindPopup('New York Public Library for the Performing Arts, Music Division')
+	    	L.marker([41.79541254876555, -87.59226344635543]).addTo(map2)
+	    		.bindPopup('University of Chicago Special Collections')
+	    	L.marker([37.870596548069116, -122.25578955689716]).addTo(map2)
+	    		.bindPopup('University of California, Berkeley, Music Library')
+		</script>
+	</div>	
+</div>
+
+<br>
+
+Do you know of concert programs in archives that should be included in this project? [Let us know](mailto:concertsdatabase@gmail.com).
 
 ### Support
 
