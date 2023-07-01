@@ -71,6 +71,7 @@ Concert programs have been located so far in the following archives:
 			archives.archloc     = "Archive Location";
 
 			let map = L.map('map').setView([50, 25], 4);
+			map.options.minZoom = 4;
 
 			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	    		maxZoom: 19,
@@ -94,6 +95,8 @@ Concert programs have been located so far in the following archives:
 	<div id="map2">
 		<script> 
 			let map2 = L.map('map2').setView([37, -100], 3);
+			map2.options.minZoom = 3;
+
 			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	    		maxZoom: 19,
 	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
