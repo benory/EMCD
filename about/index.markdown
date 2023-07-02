@@ -79,15 +79,15 @@ Concert programs have been located so far in the following archives:
 			}).addTo(map);
 
 			L.marker([50.73420546539783, 7.102690461805324]).addTo(map)
-	    		.bindPopup('Universitätsarchiv Bonn')
+	    		.bindPopup("<a target='_blank' href='https://www.uni-bonn.de/de/universitaet/organisation/weitere-einrichtungen/archiv-der-universitaet'>Universitätsarchiv Bonn</a>")
 	    	L.marker([47.992586641284895, 7.845301862164243]).addTo(map)
-	    		.bindPopup('Universitätsarchiv Freiburg')
+	    		.bindPopup("<a target='_blank' href='https://www.uniarchiv.uni-freiburg.de'>Universitätsarchiv Freiburg</a>")
 	    	L.marker([52.438027825357835, 13.53445588334833]).addTo(map)
-	    		.bindPopup('Universitätsarchiv der Humboldt-Universität zu Berlin')
+	    		.bindPopup("<a target='_blank' href='https://www.ub.hu-berlin.de/de/standorte/archiv'>Universitätsarchiv Humboldt Universität</a>")
 	    	L.marker([51.33587250631357, 12.388703512116019]).addTo(map)
-	    		.bindPopup('Universitätsarchiv Leipzig')
+	    		.bindPopup("<a target='_blank' href='https://www.universitaetsarchivleipzig.de'>Universitätsarchiv Leipzig</a>")
 	    	L.marker([48.16063263366055, 11.562894375163575]).addTo(map)
-	    		.bindPopup('Stadtarchiv München')
+	    		.bindPopup("<a target='_blank' href='https://stadt.muenchen.de/rathaus/verwaltung/direktorium/stadtarchiv.html'>Stadtarchiv München</a>")
 	    	L.marker([56.505583949298945, 13.047239412811416]).addTo(map)
 	    		.bindPopup('Privat Nachlass Walter Gerstenberg')
 		</script>
@@ -102,13 +102,13 @@ Concert programs have been located so far in the following archives:
 	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}).addTo(map2);
 			L.marker([42.373116227949886, -71.11528917862246]).addTo(map2)
-	    		.bindPopup('Harvard Theatre Collection, Houghton Library')
+	    		.bindPopup("<a target='_blank' href='https://library.harvard.edu/collections/harvard-theatre-collection'>Harvard Theatre Collection, Houghton Library</a>")
 	    	L.marker([40.773567244715764, -73.98410683081381]).addTo(map2)
-	    		.bindPopup('New York Public Library for the Performing Arts, Music Division')
+	    		.bindPopup("<a target='_blank' href='https://www.nypl.org/locations/lpa/music-division'>New York Public Library for the Performing Arts, Music Division</a>")
 	    	L.marker([41.79541254876555, -87.59226344635543]).addTo(map2)
-	    		.bindPopup('University of Chicago Special Collections')
+	    		.bindPopup("<a target='_blank' href='https://www.lib.uchicago.edu/scrc/'>University of Chicago Special Collections</a>")
 	    	L.marker([37.870596548069116, -122.25578955689716]).addTo(map2)
-	    		.bindPopup('University of California, Berkeley, Music Library')
+	    		.bindPopup("<a target='_blank' href='https://www.lib.berkeley.edu/visit/music'>University of California, Berkeley, Music Library</a>")
 		</script>
 	</div>	
 </div>
