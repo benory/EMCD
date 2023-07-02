@@ -72,7 +72,14 @@ Concert programs have been located so far in the following archives:
 			archives.urlde       = "URL (DE)";
 			archives.urlen       = "URL (EN)";
 
-			let map = L.map('map').setView([50, 25], 4);
+		//////////////////////////////
+		//
+		// domapsetup --
+		//
+
+		function doMapSetup() {
+
+		let map = L.map('map').setView([50, 25], 4);
 			map.options.minZoom = 4;
 
 			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -92,12 +99,15 @@ Concert programs have been located so far in the following archives:
 				console.warn("archive name", archives[i][archives.name]);
 				console.warn("archive location", archives[i][archives.archloc]);
 
-				if (url) {
-     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`<a target='_blank' href="${url}">${archives[i][archives.name]}</a>`);
-     			} else {
-     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`${archives[i][archives.name]}`);
+				if (archives[i][archives.archloc] && archives[i][archives.name]) {
+					if (url) {
+	     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`<a target='_blank' href="${url}">${archives[i][archives.name]}</a>`);
+	     			} else {
+	     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`${archives[i][archives.name]}`);
+	     			}
      			}
 			}
+
 			/*
 			L.marker([50.73420546539783, 7.102690461805324]).addTo(map)
 	    		.bindPopup("<a target='_blank' href='https://www.uni-bonn.de/de/universitaet/organisation/weitere-einrichtungen/archiv-der-universitaet'>Universitätsarchiv Bonn</a>")
@@ -112,6 +122,13 @@ Concert programs have been located so far in the following archives:
 	    	L.marker([56.505583949298945, 13.047239412811416]).addTo(map)
 	    		.bindPopup('Privat Nachlass Walter Gerstenberg')
 	    	*/
+		}
+
+		document.addEventListener("DOMContentLoaded",  function () {
+     			doMapSetup();
+			});
+
+
 		</script>
 	</div>
 	<div id="map2">
