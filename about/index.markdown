@@ -80,33 +80,33 @@ Concert programs have been located so far in the following archives:
 		function doMapSetup() {
 
 		let map = L.map('map').setView([50, 25], 4);
-			map.options.minZoom = 4;
+		map.options.minZoom = 4;
 
-			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	    		maxZoom: 19,
-	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-			}).addTo(map);
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    	maxZoom: 19,
+	   		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
 
-			for (let i=0; i < archives.length; i++) {
+		for (let i=0; i < archives.length; i++) {
 
-				let url = "";
-				if (archives[i][archives.urlde]) {
-					url = archives[i][archives.urlde];
-				} else if (archives[i][archives.urlen]) {
-					url = archives[i][archives.urlen];
-				}
-				console.warn("url", url);
-				console.warn("archive name", archives[i][archives.name]);
-				console.warn("archive location", archives[i][archives.archloc]);
-
-				if (archives[i][archives.archloc] && archives[i][archives.name]) {
-					if (url) {
-	     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`<a target='_blank' href="${url}">${archives[i][archives.name]}</a>`);
-	     			} else {
-	     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`${archives[i][archives.name]}`);
-	     			}
-     			}
+			let url = "";
+			if (archives[i][archives.urlde]) {
+				url = archives[i][archives.urlde];
+			} else if (archives[i][archives.urlen]) {
+				url = archives[i][archives.urlen];
 			}
+			console.warn("url", url);
+			console.warn("archive name", archives[i][archives.name]);
+			console.warn("archive location", archives[i][archives.archloc]);
+
+			if (archives[i][archives.archloc] && archives[i][archives.name]) {
+				if (url) {
+	     			L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`<a target='_blank' href="${url}">${archives[i][archives.name]}</a>`);
+	     		} else {
+	     			L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`${archives[i][archives.name]}`);
+	     		}
+     		}
+		}
 
 			/*
 			L.marker([50.73420546539783, 7.102690461805324]).addTo(map)
