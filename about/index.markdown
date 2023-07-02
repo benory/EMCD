@@ -65,10 +65,12 @@ Concert programs have been located so far in the following archives:
 <div class="grid">
 	<div id="map">
 		<script> 
-			archives = {% include_relative archives.json %};
+			let archives = {% include_relative archives.json %};
 			archives.archID      = "Archive ID (ARC)";
 			archives.name        = "Name";		
 			archives.archloc     = "Archive Location";
+			archives.urlde       = "URL (DE)";
+			archives.urlen       = "URL (EN)";
 
 			let map = L.map('map').setView([50, 25], 4);
 			map.options.minZoom = 4;
@@ -78,6 +80,25 @@ Concert programs have been located so far in the following archives:
 	   			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}).addTo(map);
 
+			for (let i=0; i < archives.length; i++) {
+
+				let url = "";
+				if (archives[i][archives.urlde]) {
+					url = archives[i][archives.urlde];
+				} else if (archives[i][archives.urlen]) {
+					url = archives[i][archives.urlen];
+				}
+				console.warn("url", url);
+				console.warn("archive name", archives[i][archives.name]);
+				console.warn("archive location", archives[i][archives.archloc]);
+
+				if (url) {
+     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`<a target='_blank' href="${url}">${archives[i][archives.name]}</a>`);
+     			} else {
+     				L.marker([archives[i][archives.archloc]]).addTo(map).bindPopup(`${archives[i][archives.name]}`);
+     			}
+			}
+			/*
 			L.marker([50.73420546539783, 7.102690461805324]).addTo(map)
 	    		.bindPopup("<a target='_blank' href='https://www.uni-bonn.de/de/universitaet/organisation/weitere-einrichtungen/archiv-der-universitaet'>Universitätsarchiv Bonn</a>")
 	    	L.marker([47.992586641284895, 7.845301862164243]).addTo(map)
@@ -90,6 +111,7 @@ Concert programs have been located so far in the following archives:
 	    		.bindPopup("<a target='_blank' href='https://stadt.muenchen.de/rathaus/verwaltung/direktorium/stadtarchiv.html'>Stadtarchiv München</a>")
 	    	L.marker([56.505583949298945, 13.047239412811416]).addTo(map)
 	    		.bindPopup('Privat Nachlass Walter Gerstenberg')
+	    	*/
 		</script>
 	</div>
 	<div id="map2">
