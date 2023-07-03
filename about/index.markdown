@@ -31,9 +31,9 @@ For each program of early music:
 + concert participants are identified.
 + details about performance location are entered.
 
-### Documentation
+<!-- ### Documentation
 
-For more details, read the [documentation](https://docs.google.com/document/d/18vVdL4CHMyDCxVk4t6r65NyTIwJbDcgxFDfYwpFgedg/edit){:target="_blank"} for the project (updated 19 May 2023).
+For more details, read the [documentation](https://docs.google.com/document/d/18vVdL4CHMyDCxVk4t6r65NyTIwJbDcgxFDfYwpFgedg/edit){:target="_blank"} for the project (updated 19 May 2023). -->
 
 ### The archives
 
