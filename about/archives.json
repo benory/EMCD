@@ -60,7 +60,7 @@
 		"City": "Cambridge",
 		"Name": "Harvard Theatre Collection, Houghton Library",
 		"URL (EN)": "https://library.harvard.edu/collections/harvard-theatre-collection",
-		"Archive Location": "42.373116227949886, 71.11528917862246"
+		"Archive Location": "42.373116227949886, -71.11528917862246"
 	},
 	{
 		"ID": "ARC:US_NYPL",
@@ -69,7 +69,7 @@
 		"City": "New York",
 		"Name": "New York Public Library for the Performing Arts, Music Division",
 		"URL (EN)": "https://www.nypl.org/locations/lpa/music-division",
-		"Archive Location": "40.773567244715764, 73.98410683081381"
+		"Archive Location": "40.773567244715764, -73.98410683081381"
 	},
 	{
 		"ID": "ARC:US_UC",
@@ -78,7 +78,7 @@
 		"City": "Chicago",
 		"Name": "University of Chicago Special Collections",
 		"URL (EN)": "https://www.lib.uchicago.edu/scrc/",
-		"Archive Location": "41.79541254876555, 87.59226344635543"
+		"Archive Location": "41.79541254876555, -87.59226344635543"
 	},
 	{
 		"ID": "ARC:US_UCB",
@@ -87,6 +87,6 @@
 		"City": "Berkeley",
 		"Name": "University of California, Berkeley, Music Library",
 		"URL (EN)": "https://www.lib.berkeley.edu/visit/music",
-		"Archive Location": "37.870596548069116, 122.25578955689716"
+		"Archive Location": "37.870596548069116, -122.25578955689716"
 	}
 ]
