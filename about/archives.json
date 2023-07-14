@@ -9,6 +9,15 @@
 		"Archive Location": "50.73420546539783, 7.102690461805324"
 	},
 	{
+		"ID": "ARC:DE_UA_Erlangen",
+		"Archive ID (ARC)": "ARC:DE_UA_Erlangen",
+		"Country": "Deutschland",
+		"City": "Erlangen",
+		"Name": "Universitätsarchiv Erlangen-Nürnberg",
+		"URL (DE)": "https://www.fau.de/fau/fakultaeten-und-einrichtungen/universitaetsarchiv/",
+		"Archive Location": "49.596881123387, 11.007744033231159"
+	},
+	{
 		"ID": "ARC:DE_UA_Freiburg",
 		"Archive ID (ARC)": "ARC:DE_UA_Freiburg",
 		"Country": "Deutschland",

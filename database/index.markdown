@@ -161,6 +161,7 @@ EMC.index.concerts.notes       = "Notes on Program";
 EMC.index.concerts.literature  = "Literature";
 EMC.index.concerts.image       = "Image";
 EMC.index.concerts.imageperm   = "Image Permissions";
+EMC.index.concerts.imagesource = "Image Source";
 EMC.index.concerts.extimage    = "Externally Hosted Image";
 EMC.index.archives.archID      = "Archive ID (ARC)";
 EMC.index.archives.country     = "Country";
@@ -588,9 +589,15 @@ function makeTableBody(headings, data) {
 			else if (headings[i] == EMC.index.concerts.ProgTitle) {
 				let ProgTitle = value;
 				let imageperm = entry["Image Permissions"];
+				let imagesource = entry["Image Source"];
+				let imagesourcename = "";
+				if (imagesource) {
+					let imagesourceID = EMC.lookup.archives[imagesource];
+					imagesourcename = imagesourceID[EMC.index.archives.name];
+				}
 				let ProgUrl = getProgUrl(entry);
 				if (imageperm == "yes"){
-					output += `${ProgTitle} [<a target="_blank" href="${ProgUrl}">Image</a>]`;
+					output += `<br><br>${ProgTitle} <br><br>[<a target="_blank" href="${ProgUrl}">Image courtesy of ${imagesourcename}</a>]<br><br>`;
 				}
 				else {
 					output += ProgTitle;
@@ -607,79 +614,79 @@ function makeTableBody(headings, data) {
 			} 
 			else if (headings[i] == EMC.index.concerts.archive) {
 				if (value){
+					let valueshort = value.substring(0,3);
+					let signature = entry["Signature"];
 					if (value.match(";")){
 						value = value.trim().split(/\s*;\s*/);
+						signature = signature.trim().split(/\s*;\s*/);
 					} else {
 						value = [ value ];
+						signature = [ signature ];
 					}
-					for (let i=0; i<value.length; i++){
-						let aentry = EMC.lookup.archives[value[i]];
-						let name = aentry[EMC.index.archives.name];
-						let archsig = getSignature(entry);
-						output += `${name}, ${archsig}`;
-						if (i < value.length - 1){
-							output += "; ";
-						}
-					}
-				} else {
-					let archsig = getSignature(entry);
-					if (archsig){
-						let valueshort = archsig.substring(0,3);
-							if (valueshort == "BIB"){
-								let bentry = EMC.lookup.bibliography[archsig];
-								if (bentry) {
-									let bauthor = bentry[EMC.index.bibliography.author];
-									let barticle = bentry[EMC.index.bibliography.article];
-									let bvolume = bentry[EMC.index.bibliography.volname];
-									let bedit = bentry[EMC.index.bibliography.editor];
-									let bvolnum = bentry[EMC.index.bibliography.volnum];
-									let bpub = bentry[EMC.index.bibliography.pub];
-									let bloc = bentry[EMC.index.bibliography.loc];
-									let bpubyear = bentry[EMC.index.bibliography.pubyear];
-									let bpages = bentry[EMC.index.bibliography.pages];
-									let bibfull = "";
-									let biburl = "";
-									if (bauthor) {
-										bibfull += `${bauthor}, `;
-									}
-									if (barticle) {
-										bibfull += `"${barticle}," `;
-									}
-									if (bvolume) {
-										bibfull += `<i>${bvolume}</i> `;
-									}
-									if (bedit) {
-										bibfull += `, ed. ${bedit}`;
-									}
-									if (bvolnum) {
-										bibfull += `${bvolnum} `;
-									}
-									if (bloc) {
-										bibfull += ` (${bloc}: `;
-									}
-									if (bpub) {
-										bibfull += `${bpub}, `;
-									}
-									if (bloc && bpub && bpubyear || bloc && bpubyear) {
-										bibfull += `${bpubyear})`;
-									}
-									else if (bpubyear) {
-										bibfull += ` (${bpubyear})`;
-									}
-									if (bpages) {
-										bibfull += `, ${bpages}`;
-									}
-									if (biburl && bpubyear < "1928"){
-										output += `<a target="_blank" href="${biburl}">${bibfull}.</a>`;
-									} else {
-										output += `${bibfull}.`;
-									}
-								}
-							} else {
-								output += `${archsig}`;
+					if (valueshort == "ARC") {
+						for (let i=0; i<value.length; i++){
+							let aentry = EMC.lookup.archives[value[i]];
+							let archsig = signature[i];
+							let name = aentry[EMC.index.archives.name];
+							output += `${name}, ${archsig}`;
+							if (i < value.length - 1){
+								output += "; ";
 							}
 						}
-					}
+					} else if (valueshort == "BIB"){
+						for (let i=0; i<value.length; i++){
+							let bentry = EMC.lookup.bibliography[value];
+							if (bentry) {
+								let bauthor = bentry[EMC.index.bibliography.author];
+								let barticle = bentry[EMC.index.bibliography.article];
+								let bvolume = bentry[EMC.index.bibliography.volname];
+								let bedit = bentry[EMC.index.bibliography.editor];
+								let bvolnum = bentry[EMC.index.bibliography.volnum];
+								let bpub = bentry[EMC.index.bibliography.pub];
+								let bloc = bentry[EMC.index.bibliography.loc];
+								let bpubyear = bentry[EMC.index.bibliography.pubyear];
+								let bpages = bentry[EMC.index.bibliography.pages];
+								let bibfull = "";
+								let biburl = "";
+								if (bauthor) {
+									bibfull += `${bauthor}, `;
+								}
+								if (barticle) {
+									bibfull += `"${barticle}," `;
+								}
+								if (bvolume) {
+									bibfull += `<i>${bvolume}</i> `;
+								}
+								if (bedit) {
+									bibfull += `, ed. ${bedit}`;
+								}
+								if (bvolnum) {
+									bibfull += `${bvolnum} `;
+								}
+								if (bloc) {
+									bibfull += ` (${bloc}: `;
+								}
+								if (bpub) {
+									bibfull += `${bpub}, `;
+								}
+								if (bloc && bpub && bpubyear || bloc && bpubyear) {
+									bibfull += `${bpubyear})`;
+								}
+								else if (bpubyear) {
+									bibfull += ` (${bpubyear})`;
+								}
+								if (bpages) {
+									bibfull += `, ${bpages}`;
+								}
+								if (biburl && bpubyear < "1928"){
+									output += `<a target="_blank" href="${biburl}">${bibfull}.</a>`;
+								} else {
+									output += `${bibfull}.`;
+								}
+							}
+						}
+					} 
+				}
 			} 
 			else {
 				output += value;

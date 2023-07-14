@@ -77,7 +77,8 @@
 		"Program Title": "Weltliche Abendmusik",
 		"Ensemble/Larger Org.": "Madrigalkreis Hamburg-Tübingen für seine Schwabenfahrt",
 		"Country": "Germany",
-		"Signature": "BIB:AdJb_1980, pp. 138-39",
+		"Archive (ARC)": "BIB:AdJb_1980",
+		"Signature": "pp. 138–39",
 		"Image": "https://drive.google.com/file/d/1Sx1FDvBKOkgnJF8aH5Bb5AQL0m0Ins17/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -98,10 +99,11 @@
 		"Google Maps URL": "https://goo.gl/maps/te6dyWD8BZqbkiKMA",
 		"Location Coordinates": "48.14397781714745, 11.580885536226377",
 		"Introduction": "{Gustav Becking}",
-		"Archive (ARC)": "ARC:DE_UA_Freiburg",
-		"Signature": "C101/137 (Nachlass Wilibald Gurlitt)",
-		"Image": "https://drive.google.com/file/d/1ErwJNIlQ_rbygBjU9toQ_NhYBb4WTX9w/view?usp=share_link",
-		"Image Permissions": "no"
+		"Archive (ARC)": "ARC:DE_UA_Freiburg; ARC:DE_UA_Erlangen",
+		"Signature": "C101/137 (Nachlass Wilibald Gurlitt); C4/2b, Nr. 2 (Collegium musicum, 1924–1958)",
+		"Image": "https://drive.google.com/file/d/18asgA6ydjEqGbMOoTOdTfqk1Qwkf18nz/view?usp=share_link",
+		"Image Permissions": "yes",
+		"Image Source": "ARC:DE_UA_Erlangen"
 	},
 	{
 		"ID": "Prog_1924_12_18",
@@ -144,10 +146,11 @@
 		"Introduction": "{Gustav Becking}; {Oskar Dischner}",
 		"Direction": "{Gustav Becking}; {Oskar Dischner}",
 		"Performers": "{Willi Götz}, solo tenor",
-		"Archive (ARC)": "ARC:DE_UA_Leipzig",
-		"Signature": "NA Besseler 19 (Nachlass Heinrich Besseler)",
-		"Image": "https://drive.google.com/file/d/1s6-knn-TfWDDZU6KmH6zO0J_vwV09DPn/view?usp=sharing",
-		"Image Permissions": "no"
+		"Archive (ARC)": "ARC:DE_UA_Leipzig; ARC:DE_UA_Erlangen",
+		"Signature": "NA Besseler 19 (Nachlass Heinrich Besseler); C4/2b, Nr. 2 (Collegium musicum, 1924–1958)",
+		"Image": "https://drive.google.com/file/d/1s6-knn-TfWDDZU6KmH6zO0J_vwV09DPn/view?usp=share_link",
+		"Image Permissions": "yes",
+		"Image Source": "ARC:DE_UA_Erlangen"
 	},
 	{
 		"ID": "Prog_1926_07_29",
@@ -213,7 +216,8 @@
 		"Google Maps URL": "https://goo.gl/maps/TcRnQugKdgLL85go8",
 		"Location Coordinates": "52.51761827287369, 13.35291617928933",
 		"Direction": "{Walter Rein}",
-		"Signature": "BIB:AdJb_1980, p. 328",
+		"Archive (ARC)": "BIB:AdJb_1980",
+		"Signature": "p. 328",
 		"Image": "https://drive.google.com/file/d/1yKj_lumZlz-tRslLtJcuYwpm0BPMIcoj/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -234,7 +238,7 @@
 		"Location Coordinates": "47.370076259332784, 8.54392301685933",
 		"Direction": "{Jacques Handschin}",
 		"Performers": "{Walter Sterk}, tenor; {Hans Brenner}, tenor; {Ella Schmidlin}, alto; {Arnold Geering}, baritone",
-		"Signature": "BIB:Handschin_1928",
+		"Archive (ARC)": "BIB:Handschin_1928",
 		"Image": "https://drive.google.com/file/d/1w9Ja10TTGZp4av3aGO8iAUgH9IKlYve6/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -255,7 +259,7 @@
 		"Location Coordinates": "46.95123430842931, 7.443913114983031",
 		"Direction": "{Jacques Handschin}",
 		"Performers": "{Walter Sterk}, tenor; {Hans Brenner}, tenor; {Ella Schmidlin}, alto; {Arnold Geering}, baritone",
-		"Signature": "BIB:Handschin_1928",
+		"Archive (ARC)": "BIB:Handschin_1928",
 		"Image": "https://drive.google.com/file/d/1w9Ja10TTGZp4av3aGO8iAUgH9IKlYve6/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -276,7 +280,7 @@
 		"Location Coordinates": "47.559130852806874, 7.58486586159637",
 		"Direction": "{Jacques Handschin}",
 		"Performers": "{Walter Sterk}, tenor; {Hans Brenner}, tenor; {Ella Schmidlin}, alto; {Arnold Geering}, baritone",
-		"Signature": "BIB:Handschin_1928",
+		"Archive (ARC)": "BIB:Handschin_1928",
 		"Image": "https://drive.google.com/file/d/1w9Ja10TTGZp4av3aGO8iAUgH9IKlYve6/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -298,7 +302,8 @@
 		"Location Coordinates": "52.52684672811597, 13.412445467602783",
 		"Introduction": "{Leo Kestenberg}",
 		"Direction": "{Hermann Reichenbach}; {Fritz Jöde}; {Georg Götsch}; {Bethe Trümpy}; {Karl Vogt}",
-		"Signature": "BIB:AdJb_1980, pp. 728–29",
+		"Archive (ARC)": "BIB:AdJb_1980",
+		"Signature": "pp. 728–29",
 		"Image": "https://drive.google.com/file/d/1MSjAvLeuhlFgh2EYe0t29nql5Lfljjo0/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -311,7 +316,8 @@
 		"Program Title": "Weltliche Abendmusik",
 		"Ensemble/Larger Org.": "Madrigalkreis Hamburg-Tübingen",
 		"Country": "Germany",
-		"Signature": "BIB:AdJb_1980, p. 345",
+		"Archive (ARC)": "BIB:AdJb_1980",
+		"Signature": "p. 345",
 		"Notes on Program": "Fall 1928",
 		"Image": "https://drive.google.com/file/d/1enEE_holqSBr4AYYTw1tWhGRX_CIWwQl/view?usp=share_link",
 		"Image Permissions": "no"
@@ -328,7 +334,8 @@
 		"State": "Hamburg",
 		"Country": "Germany",
 		"Direction": "{Heinrich Schumann}",
-		"Signature": "BIB:AdJb_1980, p. 508",
+		"Archive (ARC)": "BIB:AdJb_1980",
+		"Signature": "p. 508",
 		"Image": "https://drive.google.com/file/d/13mvOGdG5Wu28lI325Twb6UpA6_rgxUm6/view?usp=share_link",
 		"Image Permissions": "no"
 	},
@@ -609,7 +616,7 @@
 		"Location Coordinates": "42.280817403500144, -83.73804487295591",
 		"Direction": "{Louise Cuyler}",
 		"Performers": "{Andrew Minor}, Chamber Orchestra conductor; {Norma Swinney Heyde}, soprano",
-		"Signature": "University of Michigan School of Music, \"School of Music Programs, 1948–49 \" (unpublished)",
+		"Archive (ARC)": "BIB:UMich_1948_49",
 		"Image": "https://drive.google.com/file/d/1iT8oj8sGgoTheds_LC954kpaCJeEQPWE/view?usp=share_link",
 		"Image Permissions": "no",
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
@@ -632,7 +639,7 @@
 		"Location Coordinates": "42.27922785922109, -83.73915320357928",
 		"Direction": "{Maynard Klein}",
 		"Performers": "{Harold Haugh}, tenor; {George Exon}, piano; {Priscilla Eitel}, harp; {Mary Jane Stephan}, piano; {Bertram Strickland}, organ",
-		"Signature": "University of Michigan School of Music, \"School of Music Programs, 1948–49 \" (unpublished)",
+		"Archive (ARC)": "BIB:UMich_1948_49",
 		"Image": "https://drive.google.com/file/d/1Ri1YWJdh3kw2pUnCf0N7P3XyfhaJRJAx/view?usp=share_link",
 		"Image Permissions": "no",
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
@@ -673,7 +680,7 @@
 		"Location Coordinates": "42.280817403500144, -83.73804487295591",
 		"Direction": "{Louise Cuyler}",
 		"Performers": "{Andrew Minor}, Chamber Orchestra conductor; {Norma Swinney Heyde}, soprano; {Evelyn Wohlgemuth}, mezzo-soprano; {Harriet Brask}, contralto; {Samuel Durrance}, baritone; {James Mearns}, harpsichord",
-		"Signature": "University of Michigan School of Music, \"School of Music Programs, 1948–49 \" (unpublished)",
+		"Archive (ARC)": "BIB:UMich_1948_49",
 		"Image": "https://drive.google.com/file/d/19f6urYfT0OIvjPL9HHey8zwklFRpOoez/view?usp=share_link",
 		"Image Permissions": "no",
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
@@ -790,7 +797,8 @@
 		"Location Coordinates": "49.017452924755794, 12.10923165184053",
 		"Direction": "{Ernst Schwarzmaier}",
 		"Performers": "{Willi Schönfelder}, {Rudolf Schindler}, {Otto Vielberth}, {Irmtraud Sawade}, Regensburger Violinquartett",
-		"Signature": "BIB:Kraus_1985, p. 25",
+		"Archive (ARC)": "BIB:Kraus_1985",
+		"Signature": "p. 25",
 		"Image": "https://drive.google.com/file/d/1RNADGea36DDVTkK0ZT5-5YE6HkSwZ4hr/view?usp=share_link",
 		"Image Permissions": "no"
 	},
