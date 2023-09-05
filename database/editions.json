@@ -168,6 +168,17 @@
 		"Publication Year": "1920"
 	},
 	{
+		"ID": "Ficker_1930",
+		"Edition": "Ficker_1930",
+		"ID Type": "edition",
+		"Composer/Author": "Perotinus",
+		"Name of Volume/Journal": "Organum quadruplum \"Sederunt principes\"",
+		"Editor": "Rudolf von Ficker",
+		"Location": "Vienna",
+		"Publisher": "Universal Edition",
+		"Publication Year": "1930"
+	},
+	{
 		"ID": "Gennrich_1921",
 		"Edition": "Gennrich_1921",
 		"ID Type": "edition",

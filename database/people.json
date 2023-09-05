@@ -8,7 +8,7 @@
 		"ID": "Armstrong, Thomas",
 		"Person": "Armstrong, Thomas",
 		"ID Type": "person",
-		"Birth Year": "1989",
+		"Birth Year": "1898",
 		"Death Year": "1994",
 		"Position": "organist, conductor",
 		"Doctoral Degree": "DMus, University of Oxford",
@@ -48,14 +48,28 @@
 		"Employers": "Universität Leipzig, Universität Erlangen, University of Utrecht, University of Prague",
 		"BMLO ID": "b0320",
 		"BMLO Link": "https://bmlo.de/b0320",
+		"GND ID": "118508180",
+		"GND URL": "https://explore.gnd.network/gnd/118508180",
+		"VIAF ID": "15560383",
+		"VIAF URL": "http://viaf.org/viaf/15560383",
 		"Source of Information": "Oxford Music Online"
 	},
 	{
 		"ID": "Berberich, Ludwig",
 		"Person": "Berberich, Ludwig",
 		"ID Type": "person",
+		"Birth Year": "1882",
+		"Death Year": "1965",
+		"Position": "choirmaster, composer, editor, arranger",
+		"Places Active": "Munich, Freising, Regensburg",
+		"Employers": "Münchner Dom",
 		"BMLO ID": "b0419",
-		"BMLO Link": "https://bmlo.de/b0419"
+		"BMLO Link": "https://bmlo.de/b0419",
+		"GND ID": "116124806",
+		"GND URL": "https://explore.gnd.network/gnd/116124806",
+		"VIAF ID": "35200154",
+		"VIAF URL": "http://viaf.org/viaf/35200154",
+		"Source of Information": "BMLO"
 	},
 	{
 		"ID": "Besseler, Heinrich",
