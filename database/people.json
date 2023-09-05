@@ -388,6 +388,11 @@
 		"Source of Information": "Oxford Music Online"
 	},
 	{
+		"ID": "Gerstenberg, Walter",
+		"Person": "Gerstenberg, Walter",
+		"ID Type": "person"
+	},
+	{
 		"ID": "Glover, Robert",
 		"Person": "Glover, Robert",
 		"ID Type": "person"
@@ -1040,6 +1045,11 @@
 	{
 		"ID": "Sterk, Walter",
 		"Person": "Sterk, Walter",
+		"ID Type": "person"
+	},
+	{
+		"ID": "Steves, H. H.",
+		"Person": "Steves, H. H.",
 		"ID Type": "person"
 	},
 	{

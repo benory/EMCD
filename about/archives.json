@@ -54,6 +54,17 @@
 		"GND URL": "https://explore.gnd.network/gnd/5533991-8"
 	},
 	{
+		"ID": "ARC:DE_UA_Koln",
+		"Archive ID (ARC)": "ARC:DE_UA_Koln",
+		"Country": "Deutschland",
+		"City": "Koln",
+		"Name": "Universitätsarchiv Köln",
+		"URL (DE)": "https://uniarchiv.uni-koeln.de",
+		"Archive Location": "50.92437842624867, 6.938702539065224",
+		"GND ID": "10068465-8",
+		"GND URL": "https://explore.gnd.network/gnd/10068465-8"
+	},
+	{
 		"ID": "ARC:DE_UA_Munchen",
 		"Archive ID (ARC)": "ARC:DE_UA_Munchen",
 		"Country": "Deutschland",
