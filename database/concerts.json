@@ -187,6 +187,23 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1927_05_xx",
+		"Program": "Prog_1927_05_xx",
+		"ID Type": "concert",
+		"Year": "1927",
+		"Month": "5",
+		"Date": "1927-5",
+		"Ensemble/Larger Org.": "Collegium Musicum Vocale der Friedrich-Wilhelms-Universität Berlin",
+		"City": "Berlin",
+		"State": "Berlin",
+		"Country": "Germany",
+		"Direction": "{Friedrich Blume}",
+		"Archive (ARC)": "BIB:Blume_1976",
+		"Signature": "p. 18",
+		"Image": "https://drive.google.com/file/d/1nHbFTKE6RQy18MCEd3gSs7M6lEWTHPoY/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1927_07_06",
 		"Program": "Prog_1927_07_06",
 		"ID Type": "concert",
@@ -445,7 +462,7 @@
 		"Direction": "{Walter Gerstenberg}",
 		"Performers": "{H. H. Steves}, organ",
 		"Archive (ARC)": "ARC:DE_UA_Koln",
-		"Signature": "28/407, Akten der Universität Köln betr. Musikwissenschaftl. Institut., 1930–1941",
+		"Signature": "28/407 (Akten der Universität Köln betr. Musikwissenschaftl. Institut., 1930–1941)",
 		"Notes on Program": "not found in other Collegium musicum repository in Köln",
 		"Image": "https://drive.google.com/file/d/1ewmVaC2InUjpZkwwqm92EfOljs1c1rxk/view?usp=share_link",
 		"Image Permissions": "no"
