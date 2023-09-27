@@ -23,6 +23,7 @@ archives.name    = "Name";
 archives.archloc = "Archive Location";
 archives.urlde   = "URL (DE)";
 archives.urlen   = "URL (EN)";
+archives.uroth   = "URL (other)";
 
 for (let i=0; i<archives.length; i++){
 	console.warn("locations", archives[i][archives.archloc]);
@@ -112,6 +113,8 @@ console.warn("GOT HERE BBB");
 			url = archives[i][archives.urlde];
 		} else if (archives[i][archives.urlen]) {
 			url = archives[i][archives.urlen];
+		} else if (archives[i][archives.uroth]) {
+			url = archives[i][archives.uroth];
 		}
 		console.warn("url", url);
 		console.warn("archive name", archives[i][archives.name]);
