@@ -87,6 +87,17 @@
 		"GND URL": "https://explore.gnd.network/gnd/2022592-1"
 	},
 	{
+		"ID": "ARC:NL_NMI",
+		"Archive ID (ARC)": "ARC:NL_NMI",
+		"Country": "Netherlands",
+		"City": "The Hague",
+		"Name": "Nederlands Muziek Instituut",
+		"URL (other)": "https://nederlandsmuziekinstituut.nl",
+		"Archive Location": "52.07815470372439, 4.317346163220999",
+		"GND ID": "7850016-3",
+		"GND URL": "https://explore.gnd.network/gnd/7850016-3"
+	},
+	{
 		"ID": "ARC:PN_WG",
 		"Archive ID (ARC)": "ARC:PN_WG",
 		"Country": "Sweden",
