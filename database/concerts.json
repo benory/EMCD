@@ -1,6 +1,6 @@
 [
 	{
-		"o": "Prog_1915_11_17",
+		"ID": "Prog_1915_11_17",
 		"Program": "Prog_1915_11_17",
 		"ID Type": "concert",
 		"Year": "1915",
@@ -20,7 +20,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1924_04_03",
+		"ID": "Prog_1924_04_03",
 		"Program": "Prog_1924_04_03",
 		"ID Type": "concert",
 		"Year": "1924",
@@ -44,7 +44,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1924_04_08",
+		"ID": "Prog_1924_04_08",
 		"Program": "Prog_1924_04_08",
 		"ID Type": "concert",
 		"Year": "1924",
@@ -68,7 +68,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1924_10_xx",
+		"ID": "Prog_1924_10_xx",
 		"Program": "Prog_1924_10_xx",
 		"ID Type": "concert",
 		"Year": "1924",
@@ -83,7 +83,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1924_12_17",
+		"ID": "Prog_1924_12_17",
 		"Program": "Prog_1924_12_17",
 		"ID Type": "concert",
 		"Year": "1924",
@@ -106,7 +106,7 @@
 		"Image Source": "ARC:DE_UA_Erlangen"
 	},
 	{
-		"o": "Prog_1924_12_18",
+		"ID": "Prog_1924_12_18",
 		"Program": "Prog_1924_12_18",
 		"ID Type": "concert",
 		"Year": "1924",
@@ -128,7 +128,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1926_02_20",
+		"ID": "Prog_1926_02_20",
 		"Program": "Prog_1926_02_20",
 		"ID Type": "concert",
 		"Year": "1926",
@@ -153,7 +153,7 @@
 		"Image Source": "ARC:DE_UA_Erlangen"
 	},
 	{
-		"o": "Prog_1926_07_29",
+		"ID": "Prog_1926_07_29",
 		"Program": "Prog_1926_07_29",
 		"ID Type": "concert",
 		"Year": "1926",
@@ -177,7 +177,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1927_05_xx",
+		"ID": "Prog_1927_05_xx",
 		"Program": "Prog_1927_05_xx",
 		"ID Type": "concert",
 		"Year": "1927",
@@ -194,7 +194,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1927_07_06",
+		"ID": "Prog_1927_07_06",
 		"Program": "Prog_1927_07_06",
 		"ID Type": "concert",
 		"Year": "1927",
@@ -217,7 +217,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1927_09_03",
+		"ID": "Prog_1927_09_03",
 		"Program": "Prog_1927_09_03",
 		"ID Type": "concert",
 		"Year": "1927",
@@ -239,7 +239,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1928_05_16",
+		"ID": "Prog_1928_05_16",
 		"Program": "Prog_1928_05_16",
 		"ID Type": "concert",
 		"Year": "1928",
@@ -260,7 +260,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1928_05_17",
+		"ID": "Prog_1928_05_17",
 		"Program": "Prog_1928_05_17",
 		"ID Type": "concert",
 		"Year": "1928",
@@ -281,7 +281,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1928_05_30",
+		"ID": "Prog_1928_05_30",
 		"Program": "Prog_1928_05_30",
 		"ID Type": "concert",
 		"Year": "1928",
@@ -302,7 +302,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1928_10_28",
+		"ID": "Prog_1928_10_28",
 		"Program": "Prog_1928_10_28",
 		"ID Type": "concert",
 		"Year": "1928",
@@ -325,7 +325,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1928_xx_xx",
+		"ID": "Prog_1928_xx_xx",
 		"Program": "Prog_1928_xx_xx",
 		"ID Type": "concert",
 		"Year": "1928",
@@ -340,7 +340,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1930_xx_xx",
+		"ID": "Prog_1930_xx_xx",
 		"Program": "Prog_1930_xx_xx",
 		"ID Type": "concert",
 		"Year": "1930",
@@ -357,7 +357,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1931_06_22",
+		"ID": "Prog_1931_06_22",
 		"Program": "Prog_1931_06_22",
 		"ID Type": "concert",
 		"Year": "1931",
@@ -377,7 +377,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1931_06_24",
+		"ID": "Prog_1931_06_24",
 		"Program": "Prog_1931_06_24",
 		"ID Type": "concert",
 		"Year": "1931",
@@ -396,7 +396,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1933_02_24",
+		"ID": "Prog_1933_02_24",
 		"Program": "Prog_1933_02_24",
 		"ID Type": "concert",
 		"Year": "1933",
@@ -414,7 +414,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1933_06_14",
+		"ID": "Prog_1933_06_14",
 		"Program": "Prog_1933_06_14",
 		"ID Type": "concert",
 		"Year": "1933",
@@ -434,7 +434,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1935_02_06",
+		"ID": "Prog_1935_02_06",
 		"Program": "Prog_1935_02_06",
 		"ID Type": "concert",
 		"Year": "1935",
@@ -458,7 +458,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1940_12_01",
+		"ID": "Prog_1940_12_01",
 		"Program": "Prog_1940_12_01",
 		"ID Type": "concert",
 		"Year": "1940",
@@ -479,7 +479,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1943_02_06",
+		"ID": "Prog_1943_02_06",
 		"Program": "Prog_1943_02_06",
 		"ID Type": "concert",
 		"Year": "1943",
@@ -502,7 +502,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1943_06_05",
+		"ID": "Prog_1943_06_05",
 		"Program": "Prog_1943_06_05",
 		"ID Type": "concert",
 		"Year": "1943",
@@ -526,7 +526,7 @@
 		"Externally Hosted Image": "https://digital.ncdcr.gov/digital/collection/p249901coll44/id/628/rec/7"
 	},
 	{
-		"o": "Prog_1944_09_02",
+		"ID": "Prog_1944_09_02",
 		"Program": "Prog_1944_09_02",
 		"ID Type": "concert",
 		"Year": "1944",
@@ -547,7 +547,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1945_03_16",
+		"ID": "Prog_1945_03_16",
 		"Program": "Prog_1945_03_16",
 		"ID Type": "concert",
 		"Year": "1945",
@@ -571,7 +571,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1946_03_08",
+		"ID": "Prog_1946_03_08",
 		"Program": "Prog_1946_03_08",
 		"ID Type": "concert",
 		"Year": "1946",
@@ -593,7 +593,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1946_05_24",
+		"ID": "Prog_1946_05_24",
 		"Program": "Prog_1946_05_24",
 		"ID Type": "concert",
 		"Year": "1946",
@@ -615,7 +615,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1947_04_24",
+		"ID": "Prog_1947_04_24",
 		"Program": "Prog_1947_04_24",
 		"ID Type": "concert",
 		"Year": "1947",
@@ -637,7 +637,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1947_07_05",
+		"ID": "Prog_1947_07_05",
 		"Program": "Prog_1947_07_05",
 		"ID Type": "concert",
 		"Year": "1947",
@@ -660,7 +660,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1948_04_02",
+		"ID": "Prog_1948_04_02",
 		"Program": "Prog_1948_04_02",
 		"ID Type": "concert",
 		"Year": "1948",
@@ -685,7 +685,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1948_07_30",
+		"ID": "Prog_1948_07_30",
 		"Program": "Prog_1948_07_30",
 		"ID Type": "concert",
 		"Year": "1948",
@@ -708,7 +708,7 @@
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
 	},
 	{
-		"o": "Prog_1948_12_16",
+		"ID": "Prog_1948_12_16",
 		"Program": "Prog_1948_12_16",
 		"ID Type": "concert",
 		"Year": "1948",
@@ -731,7 +731,7 @@
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
 	},
 	{
-		"o": "Prog_1949_04_30",
+		"ID": "Prog_1949_04_30",
 		"Program": "Prog_1949_04_30",
 		"ID Type": "concert",
 		"Year": "1949",
@@ -749,7 +749,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1949_05_12",
+		"ID": "Prog_1949_05_12",
 		"Program": "Prog_1949_05_12",
 		"ID Type": "concert",
 		"Year": "1949",
@@ -772,7 +772,7 @@
 		"Externally Hosted Image": "https://search.lib.umich.edu/catalog/record/990000461900106381"
 	},
 	{
-		"o": "Prog_1949_07_03",
+		"ID": "Prog_1949_07_03",
 		"Program": "Prog_1949_07_03",
 		"ID Type": "concert",
 		"Year": "1949",
@@ -797,7 +797,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1950_01_27",
+		"ID": "Prog_1950_01_27",
 		"Program": "Prog_1950_01_27",
 		"ID Type": "concert",
 		"Year": "1950",
@@ -818,7 +818,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1950_03_31",
+		"ID": "Prog_1950_03_31",
 		"Program": "Prog_1950_03_31",
 		"ID Type": "concert",
 		"Year": "1950",
@@ -842,7 +842,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1950_04_15",
+		"ID": "Prog_1950_04_15",
 		"Program": "Prog_1950_04_15",
 		"ID Type": "concert",
 		"Year": "1950",
@@ -866,7 +866,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1951_03_12",
+		"ID": "Prog_1951_03_12",
 		"Program": "Prog_1951_03_12",
 		"ID Type": "concert",
 		"Year": "1951",
@@ -889,7 +889,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1952_01_08",
+		"ID": "Prog_1952_01_08",
 		"Program": "Prog_1952_01_08",
 		"ID Type": "concert",
 		"Year": "1952",
@@ -911,7 +911,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1952_06_04",
+		"ID": "Prog_1952_06_04",
 		"Program": "Prog_1952_06_04",
 		"ID Type": "concert",
 		"Year": "1952",
@@ -932,7 +932,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1952_xx_xx",
+		"ID": "Prog_1952_xx_xx",
 		"Program": "Prog_1952_xx_xx",
 		"ID Type": "concert",
 		"Year": "1952",
@@ -945,7 +945,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1954_11_26",
+		"ID": "Prog_1954_11_26",
 		"Program": "Prog_1954_11_26",
 		"ID Type": "concert",
 		"Year": "1954",
@@ -967,7 +967,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1955_06_30",
+		"ID": "Prog_1955_06_30",
 		"Program": "Prog_1955_06_30",
 		"ID Type": "concert",
 		"Year": "1955",
@@ -989,7 +989,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1955_07_02",
+		"ID": "Prog_1955_07_02",
 		"Program": "Prog_1955_07_02",
 		"ID Type": "concert",
 		"Year": "1955",
@@ -1010,7 +1010,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1955_07_03",
+		"ID": "Prog_1955_07_03",
 		"Program": "Prog_1955_07_03",
 		"ID Type": "concert",
 		"Year": "1955",
@@ -1032,7 +1032,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1956_04_18",
+		"ID": "Prog_1956_04_18",
 		"Program": "Prog_1956_04_18",
 		"ID Type": "concert",
 		"Year": "1956",
@@ -1056,7 +1056,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1956_07_31",
+		"ID": "Prog_1956_07_31",
 		"Program": "Prog_1956_07_31",
 		"ID Type": "concert",
 		"Year": "1956",
@@ -1079,7 +1079,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1956_11_05",
+		"ID": "Prog_1956_11_05",
 		"Program": "Prog_1956_11_05",
 		"ID Type": "concert",
 		"Year": "1956",
@@ -1102,7 +1102,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1956_11_12",
+		"ID": "Prog_1956_11_12",
 		"Program": "Prog_1956_11_12",
 		"ID Type": "concert",
 		"Year": "1956",
@@ -1125,7 +1125,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1956_11_19",
+		"ID": "Prog_1956_11_19",
 		"Program": "Prog_1956_11_19",
 		"ID Type": "concert",
 		"Year": "1956",
@@ -1148,7 +1148,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1957_04_13",
+		"ID": "Prog_1957_04_13",
 		"Program": "Prog_1957_04_13",
 		"ID Type": "concert",
 		"Year": "1957",
@@ -1172,7 +1172,7 @@
 		"Image Permissions": "no"
 	},
 	{
-		"o": "Prog_1959_03_13",
+		"ID": "Prog_1959_03_13",
 		"Program": "Prog_1959_03_13",
 		"ID Type": "concert",
 		"Year": "1959",
