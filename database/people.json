@@ -105,6 +105,11 @@
 		"Source of Information": "Oxford Music Online"
 	},
 	{
+		"ID": "Bley, Gustav",
+		"Person": "Bley, Gustav",
+		"ID Type": "person"
+	},
+	{
 		"ID": "Blume, Friedrich",
 		"Person": "Blume, Friedrich",
 		"ID Type": "person",
@@ -1021,6 +1026,11 @@
 		"ID Type": "person"
 	},
 	{
+		"ID": "Mühlbauer-Boeck, Esther",
+		"Person": "Mühlbauer-Boeck, Esther",
+		"ID Type": "person"
+	},
+	{
 		"ID": "Müller, Liselotte",
 		"Person": "Müller, Liselotte",
 		"ID Type": "person",
@@ -1033,8 +1043,8 @@
 		"ID Type": "person"
 	},
 	{
-		"ID": "Nobel, Felix de",
-		"Person": "Nobel, Felix de",
+		"ID": "Nobel, Félix de",
+		"Person": "Nobel, Félix de",
 		"ID Type": "person",
 		"Birth Year": "1907",
 		"Death Year": "1981",
@@ -1437,7 +1447,7 @@
 		"GND URL": "https://explore.gnd.network/gnd/1055471162",
 		"VIAF ID": "16820809",
 		"VIAF URL": "http://viaf.org/viaf/16820809",
-		"Literature": "#N/A",
+		"Literature": "BIB:Leitch_1978",
 		"Pages": "p. 327"
 	},
 	{
@@ -1459,7 +1469,7 @@
 		"VIAF ID": "46948131",
 		"VIAF URL": "http://viaf.org/viaf/46948131",
 		"Source of Information": "Oxford Music Online",
-		"Literature": "Haskell_1988",
+		"Literature": "BIB:Haskell_1988",
 		"Pages": "pp. 62–63"
 	},
 	{
@@ -1484,6 +1494,18 @@
 		"ID": "Wild, Erika",
 		"Person": "Wild, Erika",
 		"ID Type": "person"
+	},
+	{
+		"ID": "Wismeyer, Heinrich",
+		"Person": "Wismeyer, Heinrich",
+		"ID Type": "person",
+		"Birth Year": "1898",
+		"Death Year": "1985",
+		"Position": "priest, orgnaist, composer, music teacher",
+		"GND ID": "118634062",
+		"GND URL": "https://explore.gnd.network/gnd/118634062",
+		"VIAF ID": "59877627",
+		"VIAF URL": "http://viaf.org/viaf/59877627"
 	},
 	{
 		"ID": "Wohlgemuth, Evelyn",

@@ -2260,13 +2260,16 @@
 		"Places Active": "France"
 	},
 	{
-		"ID": "Ranieri",
-		"Composer": "Ranieri",
+		"ID": "Rainieri",
+		"Composer": "Rainieri",
 		"ID Type": "composer",
 		"Alias": "Ranier",
 		"Composer RISM ID": "pe41018964",
 		"Composer RISM Link": "https://rism.online/people/41018964",
-		"Flourished": "–"
+		"Start of CYA": "1519",
+		"End of CYA": "1519",
+		"Flourished": "1519–1519",
+		"Places Active": "Italy"
 	},
 	{
 		"ID": "Rore, Cipriano de",
