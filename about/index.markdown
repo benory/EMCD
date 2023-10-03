@@ -12,7 +12,7 @@ But this project argues that performance in more formal contexts was also essent
 
 ## The project
 
-This project aims to meet this challenge by creating a relational database and mapping tool that will allow users to selectively display patterns of carefully-curated data from these programs. Users will be able to query the database to ask questions about the popularization of repertoires; the use of new performance and scholarly editions; the figures involved in the concerts; the early music objects that scholars and performers referenced and transcribed from; and the establishment of local, national, and international early music canons.
+This project, founded in 2023 by [Benjamin Ory](https://benjaminory.com), aims to meet this challenge by creating a relational database and mapping tool that will allow users to selectively display patterns of carefully-curated data from these programs. Users will be able to query the database to ask questions about the popularization of repertoires; the use of new performance and scholarly editions; the figures involved in the concerts; the early music objects that scholars and performers referenced and transcribed from; and the establishment of local, national, and international early music canons.
 
 Collecting this information is not simple: these programs are rarely published or digitized, but are instead often only found buried in personnel and institute files in university archives. This project seeks to collate and map materials, and provide context for important concerts. It also aims to enable users to flexibly manipulate this data to answer their own research questions.
 

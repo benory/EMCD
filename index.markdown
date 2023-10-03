@@ -11,13 +11,9 @@ layout: page
 
 ![sample program](sample_program.png)
 
-The Early Music Concerts Database catalogues programs of medieval and Renaissance music in Europe and the United States from roughly 1915 through 1960. The project, founded by [Benjamin Ory](https://www.benjaminory.com), seeks to better understand the emergence of the early music performance tradition.
-+ Learn more [about this project](about).
-+ Access the [concert program database](database).
+The Early Music Concerts Database catalogues concert programs of medieval and Renaissance music from roughly 1915 through 1960. Read [about this project](about) or [browse the database](database).<br><br>
 
-<br>
-
-### Project data
+#### Project data
 + 48 catalogued concerts
 + 497 individual performed works, including pieces by 130 individual composers 
 + 158 musicologists, singers, and musicians catalogued
