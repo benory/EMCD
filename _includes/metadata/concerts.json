@@ -945,6 +945,27 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1953_10_12",
+		"Program": "Prog_1953_10_12",
+		"ID Type": "concert",
+		"Year": "1953",
+		"Month": "10",
+		"Day": "12",
+		"Date": "1953-10-12",
+		"Ensemble/Larger Org.": "Nederlands Kammerkoor",
+		"Location": "Nutsdepartement",
+		"City": "Deventer",
+		"State": "Overijssel",
+		"Country": "Netherlands",
+		"Google Maps URL": "https://maps.app.goo.gl/itCC45tP97hVRVuPA",
+		"Location Coordinates": "52.26572920305039, 6.156572468655892",
+		"Direction": "{Félix de Nobel}",
+		"Archive (ARC)": "ARC:NL_NMI",
+		"Signature": "Nederlands Kamerkoor, Box 18",
+		"Image": "https://drive.google.com/file/d/1WrZZ0vOvv2aQmKlNzwW-z3foz4thmDeU/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1954_11_26",
 		"Program": "Prog_1954_11_26",
 		"ID Type": "concert",
