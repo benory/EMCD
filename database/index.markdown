@@ -39,6 +39,17 @@ title: database
  		text-decoration: underline;
  	}
 
+	#input {
+		background-image: url('/database/searchicon.png'); /* Add a search icon to input */
+		background-position: 10px 12px; /* Position the search icon */
+		background-repeat: no-repeat; /* Do not repeat the icon image */
+		border: 1px solid #ddd; /* Add a grey border */
+		font-size: 16px; /* Increase font-size */
+		margin-bottom: 12px; /* Add some space below the input */
+		padding: 12px 20px 12px 40px; /* Add some padding */
+		width: 37%; /* Full-width */
+	}
+
 </style>
 
 <script>
@@ -82,6 +93,8 @@ function displaySheet(name) {
 	<span class="sheet-button" data-sheet="works">Works</span>
 	<span class="sheet-button" data-sheet="concerts">Concerts</span>
 </div>
+
+<input type="text" id="input" onkeyup="UserSearch()" placeholder="Enter title, composer, source, or date">
 
 <div id="browse-interface">
 	<div class="sheet-display" data-sheet="works">
@@ -698,7 +711,29 @@ function makeTableBody(headings, data) {
 	return output;
 }
 
+//////////////////////////////
+//
+// UserSearch --
+//
 
+function UserSearch() {
+	let tr    = document.querySelectorAll("div.results-list tbody tr");
+	let input = document.querySelector("#input");
+	let regex = new RegExp(input.value, 'i');
+
+	// Loop through all table rows, hiding those that don't match the search query:
+	for (let i=0; i<tr.length; i++) {
+		let td = tr[i].querySelectorAll("td");
+		let found = false;
+		for (let j=0; j<td.length; j++) {
+			if (td[j].innerText.match(regex)) {
+				found = true;
+				break;
+			}
+		}
+		tr[i].style.display = found ? "" : "none";
+	}
+}
 
 //////////////////////////////
 //
