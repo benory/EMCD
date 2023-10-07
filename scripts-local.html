@@ -1,0 +1,64 @@
+<script>
+
+let EMC = {};
+EMC.METADATA = {};
+EMC.METADATA.works = {% include metadata/works.json %};
+EMC.METADATA.concerts = {% include metadata/concerts.json %};
+EMC.METADATA.people = {% include metadata/people.json %};
+EMC.METADATA.composers = {% include metadata/composers.json %};
+
+document.addEventListener("DOMContentLoaded", function () {
+	fillInCensusData(EMC.METADATA);
+});
+
+
+function fillInCensusData(data) {
+	let workCount = 0;
+	let concertCount = 0;
+	let personCount = 0;
+	let composerCount = 0;
+
+	for (let i=0; i<EMC.METADATA.works.length; i++) {
+		let count = EMC.METADATA.works[i]["Standardized Name of Work"];
+		workCount++;
+	}
+
+	for (let i=0; i<EMC.METADATA.concerts.length; i++) {
+		let count = EMC.METADATA.concerts[i]["ID"];
+		concertCount++;
+	}
+
+	for (let i=0; i<EMC.METADATA.people.length; i++) {
+		let count = EMC.METADATA.people[i]["ID"];
+		personCount++;
+	}
+
+	for (let i=0; i<EMC.METADATA.composers.length; i++) {
+		let count = EMC.METADATA.composers[i]["ID"];
+		composerCount++;
+	}
+
+
+	let workElement = document.querySelector("#work-count");
+	if (workElement) {
+		workElement.innerHTML = workCount;
+	}
+
+	let concertElement = document.querySelector("#concert-count");
+	if (concertElement) {
+		concertElement.innerHTML = concertCount;
+	}
+
+	let personElement = document.querySelector("#person-count");
+	if (personElement) {
+		personElement.innerHTML = personCount;
+	}
+
+	let composerElement = document.querySelector("#composer-count");
+	if (composerElement) {
+		composerElement.innerHTML = composerCount;
+	}
+
+}
+
+</script>
