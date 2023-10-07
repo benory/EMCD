@@ -14,7 +14,7 @@ The Early Music Concerts Database catalogues concert programs of medieval and Re
 
 #### Project data
 + <span id="concert-count"></span> catalogued concerts
-+ <span id="work-count"></span> individual performed works, including pieces by 130 individual composers 
++ <span id="work-count"></span> individual performed works, including pieces by <span id="composer-count"></span> individual composers 
 + <span id="person-count"></span> musicologists, singers, and musicians catalogued
 
 ![concerts by year](Concerts_by_year.svg)
