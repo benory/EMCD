@@ -20,3 +20,6 @@ The Early Music Concerts Database catalogues concert programs of medieval and Re
 + <span id="person-count"></span> musicologists, singers, and musicians catalogued
 
 <div id="concerts-by-year"></div>
+
+
+
