@@ -1212,5 +1212,24 @@
 		"Notes on Program": "Memorial address {Erich Hertzmann}, between Nymphes des bois and Super flumina Babylonis",
 		"Image": "https://drive.google.com/file/d/1CDvlInmxpHj4vXBorJ1yN_DUEp_UDF0H/view?usp=share_link",
 		"Image Permissions": "no"
+	},
+	{
+		"ID": "Prog_1959_11_12",
+		"Program": "Prog_1959_11_12",
+		"ID Type": "concert",
+		"Year": "1959",
+		"Month": "11",
+		"Day": "12",
+		"Date": "1959-11-12",
+		"Ensemble/Larger Org.": "Nederlands Kammerkoor",
+		"City": "Ruinerwold",
+		"State": "Drenthe",
+		"Country": "Netherlands",
+		"Google Maps URL": "https://maps.app.goo.gl/tLExAkVMRrTjLg2cA",
+		"Location Coordinates": "52.72198241050593, 6.251605752317339",
+		"Archive (ARC)": "ARC:NL_NMI",
+		"Signature": "Nederlands Kamerkoor, Box 18",
+		"Image": "https://drive.google.com/file/d/1l-cnFy5cWEDRSfFm7HjZdMRIwSePbuuq/view?usp=share_link",
+		"Image Permissions": "no"
 	}
 ]
