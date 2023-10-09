@@ -12,8 +12,7 @@ layout: page
 {% include_relative styles-local.html %}
 {% include_relative scripts-local.html %}
 
-
-The Early Music Concerts Database catalogues concert programs of medieval and Renaissance music from roughly 1915 through 1960. Read [about this project](about) or [browse the database](database).<br><br>
+The Early Music Concerts Database catalogues concert programs of medieval and Renaissance music from roughly 1915 through 1960. It aims to answer questions of how the early music canon was formed and how scholars, performers, and audiences alike rediscovered long-lost repertoires. Read [about this project](about) or [browse the database](database).<br><br>
 
 #### Project data
 + <span id="concert-count"></span> catalogued concerts
