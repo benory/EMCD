@@ -13,11 +13,11 @@
 ##              Type "make" in this directory to download the JSON files for the metadata.
 ##
 
-SID = AKfycbyCCOTXQ3kjJZOJPTXLAmseKlZSKS5p0zdY2JZcHVhwlubbQjNTyNlJKMRoH8J1IheRyQ
+SID = AKfycbxHIp2F-oT0_CX_S6ENH6U4L8Okw6Jx6h-HpUJQXvO3glHxHmn-eG9etR9pDC0Etg4bDw
 
 all: download
 
-download: works concerts archives composers editions sources people bibliography
+download: works concerts archives composers editions sources people bibliography statistics
 
 works:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=works" > works.json
@@ -42,3 +42,6 @@ people:
 
 bibliography:
 	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=bibliography" > bibliography.json
+
+statistics:
+	curl -L "https://script.google.com/macros/s/$(SID)/exec?sheet=statistics" > statistics.json

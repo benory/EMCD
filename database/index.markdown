@@ -1,6 +1,6 @@
 ---
 layout: page
-title: database
+title: concerts database
 ---
 
 {% include_relative scripts-local.html %}

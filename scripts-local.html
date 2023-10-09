@@ -1,16 +1,6 @@
+{% include_relative scripts-listeners.html %}
+
 <script>
-
-let EMC = {};
-EMC.METADATA = {};
-EMC.METADATA.works = {% include metadata/works.json %};
-EMC.METADATA.concerts = {% include metadata/concerts.json %};
-EMC.METADATA.people = {% include metadata/people.json %};
-EMC.METADATA.composers = {% include metadata/composers.json %};
-
-document.addEventListener("DOMContentLoaded", function () {
-	fillInCensusData(EMC.METADATA);
-});
-
 
 function fillInCensusData(data) {
 	let workCount = 0;
@@ -59,6 +49,68 @@ function fillInCensusData(data) {
 		composerElement.innerHTML = composerCount;
 	}
 
+}
+
+//////////////////////////////
+//
+// displayYearsPlot --
+//
+
+function displayYearsPlot(data) {
+
+	let element = document.querySelector("#concerts-by-year");
+	if (!element) {
+		console.error("ERROR: Cannot find #concerts-by-year");
+		return;
+	}
+
+	let threshold = element.dataset.threshold;
+	if (threshold < 1) {
+		threshold = 10;
+	} else if (threshold > 50) {
+		threshold = 50;
+	}
+
+	let plotInfo = {
+		"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+		"config": {
+			"view": {
+				"width": 700,
+				"height": 250
+			}
+		},
+		  "data": {
+			"values": data.statistics
+				},
+		  "mark": "bar",
+		  "encoding": {
+		    "x": {"field": "Concert Years", "type": "ordinal", "title": "Years", 						"axis": {
+							"tickMinStep": 5,
+							"labelFontSize": 14,
+							"titleFontSize": 16
+						}
+				},
+		    "y": {"field": "Number of Concerts", "type": "quantitative", "title": "Number of Concerts", 	"axis": {
+							"labelFontSize": 14,
+							"titleFontSize": 16
+						}},
+		    "color": {
+				    "field": "Concert Years",
+				    "type": "quantitative",
+				    "scale": {
+				        "scheme": "viridis",
+				        "interpolate": "light-blue-green" // You can experiment with other interpolation schemes
+				    },
+			  "legend": null
+			}
+		},
+		  	"title": {
+				"text": "Number of Concerts per Year",
+				"fontSize": 18
+		}, 
+	}
+
+	vegaEmbed('#concerts-by-year', plotInfo);
 }
 
 </script>

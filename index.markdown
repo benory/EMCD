@@ -5,10 +5,13 @@
 layout: page 
 ---
 
-{% include_relative scripts-local.html %}
-{% include_relative styles-local.html %}
+<script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
 
-![sample program](sample_program.png)
+{% include_relative styles-local.html %}
+{% include_relative scripts-local.html %}
+
 
 The Early Music Concerts Database catalogues concert programs of medieval and Renaissance music from roughly 1915 through 1960. Read [about this project](about) or [browse the database](database).<br><br>
 
@@ -17,4 +20,4 @@ The Early Music Concerts Database catalogues concert programs of medieval and Re
 + <span id="work-count"></span> individual performed works, including pieces by <span id="composer-count"></span> individual composers 
 + <span id="person-count"></span> musicologists, singers, and musicians catalogued
 
-![concerts by year](Concerts_by_year.svg)
+<div id="concerts-by-year"></div>
