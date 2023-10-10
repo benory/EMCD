@@ -396,6 +396,28 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1932_03_13",
+		"Program": "Prog_1932_03_13",
+		"ID Type": "concert",
+		"Year": "1932",
+		"Month": "3",
+		"Day": "13",
+		"Date": "1932-3-13",
+		"Program Title": "Eröffnungsfeier der Austellung der Universitätsbibliothek von Salomon Hirzel's Goethe-Sammlung",
+		"Ensemble/Larger Org.": "Madrigalkreis Leipziger Studenten",
+		"Location": "Die Universitätsbibliothek",
+		"City": "Leipzig",
+		"State": "Sachsen",
+		"Country": "Germany",
+		"Google Maps URL": "https://maps.app.goo.gl/jn4jchVfydhvKRwh9",
+		"Location Coordinates": "51.33236073938483, 12.368506954408064",
+		"Introduction": "{Otto Glauning}",
+		"Archive (ARC)": "ARC:DE_UA_Leipzig",
+		"Signature": "NA Rabenschlag zu 2/1–2/13 und zu 2/60–2/76, Konzertprogramm 1927–1943 (unbearb.) 130 Bl.",
+		"Image": "https://drive.google.com/file/d/1CQ2hlvTbZJkW4BrGKqDvgKPyANGr-YOk/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1933_02_24",
 		"Program": "Prog_1933_02_24",
 		"ID Type": "concert",

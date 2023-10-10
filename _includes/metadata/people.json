@@ -511,6 +511,20 @@
 		"Source of Information": "Oxford Music Online"
 	},
 	{
+		"ID": "Glauning, Otto",
+		"Person": "Glauning, Otto",
+		"ID Type": "person",
+		"Birth Year": "1876",
+		"Death Year": "1941",
+		"Position": "professor for library sciences",
+		"Places Active": "Munich, Leipzig",
+		"GND ID": "116657693",
+		"GND URL": "https://explore.gnd.network/gnd/116657693",
+		"VIAF ID": "40135661",
+		"VIAF URL": "http://viaf.org/viaf/40135661",
+		"Source of Information": "GND; Universitätsbibliothek Leipzig"
+	},
+	{
 		"ID": "Glover, Robert",
 		"Person": "Glover, Robert",
 		"ID Type": "person"

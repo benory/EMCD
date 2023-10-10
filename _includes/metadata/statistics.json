@@ -28,6 +28,10 @@
 		"Number of Concerts": "2"
 	},
 	{
+		"Concert Years": "1932",
+		"Number of Concerts": "1"
+	},
+	{
 		"Concert Years": "1933",
 		"Number of Concerts": "2"
 	},
@@ -100,7 +104,6 @@
 		"Number of Concerts": "1"
 	},
 	{
-		"Concert Years": "1959",
-		"Number of Concerts": "2"
+		"Concert Years": "1959"
 	}
 ]
