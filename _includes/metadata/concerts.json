@@ -988,6 +988,28 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1954_11_05",
+		"Program": "Prog_1954_11_05",
+		"ID Type": "concert",
+		"Year": "1954",
+		"Month": "11",
+		"Day": "5",
+		"Date": "1954-11-5",
+		"Program Title": "Concert",
+		"Ensemble/Larger Org.": "Het Nederlands Kamerkoor",
+		"Location": "Gereformeerde Kerk",
+		"City": "Putten",
+		"State": "Gelderland",
+		"Country": "Netherlands",
+		"Google Maps URL": "https://maps.app.goo.gl/29AckQzMDBwD6N6b7",
+		"Location Coordinates": "52.25988838517843, 5.60681290898638",
+		"Direction": "{Félix de Nobel}",
+		"Archive (ARC)": "ARC:NL_NMI",
+		"Signature": "Nederlands Kamerkoor, Box 18",
+		"Image": "https://drive.google.com/file/d/1dpktryXapYiCRUxrqjmp7EQcySVSyj6J/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1954_11_26",
 		"Program": "Prog_1954_11_26",
 		"ID Type": "concert",
