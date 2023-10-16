@@ -1128,6 +1128,20 @@
 		"Source of Information": "Oxford Music Online"
 	},
 	{
+		"ID": "Rabenschlag, Friedrich",
+		"Person": "Rabenschlag, Friedrich",
+		"ID Type": "person",
+		"Birth Year": "1902",
+		"Death Year": "1973",
+		"Position": "conductor, music director",
+		"Places Active": "Leipzig",
+		"Employers": "Universität Leipzig",
+		"GND ID": "136339603",
+		"GND URL": "https://explore.gnd.network/gnd/136339603",
+		"VIAF ID": "92948052",
+		"VIAF URL": "http://viaf.org/viaf/92948052"
+	},
+	{
 		"ID": "Reichenbach, Hermann",
 		"Person": "Reichenbach, Hermann",
 		"ID Type": "person",
@@ -1209,6 +1223,18 @@
 		"VIAF ID": "8463813",
 		"VIAF URL": "http://viaf.org/viaf/8463813",
 		"Narrative Description of Person": "murdered during the Night of Long Knives in a case of mistaken identity"
+	},
+	{
+		"ID": "Schmidt, Erich",
+		"Person": "Schmidt, Erich",
+		"ID Type": "person",
+		"Birth Year": "1910",
+		"Death Year": "2005",
+		"Position": "organist, church musician, conductor, psychologist",
+		"GND ID": "135342864",
+		"GND URL": "https://explore.gnd.network/gnd/135342864",
+		"VIAF ID": "21572795",
+		"VIAF URL": "http://viaf.org/viaf/21572795"
 	},
 	{
 		"ID": "Schindler, Rudolf",

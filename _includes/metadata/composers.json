@@ -835,6 +835,24 @@
 		"Places Active": "Herefordshire, Wiltshire, London"
 	},
 	{
+		"ID": "Festa, Costanzo",
+		"Composer": "Festa, Costanzo",
+		"ID Type": "composer",
+		"Alias": "Festa, Constantinus; Festa, Constantio; Festa, Constanzio",
+		"Composer RISM ID": "pe30004621",
+		"Composer RISM Link": "https://rism.online/people/30004621",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/213/",
+		"GND ID": "118532677",
+		"GND URL": "https://explore.gnd.network/gnd/118532677",
+		"VIAF ID": "2658765",
+		"VIAF URL": "http://viaf.org/viaf/2658765",
+		"Start of CYA": "1514",
+		"End of CYA": "1545",
+		"Death Date": "1545-4-10",
+		"Flourished": "1514–1545",
+		"Places Active": "Ferrara, Rome"
+	},
+	{
 		"ID": "Finck, Heinrich",
 		"Composer": "Finck, Heinrich",
 		"ID Type": "composer",
