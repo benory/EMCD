@@ -1210,6 +1210,26 @@
 		"ID Type": "person"
 	},
 	{
+		"ID": "Schering, Arnold",
+		"Person": "Schering, Arnold",
+		"ID Type": "person",
+		"Birth Year": "1877",
+		"Death Year": "1941",
+		"Position": "musicologist",
+		"Doctoral Degree": "Ph.D., Universität Leipzig",
+		"Year of Doctorate": "1902",
+		"Doctoral Advisor": "Hermann Kretzschmar",
+		"Places Active": "Leipzig, Halle, Berlin",
+		"Employers": "Universität Leipzig, Universität Halle, Friedrich-Wilhelms-Universität Berlin",
+		"BMLO ID": "s0306",
+		"BMLO Link": "https://bmlo.de/s0306",
+		"GND ID": "118754688",
+		"GND URL": "https://explore.gnd.network/gnd/118754688",
+		"VIAF ID": "49405704",
+		"VIAF URL": "http://viaf.org/viaf/49405704",
+		"Source of Information": "Oxford Music Online"
+	},
+	{
 		"ID": "Schmid, Willi",
 		"Person": "Schmid, Willi",
 		"ID Type": "person",

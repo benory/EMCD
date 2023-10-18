@@ -9,21 +9,21 @@
 		"Source Sigla": "A-Wn Cod. 2856 Han",
 		"ID Type": "source",
 		"Source Alias": "Mondsee-Wiener Liederhandschrift",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/843/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/843/"
 	},
 	{
 		"ID": "A-Wn Mus.Hs. 18810",
 		"Source Sigla": "A-Wn Mus.Hs. 18810",
 		"ID Type": "source",
 		"CC or RISM Sigla": "VienNB Mus. 18810",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2667/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/2667/"
 	},
 	{
 		"ID": "B-Tc A 27",
 		"Source Sigla": "B-Tc A 27",
 		"ID Type": "source",
 		"Source Alias": "Mass of Tournai",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/7/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/7/"
 	},
 	{
 		"ID": "Bicinia Gallica, Latina, Germanica (Wittemberg: Georg Rhau, 1545)",
@@ -37,7 +37,7 @@
 		"Source Sigla": "CH-SGS MS 530",
 		"ID Type": "source",
 		"Source Alias": "Fridolin Sicher's Tabulaturbuch",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/4813/#/",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/4813/",
 		"IIIF Source": "http://www.e-codices.ch/en/csg/0530/IIr",
 		"IIIF Source Manifest": "http://e-codices.unifr.ch/metadata/iiif/csg-0530/manifest.json"
 	},
@@ -46,7 +46,14 @@
 		"Source Sigla": "D-As MS 2º 142a",
 		"ID Type": "source",
 		"CC or RISM Sigla": "AugsS 142a",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1524/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1524/"
+	},
+	{
+		"ID": "D-B MS Mus. 40021",
+		"Source Sigla": "D-B MS Mus. 40021",
+		"ID Type": "source",
+		"CC or RISM Sigla": "BerlS 40021",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1579/"
 	},
 	{
 		"ID": "D-B MS Mus. 40613",
@@ -54,7 +61,7 @@
 		"ID Type": "source",
 		"Source Alias": "Lochamer-Liederbuch",
 		"CC or RISM Sigla": "BerlS 40613",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1593/#/",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/1593/",
 		"IIIF Source": "http://resolver.staatsbibliothek-berlin.de/SBB0000402B00000000",
 		"IIIF Source Manifest": "https://content.staatsbibliothek-berlin.de/dc/645230707/manifest"
 	},
@@ -64,14 +71,14 @@
 		"ID Type": "source",
 		"Source Alias": "Bamberg Codex",
 		"Former Shelfmark (olim)": "Bamberg Ed.IV.6",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/863/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/863/"
 	},
 	{
 		"ID": "D-Mbs Cod. Gall. 902",
 		"Source Sigla": "D-Mbs Cod. Gall. 902",
 		"ID Type": "source",
 		"Former Shelfmark (olim)": "Mus. MS. 3192",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/817/#/",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/817/",
 		"IIIF Source": "https://www.digitale-sammlungen.de/view/bsb00079074?page=1",
 		"IIIF Source Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00079074/manifest"
 	},
@@ -80,7 +87,7 @@
 		"Source Sigla": "D-Mbs Mus. MS 3725",
 		"ID Type": "source",
 		"Source Alias": "Buxheim Orgelbuch",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/799/#/",
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/799/",
 		"IIIF Source": "https://www.digitale-sammlungen.de/view/bsb00104633?page=1",
 		"IIIF Source Manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00104633/manifest"
 	},
@@ -89,14 +96,14 @@
 		"Source Sigla": "D-W Cod. Guelf. 1099 Helmst.",
 		"ID Type": "source",
 		"Source Alias": "W2",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/854/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/854/"
 	},
 	{
 		"ID": "D-W Cod. Guelf. 628 Helmst.",
 		"Source Sigla": "D-W Cod. Guelf. 628 Helmst.",
 		"ID Type": "source",
 		"Source Alias": "Magnus Liber Organi; W1",
-		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/870/#/"
+		"DIAMM Source Link": "https://www.diamm.ac.uk/sources/870/"
 	},
 	{
 		"ID": "D-WÜst KEB D 7 11/II",

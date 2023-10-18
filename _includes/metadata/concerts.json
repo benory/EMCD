@@ -480,6 +480,28 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1939_02_18",
+		"Program": "Prog_1939_02_18",
+		"ID Type": "concert",
+		"Year": "1939",
+		"Month": "2",
+		"Day": "18",
+		"Date": "1939-2-18",
+		"Program Title": "Feier des Astronomischen Recheninstituts zu Ehren von Nicolaus Coppernicus",
+		"Ensemble/Larger Org.": "Collegium musicum, Friedrich-Wilhelms-Universität Berlin",
+		"Location": "Alten Aula im Universitäts-Hauptgebäude",
+		"City": "Berlin",
+		"State": "Berlin",
+		"Country": "Germany",
+		"Google Maps URL": "https://maps.app.goo.gl/6ekJFvkprb4qYUqWA",
+		"Location Coordinates": "52.517967872296, 13.393960871816676",
+		"Direction": "{Arnold Schering}",
+		"Archive (ARC)": "ARC:DE_UA_Humboldt",
+		"Signature": "Phil. Fak. 1582, Collegium Musicum, 1928–1940",
+		"Image": "https://drive.google.com/file/d/1p1NBCxZ0UnUS5PTz2UIfago-GWCP6K7g/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1940_12_01",
 		"Program": "Prog_1940_12_01",
 		"ID Type": "concert",
