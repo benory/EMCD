@@ -49,7 +49,25 @@ Do you know of concert programs in archives that should be included in this proj
 
 ### Support
 
-This project has been supported by a 2023 [Ora Frishberg Saloman Fund Award from the American Musicological Society](https://www.amsmusicology.org/page/Saloman_Winners){:target="_blank"}.
+This project has been supported by a 2023 [Ora Frishberg Saloman Fund Award from the American Musicological Society](https://www.amsmusicology.org/page/Saloman_Winners){:target="_blank"}. <br><br>
 
+<!--### People
 
+#### Project Director
 
+<div id="person">Benjamin Ory (Stanford University)</div> <br>
+
+#### Advisory Board
+
+<div id="person">Anna Maria Busse Berger (University of California, Davis)</div>
+<div id="person">Raymond Dittrich (Bischöfliche Zentralbibliothek Regensburg)</div>
+<div id="person">Wolfgang Drescher (Hochschule für Musik Freiburg)</div>
+<div id="person">Inga Mai Groote (Universität Zürich)</div>
+<div id="person">Birgit Lodes (Universität Wien)</div>
+<div id="person">Klaus Pietschmann (Universität Mainz)</div>
+<div id="person">Joshua Rifkin (Boston University)</div>
+<div id="person">Jesse Rodin (Stanford University)</div>
+<div id="person">Craig Sapp (Stanford University)</div>
+<div id="person">Katelijne Schiltz (Universität Regensburg)</div>
+<div id="person">Thomas Schipperges (Universität Tübingen)</div>
+<div id="person">Melanie Wald-Fuhrmann (Max-Planck-Institut für empirische Ästhetik)</div>-->
