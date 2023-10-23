@@ -1,20 +1,8 @@
+
+{% include_relative scripts-listeners.html %}
+
 <script>
-
-//////////////////////////////
-//
-// Click manager for selecting which worksheet data to browse:
-//
-
-document.addEventListener("click", function (event) {
-	let clickedElement = event.target;
-	let targetButton = clickedElement.closest(".sheet-button");
-	if (!targetButton) {
-		return;
-	}
-	let name = targetButton.dataset.sheet;
-	displaySheet(name);
-});
-
+// vim: ts=3:nowrap
 
 
 //////////////////////////////
@@ -31,112 +19,7 @@ function displaySheet(name) {
 	}
 }
 
-// vim: ts=3:nowrap
 
-let EMC = {};
-EMC.results = {};  // elements for displaying search results by sheet name.
-EMC.menus = {}; // elements for displaying search menus by sheet name.
-EMC.activeResults = null;
-EMC.index = {};    // header name mapping by sheet.
-EMC.index.works = {};  // header names for works sheet.
-EMC.index.concerts = {};  // header names for works concerts.
-EMC.index.archives = {}; // header names for archives sheet.
-EMC.index.bibliography = {}; // header names for bibliography sheet.
-EMC.index.editions = {}; //header names for editions sheet
-EMC.index.sources = {}; //header names for sources sheet
-EMC.lookup = {};
-EMC.METADATA = {};
-EMC.METADATA.works = {% include metadata/works.json %};
-EMC.METADATA.concerts = {% include metadata/concerts.json %};
-EMC.METADATA.archives = {% include metadata/archives.json %};
-EMC.METADATA.bibliography = {% include metadata/bibliography.json %};
-EMC.METADATA.editions = {% include metadata/editions.json %};
-EMC.METADATA.sources = {% include metadata/sources.json %};
-
-EMC.index.works.name          = "Standardized Name of Work";
-EMC.index.works.composer      = "Probable Composer";
-EMC.index.works.voices        = "Voices";
-EMC.index.works.composername  = "Composer Name as Listed in Program";
-EMC.index.works.conflattr     = "Conflicting Attributions";
-EMC.index.works.language	   = "Language";
-EMC.index.works.language2	   = "Second Language";
-EMC.index.works.monopoly	   = "Monophonic/Polyphonic";
-EMC.index.works.sacrsec	      = "Sacred/Secular";
-EMC.index.works.vocinstr	   = "Vocal/Instrumental";
-EMC.index.works.genre   	   = "Genre";
-EMC.index.works.source    	   = "Source of Work Listed in Program";
-EMC.index.works.folios	      = "Folios/No.";
-EMC.index.works.edition	      = "Edition of Work Listed in Program";
-EMC.index.works.pages	      = "Nos./Page Numbers";
-EMC.index.works.scanedition   = "Scan of Edition";
-EMC.index.works.ProgID	      = "Program ID";
-EMC.index.works.ProgDate	   = "Program Date";
-EMC.index.works.ProgOrder	   = "Order in Program";
-EMC.index.works.NotesWork	   = "Notes on Work";
-EMC.index.works.ModernEd	   = "Modern Edition";
-EMC.index.works.Repeatcon	   = "Repeat Concerts";
-EMC.index.concerts.ID          = "ID";
-EMC.index.concerts.year        = "Year";
-EMC.index.concerts.month       = "Month";
-EMC.index.concerts.day         = "Day";
-EMC.index.concerts.date        = "Date";
-EMC.index.concerts.ProgTitle   = "Program Title";
-EMC.index.concerts.ensemble    = "Ensemble/Larger Org.";
-EMC.index.concerts.loc         = "Location";
-EMC.index.concerts.city        = "City";
-EMC.index.concerts.state       = "State";
-EMC.index.concerts.country     = "Country";
-EMC.index.concerts.gmaps       = "Google Maps URL";
-EMC.index.concerts.loccoord    = "Location Coordinates";
-EMC.index.concerts.intro       = "Introduction";
-EMC.index.concerts.direction   = "Direction";
-EMC.index.concerts.performers  = "Performers";
-EMC.index.concerts.archive     = "Archive (ARC)";
-EMC.index.concerts.signature   = "Signature";
-EMC.index.concerts.notes       = "Notes on Program";
-EMC.index.concerts.literature  = "Literature";
-EMC.index.concerts.image       = "Image";
-EMC.index.concerts.imageperm   = "Image Permissions";
-EMC.index.concerts.imagesource = "Image Source";
-EMC.index.concerts.extimage    = "Externally Hosted Image";
-EMC.index.archives.archID      = "Archive ID (ARC)";
-EMC.index.archives.country     = "Country";
-EMC.index.archives.name        = "Name";
-EMC.index.archives.urlde       = "URL (DE)";
-EMC.index.archives.urlen       = "URL (EN)";
-EMC.index.archives.archloc     = "Archive Location";
-EMC.index.bibliography.ID      = "ID";
-EMC.index.bibliography.author  = "Author";
-EMC.index.bibliography.article = "Name of Article";
-EMC.index.bibliography.volname = "Name of Volume/Journal";
-EMC.index.bibliography.editor  = "Editor";
-EMC.index.bibliography.volnum  = "Volume";
-EMC.index.bibliography.loc     = "Location";
-EMC.index.bibliography.pub	   = "Publisher";
-EMC.index.bibliography.pubyear = "Publication Year";
-EMC.index.bibliography.pages   = "Pages";
-EMC.index.bibliography.url     = "URL";
-EMC.index.editions.ID          = "ID";
-EMC.index.editions.compauthor  = "Composer/Author";
-EMC.index.editions.article     = "Name of Article";
-EMC.index.editions.volname     = "Name of Volume/Journal";
-EMC.index.editions.editor      = "Editor";
-EMC.index.editions.volnum      = "Volume";
-EMC.index.editions.loc         = "Location";
-EMC.index.editions.pub         = "Publisher";
-EMC.index.editions.pubyear     = "Publication Year";
-EMC.index.editions.pages       = "Pages";
-EMC.index.sources.ID           = "ID";
-EMC.index.sources.alias        = "Source Alias";
-EMC.index.sources.DIAMM        = "DIAMM Source Link";
-EMC.index.sources.RISM         = "RISM Source Link";
-
-document.addEventListener("DOMContentLoaded", function () {
-	buildLookupTables();
-	buildSearchInterfaces(EMC.METADATA, "#browse-interface");
-	displayBrowseTableWorks(EMC.METADATA.works);
-	displayBrowseTableConcerts(EMC.METADATA.concerts);
-});
 
 //////////////////////////////
 //
@@ -156,6 +39,8 @@ function buildLookupTables() {
 		buildLookupTable(sheet);
 	}
 }
+
+
 
 //////////////////////////////
 //
@@ -194,19 +79,23 @@ function buildSearchInterfaces(metadata, selector) {
 		return;
 	}
 	let browsers = element.querySelectorAll("div.sheet-display");
+
 	for (let i=0; i<browsers.length; i++) {
+
 		let sheetName = browsers[i].dataset.sheet;
 		let browseElement = browsers[i].querySelector("div.search-interface");
 		if (!browseElement) {
 			console.error("ERROR: No browseElement for", sheetName);
 			return;
 		}
+
 		EMC.menus[sheetName] = browseElement;
 		let tableElement = browsers[i].querySelector("div.results-list");
 		if (!tableElement) {
 			console.error("ERROR: No search results list element for", sheetName);
 			return;
 		}
+
 		EMC.results[sheetName] = tableElement;
 		if (sheetName === "works") {
 			buildSearchInterfaceWorks(metadata.works, browseElement);
@@ -214,7 +103,9 @@ function buildSearchInterfaces(metadata, selector) {
 			buildSearchInterfaceConcerts(metadata.concerts, browseElement);
 		}
 	}
+
 }
+
 
 
 //////////////////////////////
@@ -240,6 +131,7 @@ function buildSearchInterfaceWorks(data, browseElement) {
 }
 
 
+
 //////////////////////////////
 //
 // buildSearchInterfaceConcerts --
@@ -256,6 +148,7 @@ function buildSearchInterfaceConcerts(data, browseElement) {
 	output += buildProgramSourceSelect(data);
 	browseElement.innerHTML = output;
 }
+
 
 
 //////////////////////////////
@@ -287,6 +180,8 @@ function displayBrowseTableWorks(data) {
 	element.innerHTML = contents;
 }
 
+
+
 //////////////////////////////
 //
 // displayBrowseTableConcerts --
@@ -312,6 +207,8 @@ function displayBrowseTableConcerts(data) {
 	contents += "</table>\n";
 	element.innerHTML = contents;
 }
+
+
 
 //////////////////////////////
 //
@@ -670,6 +567,8 @@ function makeTableBody(headings, data) {
 	return output;
 }
 
+
+
 //////////////////////////////
 //
 // prepareDate -- convert YYYY-M-D to D MMM YYYY
@@ -694,6 +593,8 @@ function prepareDate(inputDateString) {
 	}
 	return formattedDate;
 }
+
+
 
 //////////////////////////////
 //
@@ -732,6 +633,8 @@ function UserSearch() {
 	}
 }
 
+
+
 //////////////////////////////
 //
 // buildComposerSelect --
@@ -763,6 +666,7 @@ function buildComposerSelect(data) {
 	output += "</select>\n";
 	return output;
 }
+
 
 
 //////////////////////////////
@@ -803,6 +707,8 @@ function buildGenreSelect(data) {
 	return output;
 }
 
+
+
 //////////////////////////////
 //
 // getSignature -- Generate the archival signature.
@@ -816,6 +722,8 @@ function getSignature(entry) {
 	}
 	return "";
 }
+
+
 
 //////////////////////////////
 //
@@ -847,6 +755,7 @@ function buildLanguageSelect(data) {
 	output += "</select>\n";
 	return output;
 }
+
 
 
 //////////////////////////////
@@ -881,6 +790,7 @@ function buildMonoPolySelect(data) {
 }
 
 
+
 //////////////////////////////
 //
 // buildSacredSecularSelect --
@@ -911,6 +821,7 @@ function buildSacredSecularSelect(data) {
 	output += "</select>\n";
 	return output;
 }
+
 
 
 //////////////////////////////
@@ -944,6 +855,8 @@ function buildVocInstrSelect(data) {
 	return output;
 }
 
+
+
 //////////////////////////////
 //
 // buildSourceSelect --
@@ -975,6 +888,8 @@ function buildSourceSelect(data) {
 	return output;
 }
 
+
+
 //////////////////////////////
 //
 // buildVoiceSelect --
@@ -1005,6 +920,8 @@ function buildVoiceSelect(data) {
 	return output;
 }
 
+
+
 //////////////////////////////
 //
 // getProgUrl -- Generate a source link based on "Scan of Edition".
@@ -1019,6 +936,8 @@ function getProgUrl(entry) {
 	return "";
 	console.warn("ProgUrl", ProgUrl);
 }
+
+
 
 //////////////////////////////
 //
@@ -1050,6 +969,8 @@ function getLocation(entry) {
 	}
 }
 
+
+
 //////////////////////////////
 //
 // getLocationGoogleMaps -- Generate a source link based on "Scan of Edition".
@@ -1063,6 +984,8 @@ function getLocationGoogleMaps(entry) {
 	}
 	return "";
 }
+
+
 
 //////////////////////////////
 //
@@ -1078,6 +1001,8 @@ function getCleanedDirection(entry) {
 	}
 	return "";
 }
+
+
 
 //////////////////////////////
 //
@@ -1111,6 +1036,7 @@ function buildCountrySelect(data) {
 }
 
 
+
 //////////////////////////////
 //
 // buildYearSelect --
@@ -1141,6 +1067,7 @@ function buildYearSelect(data) {
 	output += "</select>\n";
 	return output;
 }
+
 
 
 //////////////////////////////
@@ -1177,6 +1104,7 @@ function buildProgramSourceSelect(data) {
 	output += "</select>\n";
 	return output;
 }
+
 
 
 //////////////////////////////
@@ -1257,6 +1185,7 @@ function doSearchConcerts(data) {
 	displayBrowseTableConcerts(data);
 
 }
+
 
 
 //////////////////////////////
@@ -1435,4 +1364,8 @@ function doSearchWorks(data) {
 	displayBrowseTableWorks(data);
 }
 
+
 </script>
+
+
+

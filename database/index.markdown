@@ -7,7 +7,7 @@ title: concerts database
 {% include_relative styles-local.html %}
 
 <div id="sheet-select">
-	<span class="sheet-button" data-sheet="works">Works</span>
+	<span class="sheet-button selected" data-sheet="works">Works</span>
 	<span class="sheet-button" data-sheet="concerts">Concerts</span>
 </div>
 
@@ -18,8 +18,11 @@ title: concerts database
 		<div class="search-interface"></div>
 		<div class="results-list"></div>
 	</div>
-	<div class="sheet-display" data-sheet="concerts">
+	<div class="sheet-display hidden" data-sheet="concerts">
 		<div class="search-interface"></div>
 		<div class="results-list"></div>
 	</div>
 </div>
+
+
+
