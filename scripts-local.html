@@ -184,6 +184,10 @@ concerts.title = "Program Title";
 concerts.ensemble = "Ensemble/Larger Org.";
 concerts.location = "Location Coordinates";
 concerts.date = "Date";
+concerts.year = "Year";
+concerts.month = "Month";
+concerts.day = "Day";
+let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
 for (let i=0; i<concerts.length; i++){
@@ -263,10 +267,19 @@ function doMapSetup(opts) {
 	).addTo(map);
 
 	for (let i=0; i<concerts.length; i++) {
-		console.warn("name", concerts[i][concerts.ID]);
-		console.warn("location", concerts[i][concerts.location]);
 		let date = prepareDate(concerts[i][concerts.date]);
-
+		let concertMonth = concerts[i][concerts.month];
+		let concertMonthstring = monthNames[concertMonth-1];
+		let concertYear = concerts[i][concerts.year];
+		let concertDay = concerts[i][concerts.day];
+		let processeddate = "";
+		if (concertMonth && concertDay) {
+			processeddate += `${date}`;
+		} else if (concertMonth) {
+			processeddate += `${concertMonthstring} ${concertYear}`;
+		} else if (concertYear){
+			processeddate += `${concertYear}`;
+		}
 		let loc = "";
 		if (concerts[i][concerts.location]) {
 			loc = concerts[i][concerts.location].split(/,?\s+,?/);
@@ -279,7 +292,7 @@ function doMapSetup(opts) {
 		if (loc && name) {
 			L.marker(loc)
 				.addTo(map)
-				.bindPopup(`${date}: ${name}`);
+				.bindPopup(`${processeddate}: ${name}`);
 		}
 	}
 }
@@ -296,7 +309,17 @@ function prepareDate(inputDateString) {
 	}
 	let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
 	let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	let day = parsedDate.getDate();
+	let month = monthNames[parsedDate.getMonth()];
+	let year = parsedDate.getFullYear();
+	let formattedDate = "";
+	if (day && month && year) {
+		formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	} else if (month && year) {
+		formattedDate = `${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	} else {
+		formattedDate = `${parsedDate.getFullYear()}`;
+	}
 	return formattedDate;
 }
 
