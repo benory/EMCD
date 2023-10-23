@@ -877,6 +877,23 @@
 		"VIAF URL": "http://viaf.org/viaf/45932472"
 	},
 	{
+		"ID": "Köbler, Robert",
+		"Person": "Köbler, Robert",
+		"ID Type": "person",
+		"Birth Year": "1912",
+		"Death Year": "1970",
+		"Position": "organist, conductor, choir director",
+		"Places Active": "Leipzig; Löbau",
+		"Employers": "St. Pauli, Leipzig",
+		"BMLO ID": "k1188",
+		"BMLO Link": "https://bmlo.de/k1188",
+		"GND ID": "130528765",
+		"GND URL": "https://explore.gnd.network/gnd/130528765",
+		"VIAF ID": "15880392",
+		"VIAF URL": "http://viaf.org/viaf/15880392",
+		"Source of Information": "Bayerisches Musiker Lexicon Online"
+	},
+	{
 		"ID": "Köhler, Josef",
 		"Person": "Köhler, Josef",
 		"ID Type": "person",
@@ -927,6 +944,20 @@
 		"ID": "Larzelere, Robert",
 		"Person": "Larzelere, Robert",
 		"ID Type": "person"
+	},
+	{
+		"ID": "Lechner, Konrad",
+		"Person": "Lechner, Konrad",
+		"ID Type": "person",
+		"Birth Year": "1911",
+		"Death Year": "1989",
+		"Position": "composer, conductor, flautist, cellist",
+		"BMLO ID": "l0274",
+		"BMLO Link": "https://bmlo.de/l0274",
+		"GND ID": "123555833",
+		"GND URL": "https://explore.gnd.network/gnd/123555833",
+		"VIAF ID": "117110895",
+		"VIAF URL": "http://viaf.org/viaf/117110895"
 	},
 	{
 		"ID": "Liegner, J.",

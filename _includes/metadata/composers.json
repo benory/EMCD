@@ -133,6 +133,23 @@
 		"Places Active": "Venice"
 	},
 	{
+		"ID": "Bauldeweyn, Noel",
+		"Composer": "Bauldeweyn, Noel",
+		"ID Type": "composer",
+		"Alias": "Balbun, Noel; Balduin, Noel; Balduini, Natalis; Balduinus, Noel; Baldwyn, Noel; Baubdweyn, Noel; Baudouyn, Noel; Bauldewijn, Noel; Baulduin, Noel; Baulduinus, Noel; Baulduvin, Noel; Baydouyn, Noel; Bouldewijen, Noel; Maester Noél, Noel; Meester Noel, Noel; Noe; Valdobin, Noel; Valdovin, Noel; Valduin, Noel",
+		"Composer RISM ID": "pe30001642",
+		"Composer RISM Link": "https://rism.online/people/30001642",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/265/",
+		"GND ID": "131891618",
+		"GND URL": "https://explore.gnd.network/gnd/131891618",
+		"VIAF ID": "16252408",
+		"VIAF URL": "http://viaf.org/viaf/16252408",
+		"Start of CYA": "1509",
+		"End of CYA": "1517",
+		"Flourished": "1509–1517",
+		"Places Active": "Mechelen, Antwerp"
+	},
+	{
 		"ID": "Besard, Jean-Baptiste",
 		"Composer": "Besard, Jean-Baptiste",
 		"ID Type": "composer",
@@ -1265,6 +1282,24 @@
 		"End of CYA": "1288",
 		"Flourished": "1276–1288",
 		"Places Active": "Arras, Paris, Italy"
+	},
+	{
+		"ID": "Handl, Jacobus",
+		"Composer": "Handl, Jacobus",
+		"ID Type": "composer",
+		"Alias": "Carniolus, Jacobus; Gallo, Giacomo; Gallus Carniolus, Jacobus; Gallus, Iacobus; Gallus, Jacob; Gallus, Jakob; Gallus, Jakobus; Haindl, Jacobus; Handl Gallus, Jakob; Handl, Jacob; Handl, Jacob; Handl, Jacobus; Handl, Jakob; Handl, Jakobus; Handl-Gallus, Iacobus; Handl-Gallus, J.; Handl-Gallus, Jacobus; Haÿndl, Jacobi; Hándl, Iacobus; Hähnel, Jacob; Händl, Jacob; Petelin, Jacobus",
+		"Composer RISM ID": "pe30001209",
+		"Composer RISM Link": "https://rism.online/people/30001209",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/790/",
+		"GND ID": "118689363",
+		"GND URL": "https://explore.gnd.network/gnd/118689363",
+		"VIAF ID": "27251963",
+		"VIAF URL": "http://viaf.org/viaf/27251963",
+		"Start of CYA": "1579",
+		"End of CYA": "1591",
+		"Death Date": "1591-7-18",
+		"Flourished": "1579–1591",
+		"Places Active": "Melk, Brno, Breslau, Olomouc, Prague"
 	},
 	{
 		"ID": "Hassler, Hans Leo",
