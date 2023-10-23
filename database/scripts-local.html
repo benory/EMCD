@@ -364,17 +364,18 @@ function makeTableBody(headings, data) {
 							let cdate = centry[EMC.index.concerts.date];
 							let ctitle = centry[EMC.index.concerts.ProgTitle];
 							let censemble = centry[EMC.index.concerts.ensemble];
+							let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 							let prepareddate = "";
 							if (cdate) {
 								let prepareddate = prepareDate(cdate);
 								let year = centry[EMC.index.concerts.year];
 								let month = centry[EMC.index.concerts.month];
+								let monthprepared = monthNames[month-1];
 								let day = centry[EMC.index.concerts.day];
 								if (month && day) {
 									output += `${prepareddate}: `;
 								} else if (month) {
-									let noday = prepareddate.slice(2);
-									output += `${noday}: `;
+									output += `${monthprepared} ${year}: `;
 								} else if (year){
 									output += `${year}: `;
 								}
@@ -683,17 +684,15 @@ function prepareDate(inputDateString) {
 	let day = parsedDate.getDate();
 	let month = monthNames[parsedDate.getMonth()];
 	let year = parsedDate.getFullYear();
-	let output = "";
-	if (day) {
-		output += `${day} `;
+	let formattedDate = "";
+	if (day && month && year) {
+		formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	} else if (month && year) {
+		formattedDate = `${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	} else {
+		formattedDate = `${parsedDate.getFullYear()}`;
 	}
-	if (month){
-		output += `${month} `;
-	}
-	if (year) {
-		output += `${year}`;
-	}
-	return output;
+	return formattedDate;
 }
 
 //////////////////////////////
