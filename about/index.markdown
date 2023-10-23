@@ -45,7 +45,7 @@ Concert programs have been located so far in the following archives:
 
 <br>
 
-Do you know of concert programs in archives that should be included in this project? [Let us know](mailto:concertsdatabase@gmail.com).
+Are there other concert programs that should be included in this project? [Let us know](mailto:concertsdatabase@gmail.com).
 
 ### Support
 

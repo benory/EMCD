@@ -271,7 +271,7 @@ function displayBrowseTableWorks(data) {
 	}
 
 	let headings = [EMC.index.works.name, EMC.index.works.composer,
-	EMC.index.works.voices, EMC.index.works.ProgDate,
+	EMC.index.works.voices, EMC.index.works.ProgID,
 	EMC.index.works.genre, EMC.index.works.source,
 	EMC.index.works.edition, EMC.index.works.ModernEd];
 
@@ -321,10 +321,13 @@ function displayBrowseTableConcerts(data) {
 function makeTableHeader(headings) {
 	let output = "";
 	let archivename = "Program Source";
+	let dateprogram = "Date and Concert Name";
 	for (let i=0; i<headings.length; i++ ) {
 		output += "<th>";
 		if (headings[i] == EMC.index.concerts.archive){
 			output += archivename;
+		} else if (headings[i] == EMC.index.works.ProgID) {
+			output += dateprogram;
 		} else {
 			output += headings[i];
 		}
@@ -351,8 +354,31 @@ function makeTableBody(headings, data) {
 				value = entry[headings[i]];
 			}
 			output += "<td>";
-
-			if (headings[i] == EMC.index.works.edition) {
+			if (headings[i] == EMC.index.works.ProgID) {
+				//preparing concert date and name
+				value = [ value ];
+				if (value){
+					for (let i=0; i<value.length; i++){
+						let centry = EMC.lookup.concerts[value];
+						console.warn(centry, "centry");
+						if (centry){
+							let cdate = centry[EMC.index.concerts.date];
+							let ctitle = centry[EMC.index.concerts.ProgTitle];
+							let censemble = centry[EMC.index.concerts.ensemble];
+							let prepareddate = "";
+							if (cdate) {
+								let prepareddate = prepareDate(cdate);
+								output += `${prepareddate}: `;
+							}
+							if (ctitle) {
+								output += ` ${ctitle}`;
+							} else if (censemble) {
+								output += ` ${censemble}`;
+							}
+						}
+					}
+				}	
+			} else if (headings[i] == EMC.index.works.edition) {
 				let pagenumbers = entry["Nos./Page Numbers"];
 				let editionurl = entry["Scan of Edition"];
 				if (value){
@@ -632,6 +658,21 @@ function makeTableBody(headings, data) {
 		output += "</tr>\n";
 	}
 	return output;
+}
+
+//////////////////////////////
+//
+// prepareDate -- convert YYYY-M-D to D MMM YYYY
+//
+
+function prepareDate(inputDateString) {
+	if (!inputDateString) {
+		return "";
+	}
+	let parsedDate = new Date(inputDateString.replace(/-/g, "/"));
+	let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	let formattedDate = `${parsedDate.getDate()} ${monthNames[parsedDate.getMonth()]} ${parsedDate.getFullYear()}`;
+	return formattedDate;
 }
 
 //////////////////////////////
