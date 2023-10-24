@@ -169,7 +169,7 @@ function displayBrowseTableWorks(data) {
 	EMC.index.works.edition, EMC.index.works.ModernEd];
 
 	let contents = "";
-	contents += "<table class='browse-works'>\n";
+	contents += "<table class='browse-works sticky'>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";
@@ -197,7 +197,7 @@ function displayBrowseTableConcerts(data) {
 	let headings = [EMC.index.concerts.date, EMC.index.concerts.ProgTitle, EMC.index.concerts.ensemble, EMC.index.concerts.loc, EMC.index.concerts.direction, EMC.index.concerts.archive];
 
 	let contents = "";
-	contents += "<table class='browse-concerts'>\n";
+	contents += "<table class='browse-concerts sticky'>\n";
 	contents += "<thead>\n";
 	contents += makeTableHeader(headings);
 	contents += "</thead>\n";
@@ -250,7 +250,8 @@ function makeTableBody(headings, data) {
 			if (typeof entry[headings[i]] !== "undefined") {
 				value = entry[headings[i]];
 			}
-			output += "<td>";
+			let tdClass = headings[i].replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^-+/, "").replace(/-+$/, "").toLowerCase();
+			output += `<td class="${tdClass}">`;
 			if (headings[i] == EMC.index.works.ProgID) {
 				//preparing concert date and name
 				value = [ value ];
