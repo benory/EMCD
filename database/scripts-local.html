@@ -220,7 +220,8 @@ function makeTableHeader(headings) {
 	let archivename = "Program Source";
 	let dateprogram = "Date and Concert Name";
 	for (let i=0; i<headings.length; i++ ) {
-		output += "<th>";
+		let thClass = headings[i].replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^-+/, "").replace(/-+$/, "").toLowerCase();
+		output += `<th class="${thClass}">`;
 		if (headings[i] == EMC.index.concerts.archive){
 			output += archivename;
 		} else if (headings[i] == EMC.index.works.ProgID) {
