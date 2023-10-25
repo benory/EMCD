@@ -21,13 +21,13 @@ Collecting this information is not simple: these programs are rarely published o
 Surviving programs are remarkably detailed. Most provide information about performance locations, which frequently included churches, museums, and university lecture halls. Programs list ensembles, directors, performers, and who introduced the concert. They sometimes describe the early music sources (manuscripts, early prints) from which scholars drew their transcriptions and name the scholar responsible for the transcriptions. Ensembles performing from existing modern editions often cite their sources, too.
 
 <div id="sample-program"><a href="https://drive.google.com/file/d/18asgA6ydjEqGbMOoTOdTfqk1Qwkf18nz/view" target="_blank"><img src="/images/sample_program_analysis.png" alt="Sample Program Analysis"></a></div>
-<center><small>Image reproduced by permission of the Universitätsarchiv Nürnberg-Erlangen</small></center><br>
+<center><small>Image reproduced by permission of the Universitätsarchiv Nürnberg-Erlangen</small></center><br><br>
 
 ### Why 1915 to 1960?
 
 Sporadic performances of medieval and Renaissance music can be traced back to the ninteenth and even the eighteenth centuries, but until the 1910s, concerts of these repertoires were rare. All of this changed in Europe in the years following World War I: early music rapidly came into vogue. A generation of young scholars, captivated by informal music making movements such as the _Jugendmusikbewegung_ and emerging scholarship on music history, began to direct concerts and devote themselves to specialized knowledge about music from before 1600. The project's chronological bound of 1915 reflects this newfound interest.
 
-After 1945, the center of early music scholarship shifted to the United States. Homegrown and émigré scholars alike led performance ensembles and taught generations of students who themselves came to focus on early music. Interest in early music on both sides of the Atlantic increased rapidly throughout the 1950s, and by the 1960s, the number performances had exploded. Ending the project's focus at 1960 enables the project to concentrate on the emergence of the modern early music tradition without being overwhelmed by the expansive concert data in ensuing decades.
+Interest in early music on both sides of the Atlantic increased rapidly throughout the 1950s, and by the 1960s, the number performances had exploded. Ending the project's focus at 1960 enables the project to concentrate on the emergence of the modern early music tradition without being overwhelmed by the expansive concert data in ensuing decades.<br><br>
 
 ### Entering programs
 
@@ -36,7 +36,7 @@ For each program of early music:
 + The probable composer for each work is listed, as agreed by modern scholars. Should there be more than one plausible conflicting attribution, these are provided as well.
 + music editions and original sources are named, if offered.
 + concert participants are identified.
-+ details about performance location are entered.
++ details about performance location are entered.<br><br>
 
 <!-- ### Documentation
 
@@ -64,7 +64,7 @@ This project has been supported by a 2023 [Ora Frishberg Saloman Fund Award from
 
 <div id="person">Benjamin Ory (Stanford University)</div> <br>
 
-#### Advisory Board
+<!--#### Advisory Board
 
 <div id="person">Anna Maria Busse Berger (University of California, Davis)</div>
 <div id="person">Raymond Dittrich (Bischöfliche Zentralbibliothek Regensburg)</div>
