@@ -6,15 +6,22 @@ title: about
 {% include_relative scripts-local.html %}
 {% include_relative styles-local.html  %}
 
-We're often told how informal performance in European musicological seminars played important roles in the revival of medieval and Renaissance music performance following World War I.
+We're often told how informal performance in European musicological seminars played an important role in the revival of medieval and Renaissance music performance in the years following World War I.
 
-But this project argues that performance in more formal contexts was also essential in the rediscovery of early music. And a whole additional category of evidence for this survives in abundance, but has until now largely been ignored: programs for public concerts between 1915 and 1960—often introduced, directed, performed, or heard by the very same scholars leading important seminars—that included music from before 1600. To better understand the emergence of the early music performance tradition on both sides of the Atlantic, we need to systematically collect and curate all this information in a way that moves beyond narrative descriptions of a few individual concerts.
+But this project argues that performance in more formal contexts was also essential in the rediscovery of early music. And a whole additional category of evidence for this survives in abundance, but has until now largely been ignored: programs for public concerts between 1915 and 1960—often introduced, directed, performed, or heard by the very same scholars leading important seminars—and which included music from before 1600. To better understand the emergence of the early music performance tradition on both sides of the Atlantic, we need to systematically collect and curate all this information in a way that moves beyond narrative descriptions of a few individual concerts.
 
 ## The project
 
 This project, founded in 2023 by [Benjamin Ory](https://benjaminory.com), aims to meet this challenge by creating a relational database and mapping tool that will allow users to selectively display patterns of carefully-curated data from these programs. Users will be able to query the database to ask questions about the popularization of repertoires; the use of new performance and scholarly editions; the figures involved in the concerts; the early music objects that scholars and performers referenced and transcribed from; and the establishment of local, national, and international early music canons.
 
 Collecting this information is not simple: these programs are rarely published or digitized, but are instead often only found buried in personnel and institute files in university archives. This project seeks to collate and map materials, and provide context for important concerts. It also aims to enable users to flexibly manipulate this data to answer their own research questions.
+
+### A Sample Program
+
+Surviving programs are remarkably detailed. Most provide information about performance locations, which frequently included churches, museums, and university lecture halls. Programs list ensembles, directors, performers, and who introduced the concert. They sometimes describe the early music sources (manuscripts, early prints) from which scholars drew their transcriptions and name the scholar responsible for the transcriptions. Ensembles performing from existing modern editions often cite their sources, too.
+
+![Sample Program Analysis](/images/sample_program_analysis.png)
+<center><small>Image reproduced by permission of the Universitätsarchiv Nürnberg-Erlangen</small></center><br>
 
 ### Why 1915 to 1960?
 
