@@ -6,7 +6,7 @@ title: about
 {% include_relative scripts-local.html %}
 {% include_relative styles-local.html  %}
 
-We're often told how informal performance in European musicological seminars played an important role in the revival of medieval and Renaissance music performance in the years following World War I.
+We're often told how informal performance in musicology seminars played an important role in the revival of medieval and Renaissance music performance in the years following World War I.
 
 But this project argues that performance in more formal contexts was also essential in the rediscovery of early music. And a whole additional category of evidence for this survives in abundance, but has until now largely been ignored: programs for public concerts between 1915 and 1960—often introduced, directed, performed, or heard by the very same scholars leading important seminars—and which included music from before 1600. To better understand the emergence of the early music performance tradition on both sides of the Atlantic, we need to systematically collect and curate all this information in a way that moves beyond narrative descriptions of a few individual concerts.
 
