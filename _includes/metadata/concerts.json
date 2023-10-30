@@ -956,6 +956,28 @@
 		"Image Permissions": "no"
 	},
 	{
+		"ID": "Prog_1951_06_18",
+		"Program": "Prog_1951_06_18",
+		"ID Type": "concert",
+		"Year": "1951",
+		"Month": "6",
+		"Day": "18",
+		"Date": "1951-6-18",
+		"Program Title": "Het Nederlands Kamerkoor",
+		"Ensemble/Larger Org.": "Holland Festival",
+		"Location": "Bachzaal",
+		"City": "Amsterdam",
+		"State": "Noord-Holland",
+		"Country": "Netherlands",
+		"Google Maps URL": "https://maps.app.goo.gl/RQhteq3BuhNNVQUMA",
+		"Location Coordinates": "52.34934694824997, 4.880207726222502",
+		"Direction": "{Félix de Nobel}",
+		"Archive (ARC)": "ARC:NL_NMI",
+		"Signature": "Nederlands Kamerkoor, Box 18",
+		"Image": "https://drive.google.com/file/d/1S3nV8b6D3vTQaq9_epdbnYBjWygVMJPV/view?usp=share_link",
+		"Image Permissions": "no"
+	},
+	{
 		"ID": "Prog_1952_01_08",
 		"Program": "Prog_1952_01_08",
 		"ID Type": "concert",

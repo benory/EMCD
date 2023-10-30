@@ -6381,6 +6381,37 @@
 		"Modern Edition": "Johann Eccard, Neue geistliche und weltliche Lieder zu fünf und vier Stimmen, Königsberg 1589, ed. Robert Eitner (Leipzig: Breitkopf & Härtel, 1897), no. 22, pp. 119–22."
 	},
 	{
+		"Standardized Name of Work": "O bone Jesu",
+		"Probable Composer": "Anonymous",
+		"Voices": "4",
+		"Name of Work in Program": "O bone Jesu",
+		"Composer Name as Listed in Program": "Loyset Compère",
+		"Language": "Latin",
+		"Monophonic/Polyphonic": "polyphonic",
+		"Sacred/Secular": "sacred",
+		"Vocal/Instrumental": "vocal",
+		"Genre": "motet",
+		"Program ID": "Prog_1951_06_18",
+		"Program Date": "1951-6-18",
+		"Order in Program": "1",
+		"Modern Edition": "Loyset Compere, Opera Omnia: Motets, CMM 15/4 (American Institute of Musicology, 1961), pp. 27–28."
+	},
+	{
+		"Standardized Name of Work": "Missa Sine nomine",
+		"Probable Composer": "Okeghem, Johannes",
+		"Name of Work in Program": "Missa Sine nomine",
+		"Composer Name as Listed in Program": "Johannes Ockeghem",
+		"Language": "Latin",
+		"Monophonic/Polyphonic": "polyphonic",
+		"Sacred/Secular": "sacred",
+		"Vocal/Instrumental": "vocal",
+		"Genre": "mass",
+		"Program ID": "Prog_1951_06_18",
+		"Program Date": "1951-6-18",
+		"Order in Program": "2",
+		"Internal Notes": "insufficient information"
+	},
+	{
 		"Standardized Name of Work": "Sicut lilium inter spinas",
 		"Probable Composer": "Brumel, Antoine",
 		"Voices": "4",
@@ -6992,7 +7023,7 @@
 	},
 	{
 		"Standardized Name of Work": "O bone Jesu",
-		"Probable Composer": "Compere, Loyset",
+		"Probable Composer": "Anonymous",
 		"Voices": "4",
 		"Name of Work in Program": "O bone Jesu",
 		"Composer Name as Listed in Program": "Loyset Compère",
@@ -8886,7 +8917,7 @@
 	},
 	{
 		"Standardized Name of Work": "O bone Jesu",
-		"Probable Composer": "Compere, Loyset",
+		"Probable Composer": "Anonymous",
 		"Voices": "4",
 		"Name of Work in Program": "O bone Jesu",
 		"Composer Name as Listed in Program": "Loyset Compère",
