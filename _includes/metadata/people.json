@@ -907,6 +907,16 @@
 		"ID Type": "person"
 	},
 	{
+		"ID": "Krings, Alfred",
+		"Person": "Krings, Alfred",
+		"ID Type": "person",
+		"Position": "conductor, musicologist",
+		"GND ID": "134872126",
+		"GND URL": "https://explore.gnd.network/gnd/134872126",
+		"VIAF ID": "15194447",
+		"VIAF URL": "http://viaf.org/viaf/15194447"
+	},
+	{
 		"ID": "Kurtz, Kenneth",
 		"Person": "Kurtz, Kenneth",
 		"ID Type": "person"
