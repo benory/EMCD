@@ -816,6 +816,23 @@
 		"Places Active": "Weimar, Munich, Mühlhausen, Königsberg, Berlin"
 	},
 	{
+		"ID": "Farmer, John",
+		"Composer": "Farmer, John",
+		"ID Type": "composer",
+		"Alias": "Fermer, John",
+		"Composer RISM ID": "pe30006836",
+		"Composer RISM Link": "https://rism.online/people/30006836",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/1776/",
+		"GND ID": "128352132",
+		"GND URL": "https://explore.gnd.network/gnd/128352132",
+		"VIAF ID": "104247632",
+		"VIAF URL": "http://viaf.org/viaf/104247632",
+		"Start of CYA": "1591",
+		"End of CYA": "1601",
+		"Flourished": "1591–1601",
+		"Places Active": "Dublin, London"
+	},
+	{
 		"ID": "Farnaby, Giles",
 		"Composer": "Farnaby, Giles",
 		"ID Type": "composer",
@@ -2507,6 +2524,23 @@
 		"Places Active": "London, Tattershall, Boston"
 	},
 	{
+		"ID": "Tomkins, Thomas",
+		"Composer": "Tomkins, Thomas",
+		"ID Type": "composer",
+		"Alias": "Thomkins, Thomas; Thompkins, Thomas; Tompkins, Thomas; Tonkins, Thomas",
+		"Composer RISM ID": "pe30014509",
+		"Composer RISM Link": "https://rism.online/people/30014509",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/899/",
+		"GND ID": "118802496",
+		"GND URL": "https://explore.gnd.network/gnd/118802496",
+		"VIAF ID": "56797777",
+		"VIAF URL": "http://viaf.org/viaf/56797777",
+		"Start of CYA": "1596",
+		"End of CYA": "1654",
+		"Flourished": "1596–1654",
+		"Places Active": "Oxford, England, Worcester"
+	},
+	{
 		"ID": "Torre, Francesco de la",
 		"Composer": "Torre, Francesco de la",
 		"ID Type": "composer",
@@ -2755,6 +2789,24 @@
 		"End of CYA": "1623",
 		"Flourished": "1597–1623",
 		"Places Active": "Winchester, Oxford, London"
+	},
+	{
+		"ID": "Wert, Giaches de",
+		"Composer": "Wert, Giaches de",
+		"ID Type": "composer",
+		"Alias": "Dewert; Giaches de Wert; Giaches di Reggio; Jaches [de Wert]; Jacobus de Vert; Jacques [de Wert]; Vaerts; Vert; Vuert; Vuert, Iaches; Vuert, Jakob; Wert; Wert, Iaches de; Wert, Jaches de; Wert, Jacob; Wert, Jacob de; Wert, Jaques de; Werth; Werth, Jakob",
+		"Composer RISM ID": "pe1644932",
+		"Composer RISM Link": "https://rism.online/people/1644932",
+		"Composer DIAMM page": "https://www.diamm.ac.uk/people/719/",
+		"GND ID": "118975420",
+		"GND URL": "https://explore.gnd.network/gnd/118975420",
+		"VIAF ID": "89543989",
+		"VIAF URL": "http://viaf.org/viaf/89543989",
+		"Start of CYA": "1556",
+		"End of CYA": "1595",
+		"Death Date": "1596-5-6",
+		"Flourished": "1556–1595",
+		"Places Active": "Mantua, Milan, Ferrara"
 	},
 	{
 		"ID": "Whythorne, Thomas",
